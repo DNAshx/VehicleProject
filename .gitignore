@@ -1,0 +1,9 @@
+App/evidenceServer/.ReportSystemCache/pid3272/ProcessLock/
+App/evidenceServer/.ReportSystemCache/pid4148/ProcessLock/*
+App/evidenceServer/.ReportSystemCache/pid4148/ProcessLock
+App/evidenceServer/log
+App/evidenceServer/log/
+App/evidenceServer/log/*
+App/evidenceServer/log/**
+App/EvidenceNova/nova.config
+Src/VehicleSolution/001_GlauxSoft.Vehicle.Common/obj/Debug/**

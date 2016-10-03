@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Information" date="22.09.2016" time="10:52:10.648" source="evidence server" message="The evidence server was stopped">
+    <memory memory="118 591 488" virtualMemory="117 096 448" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="10:00:33.555" source="Business logic" message="User 'moritz' was disconnected. Agent ID=28c892ec-3f95-4390-b0ba-f6ca82374882.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="110 272 512" virtualMemory="107 929 600" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:58:46.946" source="Logon provider" message="User 'moritz' was connected. Agent ID=28c892ec-3f95-4390-b0ba-f6ca82374882.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="108 818 432" virtualMemory="106 844 160" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:58:04.945" source="Business logic" message="User 'moritz' was disconnected. Agent ID=cf7d34d2-ab10-4eb1-a5a5-3f01e2d36ac9.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="108 072 960" virtualMemory="106 786 816" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:54:50.918" source="Logon provider" message="User 'moritz' was connected. Agent ID=cf7d34d2-ab10-4eb1-a5a5-3f01e2d36ac9.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="123 576 320" virtualMemory="119 746 560" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:53:44.827" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="101 650 432" virtualMemory="95 924 224" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:53:44.802" source="evidence server" message="The evidence server was started; instace ID = 901f67d1-d8d4-4a47-ad64-e8fc30b14f19, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="101 380 096" virtualMemory="95 784 960" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:53:44.788" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="101 298 176" virtualMemory="95 760 384" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:53:44.757" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="99 741 696" virtualMemory="94 687 232" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:30:46.351" source="evidence server" message="The evidence server was stopped">
+    <memory memory="122 613 760" virtualMemory="119 496 704" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:30:38.799" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="103 112 704" virtualMemory="97 140 736" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:30:38.749" source="evidence server" message="The evidence server was started; instace ID = f7b0ae04-775a-484e-af4a-e289b8c7bbed, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="102 920 192" virtualMemory="97 071 104" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:30:38.736" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="102 838 272" virtualMemory="97 046 528" />
+  </entry>
+  <entry type="Information" date="22.09.2016" time="09:30:38.708" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="101 359 616" virtualMemory="96 763 904" />
+  </entry>
+  <entry type="Error" date="22.09.2016" time="08:25:30.580" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="Die von der Anmeldung angeforderte evi_Avento_Ent-Datenbank kann nicht geöffnet werden. Fehler bei der Anmeldung.&#xD;&#xA;Fehler bei der Anmeldung für den Benutzer 'CORPROOT\moritz'." />
+    <memory memory="93 753 344" virtualMemory="92 393 472" />
+  </entry>
+</log>

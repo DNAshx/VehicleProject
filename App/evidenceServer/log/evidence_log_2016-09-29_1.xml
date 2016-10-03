@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Information" date="29.09.2016" time="13:29:57.340" source="Business logic" message="User 'apolovinka' was disconnected. Agent ID=a6f1c3ce-093f-42b8-8f8f-94e2930fcd26.">
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="94 527 488" virtualMemory="69 210 112" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="13:27:19.286" source="" message="An error occurred in controller action Evidence.Nova.CoreComponents.NovaForms.DataExport.PermissionController.Index.&#xD;&#xA;Library is not found.&#xD;&#xA;Could not load file or assembly 'GlauxSoft.DataExport.Common' or one of its dependencies. The system cannot find the file specified.&#xD;&#xA;">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Host" value="sp" />
+    <additional message="" />
+    <memory memory="95 092 736" virtualMemory="69 660 672" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:27:07.283" source="" message="evidence nova logon info v1: {Browser:&quot;Chrome, 53.0.2785.116&quot;,Engine:&quot;WebKit, 537.36&quot;,OS:&quot;Windows, , Desktop&quot;,Strict:true,BrowserLang:&quot;en-US&quot;,EXTJS:&quot;6.0.0.640&quot;,JQuery:&quot;1.11.1&quot;,ClientTimestamp:&quot;Thu Sep 29 2016 13:27:03 GMT+0300 (FLE Daylight Time)&quot;,Screen:&quot;1366x768&quot;,UserAgent:&quot;Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36&quot;,Thumbprint:256391715,AgentInstanceID:&quot;48b3f8ad-e6cc-45de-8f7c-86e9449953a2&quot;,AgentUsername:&quot;Administrator&quot;,RemoteAddr:&quot;[::1]:2242&quot;,AutoLogon:false,LogonMode:&quot;EvdLogon&quot;}">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Host" value="sp" />
+    <additional message="" />
+    <memory memory="94 740 480" virtualMemory="69 316 608" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:27:03.788" source="Logon provider" message="User 'Administrator' was connected. Agent ID=48b3f8ad-e6cc-45de-8f7c-86e9449953a2.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="2 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="94 613 504" virtualMemory="69 312 512" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:10:27.229" source="Logon provider" message="User 'apolovinka' was connected. Agent ID=a6f1c3ce-093f-42b8-8f8f-94e2930fcd26.">
+    <user name="apolovinka" id="64000037" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Windows (SP\apolovinka); Language Id: 7" />
+    <memory memory="88 952 832" virtualMemory="62 717 952" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:10:21.329" source="Business logic" message="User 'Administrator' was disconnected. Agent ID=e058bcc3-bc48-4435-be81-c694a267f02f.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="88 166 400" virtualMemory="62 459 904" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:39.388" source="Logon provider" message="User 'Administrator' was connected. Agent ID=e058bcc3-bc48-4435-be81-c694a267f02f.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="87 003 136" virtualMemory="62 537 728" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:09:19.297" source="Logon provider" message="Can’t connect user 'SP\apolovinka'">
+    <memory memory="86 708 224" virtualMemory="62 570 496" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:19.295" source="evidence server" message="The attempt was made to log on for invalid user ('SP\apolovinka')">
+    <memory memory="86 700 032" virtualMemory="62 570 496" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:11.888" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="82 653 184" virtualMemory="58 560 512" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:11.718" source="evidence server" message="The evidence server was started; instace ID = 6fd3db74-d485-445a-a30e-271e417ca4cd, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="82 497 536" virtualMemory="58 486 784" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:11.687" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="82 014 208" virtualMemory="58 343 424" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:10.693" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="77 230 080" virtualMemory="56 549 376" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:09.065" source="evidence server" message="The evidence server was stopped">
+    <memory memory="90 497 024" virtualMemory="63 426 560" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:09:07.632" source="Business logic" message="User 'Administrator' was disconnected. Agent ID=61e6da68-74ed-49b8-ae42-1bf233d82051.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="89 444 352" virtualMemory="63 332 352" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="13:09:03.551" source="Business logic" message="DataCenter returns SARV_ERROR">
+    <user name="Administrator" id="64000000" />
+    <operation name="SavePermissions" />
+    <additional message="61e6da68-74ed-49b8-ae42-1bf233d82051" />
+    <memory memory="88 944 640" virtualMemory="62 750 720" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:08:07.482" source="Logon provider" message="User 'Administrator' was connected. Agent ID=61e6da68-74ed-49b8-ae42-1bf233d82051.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="86 671 360" virtualMemory="62 107 648" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:07:53.591" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="82 198 528" virtualMemory="59 121 664" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:07:53.570" source="evidence server" message="Scheduler will not work because the evidence license is invalid or an error during TaskManager initialization.">
+    <operation name="" />
+    <memory memory="82 145 280" virtualMemory="59 097 088" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:07:53.569" source="evidence server" message="The evidence server was started; instace ID = e104079e-4081-4f03-a0c1-e57998056e44, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="82 137 088" virtualMemory="59 097 088" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:07:53.547" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="81 747 968" virtualMemory="58 957 824" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:07:53.309" source="evidence server" message="License is invalid: database name does not correspond license.">
+    <operation name="" />
+    <memory memory="79 126 528" virtualMemory="58 265 600" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:07:53.282" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="77 426 688" virtualMemory="57 704 448" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:07:17.997" source="evidence server" message="The evidence server was stopped">
+    <memory memory="92 672 000" virtualMemory="66 363 392" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:07:12.395" source="Business logic" message="User 'Administrator' was disconnected. Agent ID=04de907e-10f8-4d6a-94fa-d16e9698fd85.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="91 885 568" virtualMemory="66 289 664" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:04:22.415" source="Logon provider" message="User 'Administrator' was connected. Agent ID=04de907e-10f8-4d6a-94fa-d16e9698fd85.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="86 089 728" virtualMemory="59 691 008" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:03:42.960" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="82 317 312" virtualMemory="58 994 688" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:03:42.903" source="evidence server" message="Scheduler will not work because the evidence license is invalid or an error during TaskManager initialization.">
+    <operation name="" />
+    <memory memory="82 264 064" virtualMemory="58 970 112" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:03:42.901" source="evidence server" message="The evidence server was started; instace ID = 31a368f9-058a-4f3d-88a6-96f994421bd0, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="82 259 968" virtualMemory="58 970 112" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:03:42.743" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="81 879 040" virtualMemory="58 814 464" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:03:41.818" source="evidence server" message="License is invalid: database name does not correspond license.">
+    <operation name="" />
+    <memory memory="80 867 328" virtualMemory="58 122 240" />
+  </entry>
+  <entry type="Information" date="29.09.2016" time="13:03:41.681" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="80 011 264" virtualMemory="57 892 864" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:03:41.377" source="Data access" message="Full-text indexing is not installed">
+    <operation name="Creation temporary table for enum attribute captions" />
+    <additional message="Creation of the full-text index to tmpEnumCaptQuery is not availabe, a simple query will be used instead of full-text" />
+    <memory memory="79 462 400" virtualMemory="57 581 568" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:03:40.555" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 249. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="75 538 432" virtualMemory="54 603 776" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:03:40.554" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 246. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="75 280 384" virtualMemory="54 403 072" />
+  </entry>
+  <entry type="Warning" date="29.09.2016" time="13:03:40.552" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 10. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="74 907 648" virtualMemory="54 140 928" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="13:02:24.972" source="evidence server" message="An Exception was thrown while server loading ">
+    <operation name="Connecting to repository" />
+    <exception type="Evidence.RepositoryAccess.RpException" message="Your evidence repository must be upgraded to work with this application. Please, contact your system administrator." />
+    <memory memory="68 599 808" virtualMemory="50 384 896" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="13:02:24.179" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="AppServerAdd" />
+    <exception type="System.Data.SqlClient.SqlException" message="Invalid object name 'dbo.evxAppServerInformation'." />
+    <additional message="INSERT INTO dbo.evxAppServerInformation (AppServerInstanceID, AppServerName, MachineName, InstanceName, Port, LogOnAs, State, TimezoneInformation, StartupTime, LastAppServerPulse, SchedulerOn) VALUES (@AppServerInstanceID, @AppServerName, @MachineName, @InstanceName, @Port, @LogOnAs, @State, @TimezoneInformation, @StartupTime, @LastAppServerPulse, @SchedulerOn) " />
+    <memory memory="65 753 088" virtualMemory="48 939 008" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="13:02:24.093" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="IsServerRunningWithName" />
+    <exception type="System.Data.SqlClient.SqlException" message="Invalid object name 'dbo.evxAppServerInformation'." />
+    <additional message="SELECT COUNT(*) FROM dbo.evxAppServerInformation WHERE State ='Started' AND AppServerName = 'Evidence' " />
+    <memory memory="64 552 960" virtualMemory="48 406 528" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="13:02:24.042" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="UpdateServerInfo" />
+    <exception type="System.Data.SqlClient.SqlException" message="Invalid object name 'dbo.evxAppServerInformation'." />
+    <additional message="UPDATE dbo.evxAppServerInformation SET State='StoppedUnexpected', ShutdownTime = GETUTCDATE() WHERE State &lt;&gt; 'Stopped' AND State &lt;&gt; 'StoppedUnexpected' AND LastAppServerPulse &lt; DATEADD(mi, -6, GETUTCDATE()) " />
+    <memory memory="64 311 296" virtualMemory="48 975 872" />
+  </entry>
+</log>

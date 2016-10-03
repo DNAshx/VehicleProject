@@ -1,0 +1,7 @@
+V1, Diagnostic Data, nova 2.0.27.2
+2016-09-29 13:27:07.2650	2b74825a0bdc44c4924bab8d0d105b1d	28	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Thu Sep 29 2016 13:27:03 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"48b3f8ad-e6cc-45de-8f7c-86e9449953a2",AgentUsername:"Administrator",RemoteAddr:"[::1]:2242",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-29 13:27:13.9834	2b74825a0bdc44c4924bab8d0d105b1d	0
+2016-09-29 13:27:19.2727	2b74825a0bdc44c4924bab8d0d105b1d	17	DataExport permission
+2016-09-29 13:27:26.9421	2b74825a0bdc44c4924bab8d0d105b1d	2
+2016-09-29 13:28:04.6483	2b74825a0bdc44c4924bab8d0d105b1d	3
+2016-09-29 13:28:09.0295	2b74825a0bdc44c4924bab8d0d105b1d	1

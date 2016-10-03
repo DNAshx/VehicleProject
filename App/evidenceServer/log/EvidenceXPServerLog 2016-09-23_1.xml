@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Information" date="23.09.2016" time="16:44:34.502" source="evidence server" message="The evidence server was stopped">
+    <memory memory="115 023 872" virtualMemory="116 785 152" />
+  </entry>
+  <entry type="Information" date="23.09.2016" time="15:44:44.715" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="103 059 456" virtualMemory="96 493 568" />
+  </entry>
+  <entry type="Information" date="23.09.2016" time="15:44:44.671" source="evidence server" message="The evidence server was started; instace ID = 49072bc8-9dd0-4bb7-82ea-9593e8148269, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="102 588 416" virtualMemory="96 096 256" />
+  </entry>
+  <entry type="Information" date="23.09.2016" time="15:44:44.658" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="102 514 688" virtualMemory="96 079 872" />
+  </entry>
+  <entry type="Information" date="23.09.2016" time="15:44:44.606" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="101 019 648" virtualMemory="94 994 432" />
+  </entry>
+</log>

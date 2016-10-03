@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Information" date="26.09.2016" time="13:54:08.946" source="evidence server" message="The evidence server was stopped">
+    <memory memory="126 275 584" virtualMemory="121 077 760" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:17.861" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="107 057 152" virtualMemory="101 343 232" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:17.837" source="evidence server" message="The evidence server was started; instace ID = 60ca1481-53cc-443c-b685-62bd22bd78a5, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="106 893 312" virtualMemory="101 277 696" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:17.820" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="106 500 096" virtualMemory="101 134 336" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:17.756" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="104 501 248" virtualMemory="100 261 888" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:17.674" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="103 751 680" virtualMemory="99 938 304" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:17.620" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="102 658 048" virtualMemory="99 753 984" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:15.799" source="evidence server" message="The evidence server was stopped">
+    <memory memory="139 563 008" virtualMemory="134 737 920" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:46:11.529" source="Business logic" message="User 'moritz' was disconnected. Agent ID=39aca600-8d6e-4320-ada0-6956ee130dc0.">
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="147 382 272" virtualMemory="133 898 240" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:45:27.211" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\eXPSpecialPermissionManagementClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.ApplicationException'. Fehlermeldung: 'Error in the application.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="148 877 312" virtualMemory="135 401 472" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:45:26.912" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="148 832 256" virtualMemory="135 315 456" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:45:26.907" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="148 832 256" virtualMemory="135 315 456" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:45:25.645" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="144 801 792" virtualMemory="130 891 776" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:45:25.350" source="Logon provider" message="User 'moritz' was connected. Agent ID=39aca600-8d6e-4320-ada0-6956ee130dc0.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="2 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="139 243 520" virtualMemory="125 476 864" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:44:55.380" source="Business logic" message="User 'SysMonUser' was disconnected. Agent ID=90b38c37-ec32-4c5b-ba34-8ad03362d4d5.">
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="NOTEBOOK57" />
+    <memory memory="139 182 080" virtualMemory="125 419 520" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:44:55.362" source="Business logic" message="An exception was thrown while agent operation. ">
+    <user name="SysMonUser" id="64000003" />
+    <operation name="Allow change label format" />
+    <parameter name="Full exception:" value="System.ApplicationException: Failed to check label format permissions, possibly it does not exist anymore&#xD;&#xA;   at Evidence.Services.Security.PermissionCalculator.CheckLabelFormatPermissionFlag(EvdUserId userID, EvdAuxItemID itemID, AuxItemPermissions checkedFlag)&#xD;&#xA;   at Evidence.Services.AgentCore.AllowChangeLabelFormat(EvdAuxItemID labelFormatId)" />
+    <exception type="System.ApplicationException" message="Failed to check label format permissions, possibly it does not exist anymore." />
+    <memory memory="139 177 984" virtualMemory="125 415 424" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:44:55.302" source="Logon provider" message="User 'SysMonUser' was connected. Agent ID=90b38c37-ec32-4c5b-ba34-8ad03362d4d5.">
+    <user name="SysMonUser" id="64000003" />
+    <parameter name="Active connections" value="2 (0 from Scheduler)" />
+    <parameter name="Host" value="NOTEBOOK57" />
+    <additional message="Login: Windows (SYSMON\SysMonUser); Language Id: 7" />
+    <memory memory="139 157 504" virtualMemory="125 407 232" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:39:38.197" source="Business logic" message="User 'SysMonUser' was disconnected. Agent ID=4564c467-af31-4963-8ff7-8cbb70fef8d9.">
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="NOTEBOOK57" />
+    <memory memory="139 857 920" virtualMemory="126 124 032" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:39:38.160" source="Business logic" message="An exception was thrown while agent operation. ">
+    <user name="SysMonUser" id="64000003" />
+    <operation name="Allow change label format" />
+    <parameter name="Full exception:" value="System.ApplicationException: Failed to check label format permissions, possibly it does not exist anymore&#xD;&#xA;   at Evidence.Services.Security.PermissionCalculator.CheckLabelFormatPermissionFlag(EvdUserId userID, EvdAuxItemID itemID, AuxItemPermissions checkedFlag)&#xD;&#xA;   at Evidence.Services.AgentCore.AllowChangeLabelFormat(EvdAuxItemID labelFormatId)" />
+    <exception type="System.ApplicationException" message="Failed to check label format permissions, possibly it does not exist anymore." />
+    <memory memory="139 608 064" virtualMemory="125 923 328" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:39:38.105" source="Logon provider" message="User 'SysMonUser' was connected. Agent ID=4564c467-af31-4963-8ff7-8cbb70fef8d9.">
+    <user name="SysMonUser" id="64000003" />
+    <parameter name="Active connections" value="2 (0 from Scheduler)" />
+    <parameter name="Host" value="NOTEBOOK57" />
+    <additional message="Login: Windows (SYSMON\SysMonUser); Language Id: 7" />
+    <memory memory="139 145 216" virtualMemory="125 747 200" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:37:50.050" source="Logon provider" message="Can’t connect user '\SYSMONSysMonUser'">
+    <memory memory="138 768 384" virtualMemory="125 362 176" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:37:50.047" source="evidence server" message="The attempt was made to log on for invalid user ('\SYSMONSysMonUser')">
+    <memory memory="138 764 288" virtualMemory="125 362 176" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:37:26.508" source="" message="evidence nova logon info v1: {Browser:&quot;IE, 11.0&quot;,Engine:&quot;Trident, 7.0&quot;,OS:&quot;Windows, , Desktop&quot;,Strict:true,BrowserLang:&quot;de-CH&quot;,EXTJS:&quot;6.0.0.640&quot;,JQuery:&quot;1.11.1&quot;,ClientTimestamp:&quot;Mon Sep 26 2016 13:37:26 GMT+0200 (W. Europe Daylight Time)&quot;,Screen:&quot;1920x1200&quot;,UserAgent:&quot;Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko&quot;,Thumbprint:2433336412,AgentInstanceID:&quot;ab06b6bc-3150-4236-a0e3-3b735a41c5e7&quot;,AgentUsername:&quot;Administrator&quot;,RemoteAddr:&quot;[::1]:6288&quot;,AutoLogon:false,LogonMode:&quot;EvdLogon&quot;}">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="135 241 728" virtualMemory="121 827 328" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:37:26.367" source="Logon provider" message="User 'Administrator' was connected. Agent ID=ab06b6bc-3150-4236-a0e3-3b735a41c5e7.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="135 110 656" virtualMemory="121 810 944" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:26:29.210" source="Business logic" message="User 'moritz' was disconnected. Agent ID=042967e2-685d-4824-82ea-e68dafd7bedb.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="120 614 912" virtualMemory="118 910 976" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:21:59.532" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\eXPSpecialPermissionManagementClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.ApplicationException'. Fehlermeldung: 'Error in the application.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="123 396 096" virtualMemory="122 052 608" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:21:59.227" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="127 508 480" virtualMemory="125 820 928" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:21:59.222" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="127 508 480" virtualMemory="125 820 928" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:21:57.959" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="126 738 432" virtualMemory="124 882 944" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:21:57.657" source="Logon provider" message="User 'moritz' was connected. Agent ID=042967e2-685d-4824-82ea-e68dafd7bedb.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="123 518 976" virtualMemory="121 794 560" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:21:55.065" source="Business logic" message="User 'moritz' was disconnected. Agent ID=0a83ef7d-d4a9-49a4-8344-f938ec68f164.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="123 211 776" virtualMemory="121 356 288" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:20:33.685" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\eXPSpecialPermissionManagementClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.ApplicationException'. Fehlermeldung: 'Error in the application.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="123 285 504" virtualMemory="121 409 536" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:20:33.381" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="125 054 976" virtualMemory="123 187 200" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:20:33.375" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="125 054 976" virtualMemory="123 187 200" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:20:32.081" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="128 180 224" virtualMemory="121 884 672" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:20:31.784" source="Logon provider" message="User 'moritz' was connected. Agent ID=0a83ef7d-d4a9-49a4-8344-f938ec68f164.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="125 870 080" virtualMemory="119 394 304" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:20:29.001" source="Business logic" message="User 'moritz' was disconnected. Agent ID=39daca93-f200-4d3b-9a34-75f43335febb.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="129 249 280" virtualMemory="123 359 232" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:18:34.726" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\eXPSpecialPermissionManagementClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.ApplicationException'. Fehlermeldung: 'Error in the application.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="125 829 120" virtualMemory="123 691 008" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:18:34.428" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="125 759 488" virtualMemory="123 600 896" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:18:34.420" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="125 759 488" virtualMemory="123 600 896" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:18:33.004" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="133 300 224" virtualMemory="127 344 640" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:32.606" source="Logon provider" message="User 'moritz' was connected. Agent ID=39daca93-f200-4d3b-9a34-75f43335febb.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="125 140 992" virtualMemory="120 459 264" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:17.695" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="108 802 048" virtualMemory="101 515 264" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:17.671" source="evidence server" message="The evidence server was started; instace ID = 809943fb-7d8b-4fa2-b288-38b24ce61dcb, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="108 646 400" virtualMemory="101 449 728" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:17.652" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="108 261 376" virtualMemory="101 306 368" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:17.587" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="106 369 024" virtualMemory="101 163 008" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:17.555" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="105 504 768" virtualMemory="100 102 144" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:18:17.486" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="103 133 184" virtualMemory="98 799 616" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:32.726" source="evidence server" message="The evidence server was stopped">
+    <memory memory="119 840 768" virtualMemory="112 873 472" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:31.552" source="Business logic" message="User 'moritz' was disconnected. Agent ID=81911c64-c7a1-4eac-865c-74c50d300ab8.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="119 549 952" virtualMemory="112 877 568" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:26.855" source="Business logic" message="DataCenter returns SARV_ERROR">
+    <user name="moritz" id="64000001" />
+    <operation name="SaveObject" />
+    <additional message="81911c64-c7a1-4eac-865c-74c50d300ab8" />
+    <memory memory="119 087 104" virtualMemory="112 406 528" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:26.853" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="SaveObjectsImpl" />
+    <exception type="System.Data.SqlClient.SqlException" message="Ungültiger Objektname 'dbo.EVDWORKFLOWTEMPLATE'." />
+    <additional message="WorkflowTemplate update" />
+    <memory memory="119 087 104" virtualMemory="112 406 528" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:17:19.412" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\eXPSpecialPermissionManagementClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.ApplicationException'. Fehlermeldung: 'Error in the application.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="117 051 392" virtualMemory="110 710 784" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:17:19.052" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="118 673 408" virtualMemory="112 357 376" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:19.046" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="118 665 216" virtualMemory="112 349 184" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:18.662" source="Business logic" message="DataCenter returns SARV_ERROR">
+    <user name="moritz" id="64000001" />
+    <operation name="KeywordQueryQueryInternalCall" />
+    <additional message="81911c64-c7a1-4eac-865c-74c50d300ab8" />
+    <memory memory="118 632 448" virtualMemory="112 345 088" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:18.660" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="AllObjectsQuery" />
+    <parameter name="MasterClass" value="WorkflowTemplate" />
+    <parameter name="FetchPoint" value="Nothing" />
+    <exception type="System.Data.SqlClient.SqlException" message="Ungültiger Objektname 'dbo.EVDWORKFLOWTEMPLATE'." />
+    <additional message="Select TSECONDARY.* from (SELECT  TOP 101 T.*  FROM ( SELECT EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot; FROM dbo.EVDWORKFLOWTEMPLATE WHERE (EVDWORKFLOWTEMPLATE.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDWORKFLOWTEMPLATE.IsPrivate = 1) AND (NOT EVDWORKFLOWTEMPLATE.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDWORKFLOWTEMPLATE.RuleId) OR EVDWORKFLOWTEMPLATE.RuleID IS NULL) )) T ORDER BY T.&quot;ID&quot;) TPRIMARY join (SELECT  TOP 100 PERCENT  T.&quot;s_Creator&quot;, T.&quot;s_Modifier&quot;, T.&quot;s_CreationDate&quot;, T.&quot;s_ModificationDate&quot;, T.&quot;ID&quot;, T.&quot;s_Version&quot;, T.&quot;IsActive&quot;, T.&quot;Name&quot; FROM ( SELECT EVDWORKFLOWTEMPLATE.S_CREATOR AS &quot;s_Creator&quot;, EVDWORKFLOWTEMPLATE.S_MODIFIER AS &quot;s_Modifier&quot;, EVDWORKFLOWTEMPLATE.S_CREATIONDATE AS &quot;s_CreationDate&quot;, EVDWORKFLOWTEMPLATE.S_MODIFICATIONDATE AS &quot;s_ModificationDate&quot;, EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot;, EVDWORKFLOWTEMPLATE.S_VERSION AS &quot;s_Version&quot;, EVDWORKFLOWTEMPLATE.ISACTIVE AS &quot;IsActive&quot;, EVDWORKFLOWTEMPLATE.EANAME AS &quot;Name&quot; FROM dbo.EVDWORKFLOWTEMPLATE) T) TSECONDARY ON TPRIMARY.ID = TSECONDARY.ID ORDER BY TPRIMARY.&quot;ID&quot; " />
+    <memory memory="118 628 352" virtualMemory="112 345 088" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:18.649" source="Data access" message="System.Data.SqlClient.SqlException (0x80131904): Ungültiger Objektname 'dbo.EVDWORKFLOWTEMPLATE'.&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.get_MetaData()&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)&#xD;&#xA;   at Evidence.DataAccess.CmnDbDataAdapter.Fill(DataSet dataSet, String srcTable)&#xD;&#xA;ClientConnectionId:e338f803-74dd-4b72-9251-76d70d0ec523&#xD;&#xA;Error Number:208,State:1,Class:16">
+    <additional message="Select TSECONDARY.* from (SELECT  TOP 101 T.*  FROM ( SELECT EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot; FROM dbo.EVDWORKFLOWTEMPLATE WHERE (EVDWORKFLOWTEMPLATE.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDWORKFLOWTEMPLATE.IsPrivate = 1) AND (NOT EVDWORKFLOWTEMPLATE.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDWORKFLOWTEMPLATE.RuleId) OR EVDWORKFLOWTEMPLATE.RuleID IS NULL) )) T ORDER BY T.&quot;ID&quot;) TPRIMARY join (SELECT  TOP 100 PERCENT  T.&quot;s_Creator&quot;, T.&quot;s_Modifier&quot;, T.&quot;s_CreationDate&quot;, T.&quot;s_ModificationDate&quot;, T.&quot;ID&quot;, T.&quot;s_Version&quot;, T.&quot;IsActive&quot;, T.&quot;Name&quot; FROM ( SELECT EVDWORKFLOWTEMPLATE.S_CREATOR AS &quot;s_Creator&quot;, EVDWORKFLOWTEMPLATE.S_MODIFIER AS &quot;s_Modifier&quot;, EVDWORKFLOWTEMPLATE.S_CREATIONDATE AS &quot;s_CreationDate&quot;, EVDWORKFLOWTEMPLATE.S_MODIFICATIONDATE AS &quot;s_ModificationDate&quot;, EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot;, EVDWORKFLOWTEMPLATE.S_VERSION AS &quot;s_Version&quot;, EVDWORKFLOWTEMPLATE.ISACTIVE AS &quot;IsActive&quot;, EVDWORKFLOWTEMPLATE.EANAME AS &quot;Name&quot; FROM dbo.EVDWORKFLOWTEMPLATE) T) TSECONDARY ON TPRIMARY.ID = TSECONDARY.ID ORDER BY TPRIMARY.&quot;ID&quot; " />
+    <memory memory="118 112 256" virtualMemory="112 054 272" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:17:17.518" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="114 470 912" virtualMemory="109 223 936" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:15.857" source="Logon provider" message="User 'moritz' was connected. Agent ID=81911c64-c7a1-4eac-865c-74c50d300ab8.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="122 523 648" virtualMemory="118 358 016" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:10.978" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="106 008 576" virtualMemory="100 020 224" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:10.954" source="evidence server" message="The evidence server was started; instace ID = dbb51d6d-f275-496d-80e3-15d0c8d8a7de, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="105 852 928" virtualMemory="99 954 688" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:10.938" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="105 492 480" virtualMemory="99 803 136" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:10.811" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="103 514 112" virtualMemory="99 663 872" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:10.776" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="102 617 088" virtualMemory="98 844 672" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:10.723" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="100 782 080" virtualMemory="98 004 992" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:17:09.077" source="evidence server" message="The evidence server was stopped">
+    <memory memory="121 737 216" virtualMemory="120 717 312" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:15:26.909" source="Business logic" message="User 'moritz' was disconnected. Agent ID=9288622d-9d37-496a-9377-f4f6cfbf1b41.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="120 258 560" virtualMemory="119 226 368" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:15:26.876" source="Business logic" message="The script gs_WorkflowScheduler contains the following missing referenced assemblies:              The script gs_WorkflowScheduler contains the following missing referenced assemblies:              ChilkatDotNet4">
+    <operation name="SaveScript" />
+    <memory memory="128 245 760" virtualMemory="118 775 808" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:15:22.030" source="Logon provider" message="User 'moritz' was connected. Agent ID=9288622d-9d37-496a-9377-f4f6cfbf1b41.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="128 315 392" virtualMemory="129 323 008" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:13:38.777" source="Business logic" message="User 'moritz' was disconnected. Agent ID=978c375e-48f9-4f81-a006-dd4b59dcbde5.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="128 368 640" virtualMemory="129 372 160" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:13:38.731" source="Business logic" message="The script gs_WorkflowScheduler contains the following missing referenced assemblies:              The script gs_WorkflowScheduler contains the following missing referenced assemblies:              ChilkatDotNet4">
+    <operation name="SaveScript" />
+    <memory memory="136 994 816" virtualMemory="129 630 208" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:13:37.429" source="Business logic" message="An exception was thrown while agent operation. ">
+    <user name="moritz" id="64000001" />
+    <operation name="RegisterServerAddIn" />
+    <exception type="System.ApplicationException" message="The file GlauxSoft.BusinessClientAddIn.dll is not a valid server add-in. Does it implement IEvdServerExtensibility?." />
+    <additional message="Failed to check server add-in" />
+    <memory memory="123 691 008" virtualMemory="121 192 448" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:13:31.391" source="Logon provider" message="User 'moritz' was connected. Agent ID=978c375e-48f9-4f81-a006-dd4b59dcbde5.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="121 942 016" virtualMemory="119 521 280" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:18.593" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="108 011 520" virtualMemory="100 339 712" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:18.569" source="evidence server" message="The evidence server was started; instace ID = 3cb715a0-37b5-418c-ac6a-6578d1144511, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="107 843 584" virtualMemory="100 261 888" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:18.541" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="107 454 464" virtualMemory="100 114 432" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:11:18.485" source="evidence server" message="File 'C:\Projects\glauxsoft.sachware\Dev\App\evidenceServer\ServerAddIns\GlauxSoft.Additional.WorkflowServerAddin.dll' is not registered as an addin. This file will be deleted.">
+    <operation name="Loading server add-ins." />
+    <memory memory="106 991 616" virtualMemory="100 012 032" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:18.388" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="105 496 576" virtualMemory="99 999 744" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:18.100" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="104 681 472" virtualMemory="99 454 976" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:18.044" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="102 825 984" virtualMemory="98 156 544" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:11:16.433" source="evidence server" message="The evidence server was stopped">
+    <memory memory="138 321 920" virtualMemory="140 009 472" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:08:08.829" source="Business logic" message="User 'moritz' was disconnected. Agent ID=dbee83c4-9652-479b-bd17-bc895cf577db.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="137 846 784" virtualMemory="138 526 720" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="13:08:08.777" source="Business logic" message="The script gs_WorkflowScheduler contains the following missing referenced assemblies:              The script gs_WorkflowScheduler contains the following missing referenced assemblies:              ChilkatDotNet4">
+    <operation name="SaveScript" />
+    <memory memory="146 477 056" virtualMemory="138 788 864" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="13:08:07.240" source="Business logic" message="An exception was thrown while agent operation. ">
+    <user name="moritz" id="64000001" />
+    <operation name="RegisterServerAddIn" />
+    <exception type="System.ApplicationException" message="The file GlauxSoft.BusinessClientAddIn.dll is not a valid server add-in. Does it implement IEvdServerExtensibility?." />
+    <additional message="Failed to check server add-in" />
+    <memory memory="133 013 504" virtualMemory="130 535 424" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:07:54.123" source="Logon provider" message="User 'moritz' was connected. Agent ID=dbee83c4-9652-479b-bd17-bc895cf577db.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="126 144 512" virtualMemory="123 002 880" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:07:26.108" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="108 802 048" virtualMemory="100 261 888" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:07:26.083" source="evidence server" message="The evidence server was started; instace ID = be7e6c53-fb78-4afa-a732-629aba82cb00, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="108 609 536" virtualMemory="100 192 256" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:07:26.050" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="107 028 480" virtualMemory="100 114 432" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:07:26.012" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="106 549 248" virtualMemory="99 610 624" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:07:25.953" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="104 574 976" virtualMemory="98 504 704" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="13:05:47.725" source="evidence server" message="The evidence server was stopped">
+    <memory memory="128 815 104" virtualMemory="129 167 360" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:35:19.836" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="110 301 184" virtualMemory="101 273 600" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:35:19.797" source="evidence server" message="The evidence server was started; instace ID = 3091d322-e556-4d9a-9666-ee86d4b1facc, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="110 108 672" virtualMemory="101 208 064" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:35:19.785" source="evidence server" message="File 'C:\Projects\glauxsoft.sachware\Dev\App\evidenceServer\ServerAddIns\GlauxSoft.eDocGeneratorServerAddin.dll' is not registered as an addin. This file will be deleted.">
+    <operation name="Loading server add-ins." />
+    <memory memory="109 998 080" virtualMemory="101 179 392" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:35:19.783" source="evidence server" message="File 'C:\Projects\glauxsoft.sachware\Dev\App\evidenceServer\ServerAddIns\GlauxSoft.DataExport.Service.dll' is not registered as an addin. This file will be deleted.">
+    <operation name="Loading server add-ins." />
+    <memory memory="109 998 080" virtualMemory="101 179 392" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:35:19.780" source="evidence server" message="File 'C:\Projects\glauxsoft.sachware\Dev\App\evidenceServer\ServerAddIns\GlauxSoft.BusinessServerAddIn.dll' is not registered as an addin. This file will be deleted.">
+    <operation name="Loading server add-ins." />
+    <memory memory="109 998 080" virtualMemory="101 179 392" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:35:19.777" source="evidence server" message="File 'C:\Projects\glauxsoft.sachware\Dev\App\evidenceServer\ServerAddIns\eXPSpecialPermissionManagementServerAddin.dll' is not registered as an addin. This file will be deleted.">
+    <operation name="Loading server add-ins." />
+    <memory memory="109 998 080" virtualMemory="101 179 392" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:35:19.775" source="evidence server" message="File 'C:\Projects\glauxsoft.sachware\Dev\App\evidenceServer\ServerAddIns\EXPServerDMSAddIn.dll' is not registered as an addin. This file will be deleted.">
+    <operation name="Loading server add-ins." />
+    <memory memory="109 998 080" virtualMemory="101 179 392" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:35:19.720" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="108 568 576" virtualMemory="101 150 720" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:35:19.430" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="107 368 448" virtualMemory="100 196 352" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:35:19.355" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="105 426 944" virtualMemory="99 221 504" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:35:17.657" source="evidence server" message="The evidence server was stopped">
+    <memory memory="139 857 920" virtualMemory="129 155 072" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:24:07.320" source="Business logic" message="User 'moritz' was disconnected. Agent ID=e4304c94-a409-4c67-9776-215447ac308d.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="132 935 680" virtualMemory="119 697 408" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:23:56.003" source="Logon provider" message="User 'moritz' was connected. Agent ID=e4304c94-a409-4c67-9776-215447ac308d.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="140 742 656" virtualMemory="137 056 256" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:14:45.103" source="Business logic" message="User 'moritz' was disconnected. Agent ID=087865ba-fa3c-4405-b9dd-0662c8420df7.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="122 204 160" virtualMemory="127 434 752" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:56.692" source="Business logic" message="DataCenter returns SARV_ERROR">
+    <user name="moritz" id="64000001" />
+    <operation name="SaveObject" />
+    <additional message="087865ba-fa3c-4405-b9dd-0662c8420df7" />
+    <memory memory="119 721 984" virtualMemory="125 669 376" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:56.690" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="SaveObjectsImpl" />
+    <exception type="System.Data.SqlClient.SqlException" message="Ungültiger Objektname 'dbo.EVDWORKFLOWTEMPLATE'." />
+    <additional message="WorkflowTemplate update" />
+    <memory memory="119 721 984" virtualMemory="125 669 376" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:50.384" source="Business logic" message="DataCenter returns SARV_ERROR">
+    <user name="moritz" id="64000001" />
+    <operation name="KeywordQueryQueryInternalCall" />
+    <additional message="087865ba-fa3c-4405-b9dd-0662c8420df7" />
+    <memory memory="119 398 400" virtualMemory="125 550 592" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:50.382" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="AllObjectsQuery" />
+    <parameter name="MasterClass" value="WorkflowTemplate" />
+    <parameter name="FetchPoint" value="Nothing" />
+    <exception type="System.Data.SqlClient.SqlException" message="Ungültiger Objektname 'dbo.EVDWORKFLOWTEMPLATE'." />
+    <additional message="Select TSECONDARY.* from (SELECT  TOP 101 T.*  FROM ( SELECT EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot; FROM dbo.EVDWORKFLOWTEMPLATE WHERE (EVDWORKFLOWTEMPLATE.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDWORKFLOWTEMPLATE.IsPrivate = 1) AND (NOT EVDWORKFLOWTEMPLATE.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDWORKFLOWTEMPLATE.RuleId) OR EVDWORKFLOWTEMPLATE.RuleID IS NULL) )) T ORDER BY T.&quot;ID&quot;) TPRIMARY join (SELECT  TOP 100 PERCENT  T.&quot;s_Creator&quot;, T.&quot;s_Modifier&quot;, T.&quot;s_CreationDate&quot;, T.&quot;s_ModificationDate&quot;, T.&quot;ID&quot;, T.&quot;s_Version&quot;, T.&quot;IsActive&quot;, T.&quot;Name&quot; FROM ( SELECT EVDWORKFLOWTEMPLATE.S_CREATOR AS &quot;s_Creator&quot;, EVDWORKFLOWTEMPLATE.S_MODIFIER AS &quot;s_Modifier&quot;, EVDWORKFLOWTEMPLATE.S_CREATIONDATE AS &quot;s_CreationDate&quot;, EVDWORKFLOWTEMPLATE.S_MODIFICATIONDATE AS &quot;s_ModificationDate&quot;, EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot;, EVDWORKFLOWTEMPLATE.S_VERSION AS &quot;s_Version&quot;, EVDWORKFLOWTEMPLATE.ISACTIVE AS &quot;IsActive&quot;, EVDWORKFLOWTEMPLATE.EANAME AS &quot;Name&quot; FROM dbo.EVDWORKFLOWTEMPLATE) T) TSECONDARY ON TPRIMARY.ID = TSECONDARY.ID ORDER BY TPRIMARY.&quot;ID&quot; " />
+    <memory memory="119 394 304" virtualMemory="125 550 592" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:50.380" source="Data access" message="System.Data.SqlClient.SqlException (0x80131904): Ungültiger Objektname 'dbo.EVDWORKFLOWTEMPLATE'.&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.get_MetaData()&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)&#xD;&#xA;   at Evidence.DataAccess.CmnDbDataAdapter.Fill(DataSet dataSet, String srcTable)&#xD;&#xA;ClientConnectionId:bb56bd56-c21d-4187-a6b3-9f66ee40c04b&#xD;&#xA;Error Number:208,State:1,Class:16">
+    <additional message="Select TSECONDARY.* from (SELECT  TOP 101 T.*  FROM ( SELECT EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot; FROM dbo.EVDWORKFLOWTEMPLATE WHERE (EVDWORKFLOWTEMPLATE.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDWORKFLOWTEMPLATE.IsPrivate = 1) AND (NOT EVDWORKFLOWTEMPLATE.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDWORKFLOWTEMPLATE.RuleId) OR EVDWORKFLOWTEMPLATE.RuleID IS NULL) )) T ORDER BY T.&quot;ID&quot;) TPRIMARY join (SELECT  TOP 100 PERCENT  T.&quot;s_Creator&quot;, T.&quot;s_Modifier&quot;, T.&quot;s_CreationDate&quot;, T.&quot;s_ModificationDate&quot;, T.&quot;ID&quot;, T.&quot;s_Version&quot;, T.&quot;IsActive&quot;, T.&quot;Name&quot; FROM ( SELECT EVDWORKFLOWTEMPLATE.S_CREATOR AS &quot;s_Creator&quot;, EVDWORKFLOWTEMPLATE.S_MODIFIER AS &quot;s_Modifier&quot;, EVDWORKFLOWTEMPLATE.S_CREATIONDATE AS &quot;s_CreationDate&quot;, EVDWORKFLOWTEMPLATE.S_MODIFICATIONDATE AS &quot;s_ModificationDate&quot;, EVDWORKFLOWTEMPLATE.ID AS &quot;ID&quot;, EVDWORKFLOWTEMPLATE.S_VERSION AS &quot;s_Version&quot;, EVDWORKFLOWTEMPLATE.ISACTIVE AS &quot;IsActive&quot;, EVDWORKFLOWTEMPLATE.EANAME AS &quot;Name&quot; FROM dbo.EVDWORKFLOWTEMPLATE) T) TSECONDARY ON TPRIMARY.ID = TSECONDARY.ID ORDER BY TPRIMARY.&quot;ID&quot; " />
+    <memory memory="119 394 304" virtualMemory="125 550 592" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:49.297" source="Business logic" message="DataCenter returns SARV_ERROR">
+    <user name="moritz" id="64000001" />
+    <operation name="KeywordQueryQueryInternalCall" />
+    <additional message="087865ba-fa3c-4405-b9dd-0662c8420df7" />
+    <memory memory="119 386 112" virtualMemory="125 550 592" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:49.295" source="Data access" message="An Exception was thrown by DB server">
+    <operation name="AllObjectsQuery" />
+    <parameter name="MasterClass" value="WorkflowItemTemplate" />
+    <parameter name="FetchPoint" value="Nothing" />
+    <exception type="System.Data.SqlClient.SqlException" message="Ungültiger Objektname 'dbo.EVDWORKFLOWITEMTEMPLATE'." />
+    <additional message="Select TSECONDARY.* from (SELECT  TOP 101 T.*  FROM ( SELECT EVDWORKFLOWITEMTEMPLATE.ID AS &quot;ID&quot; FROM dbo.EVDWORKFLOWITEMTEMPLATE WHERE (EVDWORKFLOWITEMTEMPLATE.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDWORKFLOWITEMTEMPLATE.IsPrivate = 1) AND (NOT EVDWORKFLOWITEMTEMPLATE.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDWORKFLOWITEMTEMPLATE.RuleId) OR EVDWORKFLOWITEMTEMPLATE.RuleID IS NULL) )) T ORDER BY T.&quot;ID&quot;) TPRIMARY join (SELECT  TOP 100 PERCENT  T.&quot;s_Creator&quot;, T.&quot;s_Modifier&quot;, T.&quot;s_CreationDate&quot;, T.&quot;s_ModificationDate&quot;, T.&quot;ID&quot;, T.&quot;s_Version&quot;, T.&quot;IsActive&quot;, T.&quot;Name&quot;, T.&quot;PlanDLZ&quot;, T.&quot;Position&quot;, T.&quot;Kommentar&quot;, T.&quot;usePreVerantwortlicher&quot;, T.&quot;usePreBesitzer&quot;, T.&quot;useFederAsVerantwortlicher&quot;, T.&quot;useFederAsBesitzer&quot;, T.&quot;Erinnern&quot;, T.&quot;ErinnernFrist&quot;, T.&quot;Eskalieren&quot;, T.&quot;EskalierenFrist&quot;, T.&quot;ConditionalBranch&quot;, T.&quot;LoopCount&quot;, T.&quot;Delay&quot;, T.&quot;NotificationEmail&quot;, T.&quot;NotificationCaption&quot;, T.&quot;ScriptShellCommand&quot;, T.&quot;ScriptUseDll&quot;, T.&quot;NotificationUseNS&quot;, T.&quot;NotificationMessage&quot;, T.&quot;FormopenString&quot;, T.&quot;FormopenInfo&quot;, T.&quot;BranchQuestion&quot;, T.&quot;CollectorFlag&quot;, T.&quot;refAktivitaetsart_Name&quot;, T.&quot;Dokumentverhalten&quot;, T.&quot;Type&quot; FROM ( SELECT EVDWORKFLOWITEMTEMPLATE.S_CREATOR AS &quot;s_Creator&quot;, EVDWORKFLOWITEMTEMPLATE.S_MODIFIER AS &quot;s_Modifier&quot;, EVDWORKFLOWITEMTEMPLATE.S_CREATIONDATE AS &quot;s_CreationDate&quot;, EVDWORKFLOWITEMTEMPLATE.S_MODIFICATIONDATE AS &quot;s_ModificationDate&quot;, EVDWORKFLOWITEMTEMPLATE.ID AS &quot;ID&quot;, EVDWORKFLOWITEMTEMPLATE.S_VERSION AS &quot;s_Version&quot;, EVDWORKFLOWITEMTEMPLATE.ISACTIVE AS &quot;IsActive&quot;, EVDWORKFLOWITEMTEMPLATE.EANAME AS &quot;Name&quot;, EVDWORKFLOWITEMTEMPLATE.EAPLANDLZ AS &quot;PlanDLZ&quot;, EVDWORKFLOWITEMTEMPLATE.EAPOSITION AS &quot;Position&quot;, EVDWORKFLOWITEMTEMPLATE.EAKOMMENTAR AS &quot;Kommentar&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEPREVERANTWORTLICHER AS &quot;usePreVerantwortlicher&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEPREBESITZER AS &quot;usePreBesitzer&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEFEDERASVERANTWORTLICHER AS &quot;useFederAsVerantwortlicher&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEFEDERASBESITZER AS &quot;useFederAsBesitzer&quot;, EVDWORKFLOWITEMTEMPLATE.EAERINNERN AS &quot;Erinnern&quot;, EVDWORKFLOWITEMTEMPLATE.EAERINNERNFRIST AS &quot;ErinnernFrist&quot;, EVDWORKFLOWITEMTEMPLATE.EAESKALIEREN AS &quot;Eskalieren&quot;, EVDWORKFLOWITEMTEMPLATE.EAESKALIERENFRIST AS &quot;EskalierenFrist&quot;, EVDWORKFLOWITEMTEMPLATE.EACONDITIONALBRANCH AS &quot;ConditionalBranch&quot;, EVDWORKFLOWITEMTEMPLATE.EALOOPCOUNT AS &quot;LoopCount&quot;, EVDWORKFLOWITEMTEMPLATE.EADELAY AS &quot;Delay&quot;, EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONEMAIL AS &quot;NotificationEmail&quot;, EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONCAPTION AS &quot;NotificationCaption&quot;, EVDWORKFLOWITEMTEMPLATE.EASCRIPTSHELLCOMMAND AS &quot;ScriptShellCommand&quot;, EVDWORKFLOWITEMTEMPLATE.EASCRIPTUSEDLL AS &quot;ScriptUseDll&quot;, EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONUSENS AS &quot;NotificationUseNS&quot;,  SUBSTRING(EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONMESSAGE,1,100)  AS &quot;NotificationMessage&quot;, EVDWORKFLOWITEMTEMPLATE.EAFORMOPENSTRING AS &quot;FormopenString&quot;, EVDWORKFLOWITEMTEMPLATE.EAFORMOPENINFO AS &quot;FormopenInfo&quot;, EVDWORKFLOWITEMTEMPLATE.EABRANCHQUESTION AS &quot;BranchQuestion&quot;, EVDWORKFLOWITEMTEMPLATE.EACOLLECTORFLAG AS &quot;CollectorFlag&quot;, EVDAKTIVITAETSART1.EANAME AS &quot;refAktivitaetsart_Name&quot;, EVDWORKFLOWITEMTEMPLATE.EADOKUMENTVERHALTEN AS &quot;Dokumentverhalten&quot;, EVDWORKFLOWITEMTEMPLATE.EATYPE AS &quot;Type&quot; FROM dbo.EVDWORKFLOWITEMTEMPLATE LEFT OUTER JOIN (SELECT * FROM dbo.EVDAKTIVITAETSART WHERE (EVDAKTIVITAETSART.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDAKTIVITAETSART.IsPrivate = 1) AND (NOT EVDAKTIVITAETSART.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDAKTIVITAETSART.RuleId) OR EVDAKTIVITAETSART.RuleID IS NULL) )) EVDAKTIVITAETSART1 ON EVDWORKFLOWITEMTEMPLATE.EAREFAKTIVITAETSART = EVDAKTIVITAETSART1.Id) T) TSECONDARY ON TPRIMARY.ID = TSECONDARY.ID ORDER BY TPRIMARY.&quot;ID&quot; " />
+    <memory memory="119 386 112" virtualMemory="125 550 592" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:13:49.278" source="Data access" message="System.Data.SqlClient.SqlException (0x80131904): Ungültiger Objektname 'dbo.EVDWORKFLOWITEMTEMPLATE'.&#xD;&#xA;   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)&#xD;&#xA;   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()&#xD;&#xA;   at System.Data.SqlClient.SqlDataReader.get_MetaData()&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)&#xD;&#xA;   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)&#xD;&#xA;   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)&#xD;&#xA;   at Evidence.DataAccess.CmnDbDataAdapter.Fill(DataSet dataSet, String srcTable)&#xD;&#xA;ClientConnectionId:bb56bd56-c21d-4187-a6b3-9f66ee40c04b&#xD;&#xA;Error Number:208,State:1,Class:16">
+    <additional message="Select TSECONDARY.* from (SELECT  TOP 101 T.*  FROM ( SELECT EVDWORKFLOWITEMTEMPLATE.ID AS &quot;ID&quot; FROM dbo.EVDWORKFLOWITEMTEMPLATE WHERE (EVDWORKFLOWITEMTEMPLATE.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDWORKFLOWITEMTEMPLATE.IsPrivate = 1) AND (NOT EVDWORKFLOWITEMTEMPLATE.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDWORKFLOWITEMTEMPLATE.RuleId) OR EVDWORKFLOWITEMTEMPLATE.RuleID IS NULL) )) T ORDER BY T.&quot;ID&quot;) TPRIMARY join (SELECT  TOP 100 PERCENT  T.&quot;s_Creator&quot;, T.&quot;s_Modifier&quot;, T.&quot;s_CreationDate&quot;, T.&quot;s_ModificationDate&quot;, T.&quot;ID&quot;, T.&quot;s_Version&quot;, T.&quot;IsActive&quot;, T.&quot;Name&quot;, T.&quot;PlanDLZ&quot;, T.&quot;Position&quot;, T.&quot;Kommentar&quot;, T.&quot;usePreVerantwortlicher&quot;, T.&quot;usePreBesitzer&quot;, T.&quot;useFederAsVerantwortlicher&quot;, T.&quot;useFederAsBesitzer&quot;, T.&quot;Erinnern&quot;, T.&quot;ErinnernFrist&quot;, T.&quot;Eskalieren&quot;, T.&quot;EskalierenFrist&quot;, T.&quot;ConditionalBranch&quot;, T.&quot;LoopCount&quot;, T.&quot;Delay&quot;, T.&quot;NotificationEmail&quot;, T.&quot;NotificationCaption&quot;, T.&quot;ScriptShellCommand&quot;, T.&quot;ScriptUseDll&quot;, T.&quot;NotificationUseNS&quot;, T.&quot;NotificationMessage&quot;, T.&quot;FormopenString&quot;, T.&quot;FormopenInfo&quot;, T.&quot;BranchQuestion&quot;, T.&quot;CollectorFlag&quot;, T.&quot;refAktivitaetsart_Name&quot;, T.&quot;Dokumentverhalten&quot;, T.&quot;Type&quot; FROM ( SELECT EVDWORKFLOWITEMTEMPLATE.S_CREATOR AS &quot;s_Creator&quot;, EVDWORKFLOWITEMTEMPLATE.S_MODIFIER AS &quot;s_Modifier&quot;, EVDWORKFLOWITEMTEMPLATE.S_CREATIONDATE AS &quot;s_CreationDate&quot;, EVDWORKFLOWITEMTEMPLATE.S_MODIFICATIONDATE AS &quot;s_ModificationDate&quot;, EVDWORKFLOWITEMTEMPLATE.ID AS &quot;ID&quot;, EVDWORKFLOWITEMTEMPLATE.S_VERSION AS &quot;s_Version&quot;, EVDWORKFLOWITEMTEMPLATE.ISACTIVE AS &quot;IsActive&quot;, EVDWORKFLOWITEMTEMPLATE.EANAME AS &quot;Name&quot;, EVDWORKFLOWITEMTEMPLATE.EAPLANDLZ AS &quot;PlanDLZ&quot;, EVDWORKFLOWITEMTEMPLATE.EAPOSITION AS &quot;Position&quot;, EVDWORKFLOWITEMTEMPLATE.EAKOMMENTAR AS &quot;Kommentar&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEPREVERANTWORTLICHER AS &quot;usePreVerantwortlicher&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEPREBESITZER AS &quot;usePreBesitzer&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEFEDERASVERANTWORTLICHER AS &quot;useFederAsVerantwortlicher&quot;, EVDWORKFLOWITEMTEMPLATE.EAUSEFEDERASBESITZER AS &quot;useFederAsBesitzer&quot;, EVDWORKFLOWITEMTEMPLATE.EAERINNERN AS &quot;Erinnern&quot;, EVDWORKFLOWITEMTEMPLATE.EAERINNERNFRIST AS &quot;ErinnernFrist&quot;, EVDWORKFLOWITEMTEMPLATE.EAESKALIEREN AS &quot;Eskalieren&quot;, EVDWORKFLOWITEMTEMPLATE.EAESKALIERENFRIST AS &quot;EskalierenFrist&quot;, EVDWORKFLOWITEMTEMPLATE.EACONDITIONALBRANCH AS &quot;ConditionalBranch&quot;, EVDWORKFLOWITEMTEMPLATE.EALOOPCOUNT AS &quot;LoopCount&quot;, EVDWORKFLOWITEMTEMPLATE.EADELAY AS &quot;Delay&quot;, EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONEMAIL AS &quot;NotificationEmail&quot;, EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONCAPTION AS &quot;NotificationCaption&quot;, EVDWORKFLOWITEMTEMPLATE.EASCRIPTSHELLCOMMAND AS &quot;ScriptShellCommand&quot;, EVDWORKFLOWITEMTEMPLATE.EASCRIPTUSEDLL AS &quot;ScriptUseDll&quot;, EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONUSENS AS &quot;NotificationUseNS&quot;,  SUBSTRING(EVDWORKFLOWITEMTEMPLATE.EANOTIFICATIONMESSAGE,1,100)  AS &quot;NotificationMessage&quot;, EVDWORKFLOWITEMTEMPLATE.EAFORMOPENSTRING AS &quot;FormopenString&quot;, EVDWORKFLOWITEMTEMPLATE.EAFORMOPENINFO AS &quot;FormopenInfo&quot;, EVDWORKFLOWITEMTEMPLATE.EABRANCHQUESTION AS &quot;BranchQuestion&quot;, EVDWORKFLOWITEMTEMPLATE.EACOLLECTORFLAG AS &quot;CollectorFlag&quot;, EVDAKTIVITAETSART1.EANAME AS &quot;refAktivitaetsart_Name&quot;, EVDWORKFLOWITEMTEMPLATE.EADOKUMENTVERHALTEN AS &quot;Dokumentverhalten&quot;, EVDWORKFLOWITEMTEMPLATE.EATYPE AS &quot;Type&quot; FROM dbo.EVDWORKFLOWITEMTEMPLATE LEFT OUTER JOIN (SELECT * FROM dbo.EVDAKTIVITAETSART WHERE (EVDAKTIVITAETSART.OwnerID IN ( 16581383 ,16581382 ,64000001  ) OR NOT (EVDAKTIVITAETSART.IsPrivate = 1) AND (NOT EVDAKTIVITAETSART.RuleID IN ( SELECT RuleId FROM dbo.evxEffSeePerms WHERE UserId=64000001 AND dbo.evxEffSeePerms.RuleId = EVDAKTIVITAETSART.RuleId) OR EVDAKTIVITAETSART.RuleID IS NULL) )) EVDAKTIVITAETSART1 ON EVDWORKFLOWITEMTEMPLATE.EAREFAKTIVITAETSART = EVDAKTIVITAETSART1.Id) T) TSECONDARY ON TPRIMARY.ID = TSECONDARY.ID ORDER BY TPRIMARY.&quot;ID&quot; " />
+    <memory memory="118 800 384" virtualMemory="125 489 152" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:11:28.266" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="136 302 592" virtualMemory="131 387 392" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:11:28.261" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="136 302 592" virtualMemory="131 387 392" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:11:26.823" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="134 455 296" virtualMemory="129 417 216" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:11:26.522" source="Logon provider" message="User 'moritz' was connected. Agent ID=087865ba-fa3c-4405-b9dd-0662c8420df7.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="131 858 432" virtualMemory="126 791 680" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:11:23.416" source="Business logic" message="User 'moritz' was disconnected. Agent ID=c55d81a3-2562-4d24-befa-de99a2b0ea4c.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="133 976 064" virtualMemory="128 876 544" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:08:27.479" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="124 682 240" virtualMemory="126 529 536" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:08:27.473" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="124 682 240" virtualMemory="126 529 536" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:08:26.070" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="117 641 216" virtualMemory="119 222 272" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:08:25.772" source="Logon provider" message="User 'moritz' was connected. Agent ID=c55d81a3-2562-4d24-befa-de99a2b0ea4c.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="112 726 016" virtualMemory="114 360 320" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:08:22.930" source="Business logic" message="User 'moritz' was disconnected. Agent ID=320eed0b-0350-4e7d-bdda-f515973e1a4e.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="116 723 712" virtualMemory="118 951 936" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:16.143" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="125 804 544" virtualMemory="124 125 184" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:07:16.137" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="125 804 544" virtualMemory="124 125 184" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="12:07:14.746" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="128 290 816" virtualMemory="127 148 032" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:07:14.370" source="Logon provider" message="User 'moritz' was connected. Agent ID=320eed0b-0350-4e7d-bdda-f515973e1a4e.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="118 800 384" virtualMemory="118 861 824" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:07:09.366" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="105 070 592" virtualMemory="100 372 480" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:07:09.336" source="evidence server" message="The evidence server was started; instace ID = 4358f7f7-3ed7-47bb-bc46-0181f042d790, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="104 869 888" virtualMemory="100 294 656" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:07:09.323" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="104 783 872" virtualMemory="100 265 984" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:07:09.291" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="103 546 880" virtualMemory="99 090 432" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="12:07:08.916" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="101 543 936" virtualMemory="97 615 872" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.573" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 308. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 853 440" virtualMemory="94 420 992" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.571" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 307. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 329 152" virtualMemory="93 896 704" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.569" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 306. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 320 960" virtualMemory="93 896 704" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.568" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 305. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 353 728" virtualMemory="93 896 704" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.566" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 304. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 439 744" virtualMemory="93 892 608" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.565" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 303. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 349 632" virtualMemory="93 892 608" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.563" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 302. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 312 768" virtualMemory="93 892 608" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.562" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 301. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 247 232" virtualMemory="93 892 608" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.560" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 300. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="97 280 000" virtualMemory="93 892 608" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="12:07:08.557" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 299. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="96 886 784" virtualMemory="93 892 608" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="10:50:11.611" source="evidence server" message="The evidence server was stopped">
+    <memory memory="114 262 016" virtualMemory="115 433 472" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:55.395" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="104 525 824" virtualMemory="97 320 960" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:55.372" source="evidence server" message="The evidence server was started; instace ID = 7a20684e-74ce-4d39-9051-81bbafa7079c, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="103 804 928" virtualMemory="96 722 944" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:55.359" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="103 219 200" virtualMemory="96 178 176" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:54.576" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="101 658 624" virtualMemory="94 871 552" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:54.504" source="evidence server" message="Server runs with permission relevant logging enabled">
+    <memory memory="100 597 760" virtualMemory="94 679 040" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:53.145" source="evidence server" message="The evidence server was stopped">
+    <memory memory="125 956 096" virtualMemory="124 182 528" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:49.848" source="Business logic" message="User 'moritz' was disconnected. Agent ID=b116164b-f325-41d2-b054-ae0e5d5172bf.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <memory memory="125 235 200" virtualMemory="123 305 984" />
+  </entry>
+  <entry type="Warning" date="26.09.2016" time="08:49:12.710" source="evidence Windows Client" message="Add-In 'C:\Users\moritz\AppData\Local\Temp\Glaux Soft\Evidence XP\Sachware_Ent\GlauxSoft.eDocGeneratorClientAddin.dll' kann nicht geladen werden. Fehler Typ: 'System.Exception'. Fehlermeldung: 'Fehler beim Laden der Settings&#xD;&#xA;Object reference not set to an instance of an object. Object reference not set to an instance of an object.'">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="" />
+    <memory memory="125 419 520" virtualMemory="126 095 360" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="08:49:12.704" source="evidence Windows Client" message="System.NullReferenceException: Object reference not set to an instance of an object.&#xD;&#xA;   at GlauxSoft.eDocGenerator.BOLightCommon.EDocConfigurationLight.GetEvdConfigurationObjects(String excludedKey)&#xD;&#xA;   at eDocGenCommon.Settings.LoadSettings()">
+    <user name="moritz" id="64000001" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.NullReferenceException" message="Object reference not set to an instance of an object." />
+    <additional message="" />
+    <memory memory="125 407 232" virtualMemory="126 095 360" />
+  </entry>
+  <entry type="Error" date="26.09.2016" time="08:49:11.286" source="evidence Windows Client" message="Fehler beim Inititalisieren des BusinessLayers.">
+    <user name="moritz" id="64000001" />
+    <operation name="" />
+    <parameter name="Host" value="notebook57" />
+    <exception type="System.Exception" message="Fehler beim Laden des SessionManagementConfigWarning Werts. Please make sure GlauxSoft.BusinessServerAddIn.dll is registered. Object A with specified identifier does not exist." />
+    <additional message="" />
+    <memory memory="129 130 496" virtualMemory="130 392 064" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:49:09.851" source="Logon provider" message="User 'moritz' was connected. Agent ID=b116164b-f325-41d2-b054-ae0e5d5172bf.">
+    <user name="moritz" id="64000001" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="notebook57" />
+    <additional message="Login: Windows (CORPROOT\moritz); Language Id: 7" />
+    <memory memory="118 562 816" virtualMemory="120 946 688" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:01:35.296" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="100 728 832" virtualMemory="97 202 176" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:01:35.245" source="evidence server" message="The evidence server was started; instace ID = aa2e41c8-8c5b-46e9-b278-129f1b8e4544, name = ''">
+    <additional message="Started as 64bit application" />
+    <memory memory="100 114 432" virtualMemory="96 997 376" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:01:35.230" source="evidence server" message="No license check performed because server is started in CORPROOT domain">
+    <operation name="" />
+    <memory memory="99 557 376" virtualMemory="96 321 536" />
+  </entry>
+  <entry type="Information" date="26.09.2016" time="08:01:35.156" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="97 849 344" virtualMemory="95 006 720" />
+  </entry>
+</log>

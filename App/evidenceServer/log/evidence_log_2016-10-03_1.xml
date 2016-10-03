@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Error" date="03.10.2016" time="11:05:46.583" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="Cannot open database &quot;evi_Repository_Leer&quot; requested by the login. The login failed.&#xD;&#xA;Login failed for user 'SP\apolovinka'." />
+    <memory memory="62 922 752" virtualMemory="47 394 816" />
+  </entry>
+</log>

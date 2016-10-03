@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Information" date="03.10.2016" time="11:07:22.731" source="evidence server" message="The evidence server was stopped">
+    <memory memory="85 749 760" virtualMemory="61 083 648" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:07:14.038" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="82 149 376" virtualMemory="58 531 840" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="11:07:13.973" source="evidence server" message="Scheduler will not work because the evidence license is invalid or an error during TaskManager initialization.">
+    <operation name="" />
+    <memory memory="82 145 280" virtualMemory="58 515 456" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:07:13.971" source="evidence server" message="The evidence server was started; instace ID = ade365d2-28a3-4d5c-b6f7-4cef9239393a, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="82 137 088" virtualMemory="58 515 456" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:07:13.721" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="82 124 800" virtualMemory="58 376 192" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="11:07:13.520" source="evidence server" message="License is invalid: database name does not correspond license.">
+    <operation name="" />
+    <memory memory="80 199 680" virtualMemory="58 232 832" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:07:13.442" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="78 962 688" virtualMemory="57 954 304" />
+  </entry>
+</log>

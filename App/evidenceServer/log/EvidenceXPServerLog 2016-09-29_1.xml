@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xsl' href='log.xsl'?>
+<log>
+  <entry type="Error" date="29.09.2016" time="12:59:48.429" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). The network path was not found." />
+    <memory memory="62 275 584" virtualMemory="49 643 520" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="10:22:20.285" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). The network path was not found." />
+    <memory memory="62 078 976" virtualMemory="47 562 752" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="10:15:31.199" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). The network path was not found." />
+    <memory memory="65 187 840" virtualMemory="49 434 624" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="10:14:32.493" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). The network path was not found." />
+    <memory memory="62 402 560" virtualMemory="49 500 160" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="10:13:35.772" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). The network path was not found." />
+    <memory memory="62 660 608" virtualMemory="49 291 264" />
+  </entry>
+  <entry type="Error" date="29.09.2016" time="10:12:09.759" source="evidence server" message="Failed to start evidence server">
+    <operation name="StartService" />
+    <exception type="System.Data.SqlClient.SqlException" message="A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server). The network path was not found." />
+    <memory memory="61 046 784" virtualMemory="48 832 512" />
+  </entry>
+</log>

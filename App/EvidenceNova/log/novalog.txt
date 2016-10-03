@@ -1,0 +1,55 @@
+2016-09-29 13:27:08.1460  Error  caller: Init, message: GlauxSoft.dll not found. SessionManager can't get initialized.  System.IO.FileNotFoundException: Could not load file or assembly 'GlauxSoft' or one of its dependencies. The system cannot find the file specified.
+File name: 'GlauxSoft'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Evidence.Nova.Kernel.GlauxSoftDllWrapper.Init()
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+ | GlauxSoftDllWrapper.Register => GlauxSoftDllWrapper.Init => NovaLogger.WriteError
+2016-09-29 13:27:08.7011  Error  caller: Load, message: Exception on loading nova Addin 'Assemblyname, Namespace.Namespace.ClassName'.  System.IO.FileNotFoundException: Could not load file or assembly 'Assemblyname' or one of its dependencies. The system cannot find the file specified.
+File name: 'Assemblyname'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Evidence.Nova.Kernel.Extensibility.NovaAddinFactory.Load()
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+ | NovaKernel.GetAddInManager => NovaAddinFactory.Load => NovaLogger.WriteError
+2016-09-29 13:27:08.7041  Error  caller: Load, message: Exception on loading nova Addin 'Assemblyname, Namespace.Namespace.ClassName'.  System.IO.FileNotFoundException: Could not load file or assembly 'Assemblyname' or one of its dependencies. The system cannot find the file specified.
+File name: 'Assemblyname'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Evidence.Nova.Kernel.Extensibility.NovaAddinFactory.Load()
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+ | NovaKernel.GetAddInManager => NovaAddinFactory.Load => NovaLogger.WriteError
+2016-09-29 13:27:19.2827  Error  caller: ProcessAction, message:   Evidence.Nova.Common.NovaUserCodeException: An error occurred in controller action Evidence.Nova.CoreComponents.NovaForms.DataExport.PermissionController.Index. ---> Evidence.Nova.CoreComponents.NovaDataExport.DataExportAssemblyNotFoundException: Library is not found ---> System.IO.FileNotFoundException: Could not load file or assembly 'GlauxSoft.DataExport.Common' or one of its dependencies. The system cannot find the file specified.
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Evidence.Nova.CoreComponents.NovaDataExport.DataExportLibWrapper..ctor(IAgent agent, IBusinessDirectory businessDirectory)
+   --- End of inner exception stack trace ---
+   at Evidence.Nova.CoreComponents.NovaDataExport.DataExportLibWrapper..ctor(IAgent agent, IBusinessDirectory businessDirectory)
+   at Evidence.Nova.CoreComponents.NovaForms.DataExport.PermissionController.Index()
+   --- End of inner exception stack trace ---
+   at Evidence.Nova.Kernel.NovaKernel.ProcessActionInternal(NovaSession session, ProcessActionInput input, NovaKernelTimeCollector timeCollector)
+   at Evidence.Nova.Kernel.NovaKernel.ProcessAction(ProcessActionInput input, NovaKernelTimeCollector timeCollector) | <>c__DisplayClass19_0.<BeginProcessActionJSON>b__0 => NovaKernel.ProcessAction => NovaLogger.WriteError

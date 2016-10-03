@@ -1,6 +1,127 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type='text/xsl' href='log.xsl'?>
 <log>
+  <entry type="Information" date="03.10.2016" time="13:24:30.453" source="evidence server" message="The evidence server was stopped">
+    <memory memory="89 309 184" virtualMemory="62 251 008" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="12:58:28.218" source="Business logic" message="User 'Administrator' was disconnected. Agent ID=14e4e6d7-35aa-4931-9e7e-6fc8d227b925.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="85 647 360" virtualMemory="60 563 456" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="12:56:58.161" source="Logon provider" message="User 'Administrator' was connected. Agent ID=14e4e6d7-35aa-4931-9e7e-6fc8d227b925.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="84 414 464" virtualMemory="60 198 912" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="12:49:19.416" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="82 579 456" virtualMemory="58 568 704" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="12:49:19.335" source="evidence server" message="Scheduler will not work because the evidence license is invalid or an error during TaskManager initialization.">
+    <operation name="" />
+    <memory memory="82 526 208" virtualMemory="58 544 128" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="12:49:19.333" source="evidence server" message="The evidence server was started; instace ID = 1689e98b-f37f-405b-b0a2-abf90b0a4641, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="82 526 208" virtualMemory="58 544 128" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="12:49:19.241" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="82 165 760" virtualMemory="58 400 768" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="12:49:18.968" source="evidence server" message="License is invalid: database name does not correspond license.">
+    <operation name="" />
+    <memory memory="79 896 576" virtualMemory="57 950 208" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="12:49:18.347" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="79 540 224" virtualMemory="57 671 680" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="12:49:17.487" source="Data access" message="The table evxCacheSequence does not contain a record for  class with ID 251. This entry will be inserted.">
+    <operation name="InitCacheSequenceTable" />
+    <memory memory="76 148 736" virtualMemory="56 602 624" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:21:23.485" source="evidence server" message="The evidence server was stopped">
+    <memory memory="92 839 936" virtualMemory="66 674 688" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:21:11.817" source="Business logic" message="User 'apolovinka' was disconnected. Agent ID=a7bdbcf6-8285-426c-95e5-c423c5bfd108.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="92 049 408" virtualMemory="66 551 808" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:19:55.891" source="Logon provider" message="User 'apolovinka' was connected. Agent ID=a7bdbcf6-8285-426c-95e5-c423c5bfd108.">
+    <user name="apolovinka" id="64000037" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Windows (SP\apolovinka); Language Id: 7" />
+    <memory memory="91 172 864" virtualMemory="62 951 424" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:19:48.511" source="Business logic" message="User 'Administrator' was disconnected. Agent ID=13d734bd-342e-440f-96bd-23d4a7cf55d3.">
+    <parameter name="Active connections" value="0 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <memory memory="91 406 336" virtualMemory="62 320 640" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:17:29.819" source="Logon provider" message="User 'Administrator' was connected. Agent ID=13d734bd-342e-440f-96bd-23d4a7cf55d3.">
+    <user name="Administrator" id="64000000" />
+    <parameter name="Active connections" value="1 (0 from Scheduler)" />
+    <parameter name="Host" value="sp" />
+    <additional message="Login: Evidence; Language Id: 7" />
+    <memory memory="83 046 400" virtualMemory="58 335 232" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:52.133" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="82 882 560" virtualMemory="59 031 552" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="11:15:52.089" source="evidence server" message="Scheduler will not work because the evidence license is invalid or an error during TaskManager initialization.">
+    <operation name="" />
+    <memory memory="82 829 312" virtualMemory="59 006 976" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:52.088" source="evidence server" message="The evidence server was started; instace ID = 7673fee5-4e3e-44bf-8c54-5f0879014c26, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="82 821 120" virtualMemory="59 006 976" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:52.065" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="82 460 672" virtualMemory="58 867 712" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="11:15:51.953" source="evidence server" message="License is invalid: database name does not correspond license.">
+    <operation name="" />
+    <memory memory="80 293 888" virtualMemory="58 150 912" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:51.915" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="78 794 752" virtualMemory="57 692 160" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:48.521" source="evidence server" message="The evidence server was stopped">
+    <memory memory="85 897 216" virtualMemory="65 843 200" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:05.616" source="Server Add-In" message="Number of Report Workers (NumberOfReportWorkers) is 2.">
+    <operation name="ReportWorkerProcessManager.Init" />
+    <memory memory="84 877 312" virtualMemory="62 648 320" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="11:15:05.571" source="evidence server" message="Scheduler will not work because the evidence license is invalid or an error during TaskManager initialization.">
+    <operation name="" />
+    <memory memory="84 828 160" virtualMemory="62 627 840" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:05.569" source="evidence server" message="The evidence server was started; instace ID = c6bb5b01-09b3-4b81-bfea-feb12ec3dafc, name = 'Evidence'">
+    <additional message="Started as 64bit application" />
+    <memory memory="84 819 968" virtualMemory="62 627 840" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:05.546" source="Server Add-In" message="Server Add-in registered OK">
+    <operation name="eXPSpecialPermissionManagementServerAddin" />
+    <memory memory="84 393 984" virtualMemory="62 484 480" />
+  </entry>
+  <entry type="Warning" date="03.10.2016" time="11:15:04.910" source="evidence server" message="License is invalid: database name does not correspond license.">
+    <operation name="" />
+    <memory memory="80 736 256" virtualMemory="57 995 264" />
+  </entry>
+  <entry type="Information" date="03.10.2016" time="11:15:04.115" source="Security" message="Effective permissions has been built successful">
+    <operation name="Build effective permissions" />
+    <memory memory="78 983 168" virtualMemory="57 122 816" />
+  </entry>
   <entry type="Information" date="03.10.2016" time="11:07:22.731" source="evidence server" message="The evidence server was stopped">
     <memory memory="85 749 760" virtualMemory="61 083 648" />
   </entry>

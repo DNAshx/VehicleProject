@@ -8,6 +8,7 @@ App/evidenceServer/log
 Thumbs.db
 #Ignore files build by Visual Studio
 *.obj
+*.config
 *.exe
 *.pdb
 *.user

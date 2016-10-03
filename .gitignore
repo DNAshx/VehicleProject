@@ -1,12 +1,33 @@
 App/evidenceServer/.ReportSystemCache/pid3272/ProcessLock/
-App/evidenceServer/.ReportSystemCache/pid4148/ProcessLock/*
-App/evidenceServer/.ReportSystemCache/pid4148/ProcessLock
+*.log
+*.config
+Src/VehicleSolution/001_GlauxSoft.Vehicle.Common/obj/Debug/
+App/evidenceServer/.ReportSystemCache
 App/evidenceServer/log
-App/evidenceServer/log/
-App/evidenceServer/log/*
-App/evidenceServer/log/**
-App/EvidenceNova/nova.config
-Src/VehicleSolution/001_GlauxSoft.Vehicle.Common/obj/Debug/**
-App/EvidenceNova/nova.config
-App/EvidenceNova/VisualStudioBootstrap.log
-App/evidenceServer/log/EvidenceXPServerLog 2016-10-03_1.xml
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*

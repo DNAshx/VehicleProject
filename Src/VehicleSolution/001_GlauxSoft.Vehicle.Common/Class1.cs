@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _001_GlauxSoft.Vehicle.Common
+namespace GlauxSoft.Vehicle.Common
 {
     public class Class1
     {

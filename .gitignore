@@ -7,3 +7,6 @@ App/evidenceServer/log/*
 App/evidenceServer/log/**
 App/EvidenceNova/nova.config
 Src/VehicleSolution/001_GlauxSoft.Vehicle.Common/obj/Debug/**
+App/EvidenceNova/nova.config
+App/EvidenceNova/VisualStudioBootstrap.log
+App/evidenceServer/log/EvidenceXPServerLog 2016-10-03_1.xml

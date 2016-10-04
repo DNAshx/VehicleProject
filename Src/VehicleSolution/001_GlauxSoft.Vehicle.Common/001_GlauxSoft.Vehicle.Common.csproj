@@ -7,8 +7,8 @@
     <ProjectGuid>{285E4C7D-B3BC-41FF-939D-05DD51897C23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GlauxSoft.Vehicle.Common</RootNamespace>
-    <AssemblyName>GlauxSoft.Vehicle.Common</AssemblyName>
+    <RootNamespace>GlauxSoft.GreenTransport.Common</RootNamespace>
+    <AssemblyName>GlauxSoft.GreenTransport.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -54,7 +54,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\Lib"</PostBuildEvent>
+    <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\Lib"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

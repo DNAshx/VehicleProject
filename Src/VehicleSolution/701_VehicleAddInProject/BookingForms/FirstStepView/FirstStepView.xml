@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NovaForm Name="frmGreenTransportStartView" Title="FirstStepView" FormType="Popover8Column" DialogBehavior="Close" xmlns="http://www.evidence.ch/nova/forms" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.evidence.ch/nova/forms http://rnd.glauxsoft.ch/nova/2.0.25.0/NovaForm.xsd">
+  <NovaText Name="GreenTransport" Label="GreenTransport Book"/>
+  <NovaCheckBox Name="IsWorking" Label="Is Working" IsChecked="true" />
+  <NovaImg Name="Image" Layout="h:9" />
+</NovaForm>

@@ -1,0 +1,10 @@
+2016-09-27 13:13:39.6920  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:Evidence.Nova.Kernel.resources, Version=2.0.26.3, Culture=en-US, PublicKeyToken=null  
+2016-09-27 13:13:39.7320  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:Evidence.Nova.Kernel.resources, Version=2.0.26.3, Culture=en-US, PublicKeyToken=null  
+2016-09-27 13:13:45.2403  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPServer, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null  
+2016-09-27 13:13:45.2403  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPServer, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null  
+2016-09-27 13:13:45.2403  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPServer, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null  
+2016-09-27 13:13:45.2403  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPServer, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null  
+2016-09-27 13:13:45.2403  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPServer, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null  
+2016-09-27 13:13:45.2403  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPServer, Version=4.5.6.0, Culture=neutral, PublicKeyToken=null  
+2016-09-27 13:13:52.5247  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPCommon.resources, Version=4.5.6.0, Culture=de, PublicKeyToken=649d2b35b4812d8a  
+2016-09-27 13:13:52.5247  Info  caller: .ctor, message: AppDomain.CurrentDomain.AssemblyResolve, RequestingAssembly:<null>, Name:EvidenceXPCommon.resources, Version=4.5.6.0, Culture=de, PublicKeyToken=649d2b35b4812d8a  

@@ -1,4 +1,6 @@
-namespace Vehicle
+using GreenTransport.BookingForms.FirstStepView;
+
+namespace GreenTransport
 {
     public class ProjectConfig : Evidence.Nova.Common.NovaProjectConfig
     {
@@ -9,8 +11,8 @@ namespace Vehicle
 
             // AddClassMapping("Person", typeof(PersonViewController));
 
-	        this.SetClassImage("Person", "Vehicle.Images.person.svg");
-            this.SetClassImage("Company", "Vehicle.Images.company.svg");
+	        this.SetClassImage("Person", "GreenTransport.Images.person.svg");
+            this.SetClassImage("Company", "GreenTransport.Images.company.svg");            
         }
     }
 }

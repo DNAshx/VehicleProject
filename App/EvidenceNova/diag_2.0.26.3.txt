@@ -1,0 +1,75 @@
+V1, Diagnostic Data, nova 2.0.26.3
+2016-09-26 16:43:19.5500	f44f50e7cdbe422ea3461f54c3a93953	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Mon Sep 26 2016 16:43:16 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"eee0fa38-e08b-4cdd-b3eb-51b9563a9c27",AgentUsername:"Administrator",RemoteAddr:"[::1]:57910",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-26 18:15:57.3395	65b1adecb0bf4063a16e084c4a2b9caf	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Mon Sep 26 2016 18:15:57 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"42036176-be4b-4c28-87db-da8dc9c4abe6",AgentUsername:"Administrator",RemoteAddr:"[::1]:57550",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-26 18:16:05.2326	65b1adecb0bf4063a16e084c4a2b9caf	0
+2016-09-26 18:16:42.1761	65b1adecb0bf4063a16e084c4a2b9caf	1
+2016-09-26 18:16:54.5154	65b1adecb0bf4063a16e084c4a2b9caf	13	Person
+2016-09-26 18:17:02.4642	65b1adecb0bf4063a16e084c4a2b9caf	28	2
+2016-09-26 18:17:06.8816	65b1adecb0bf4063a16e084c4a2b9caf	3
+2016-09-26 18:17:26.2984	65b1adecb0bf4063a16e084c4a2b9caf	11
+2016-09-26 18:23:46.0702	65b1adecb0bf4063a16e084c4a2b9caf	0
+2016-09-26 18:23:52.3885	65b1adecb0bf4063a16e084c4a2b9caf	16	
+2016-09-26 18:24:18.1904	65b1adecb0bf4063a16e084c4a2b9caf	16	
+2016-09-26 18:25:01.0890	fc6009a3fec44bb59359eab812f43bba	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Mon Sep 26 2016 18:25:00 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"e8f55af2-9104-4a38-9f7b-cd066c061a41",AgentUsername:"Administrator",RemoteAddr:"[::1]:63930",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-26 18:25:05.2972	fc6009a3fec44bb59359eab812f43bba	0
+2016-09-27 10:35:04.0553	83f616f4c63d41a4af9ebf766a730b36	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 10:35:01 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"7166d889-f454-4ee1-98d8-c7efec6bc40a",AgentUsername:"Administrator",RemoteAddr:"[::1]:20299",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 10:35:11.7316	83f616f4c63d41a4af9ebf766a730b36	0
+2016-09-27 11:47:06.0519	8d5f42201f5b4852a24da433bd4507e2	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 11:47:05 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"53e18c6c-c9e9-4739-8ba2-f533ecbaddc0",AgentUsername:"Administrator",RemoteAddr:"[::1]:5171",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 11:47:09.9732	8d5f42201f5b4852a24da433bd4507e2	0
+2016-09-27 11:56:56.5312	4ebcd4f049a2406aa004483e10443069	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 11:56:56 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"5fa367b8-3efe-436a-b4ae-20d2353b22f0",AgentUsername:"Administrator",RemoteAddr:"[::1]:12001",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 11:57:00.5687	4ebcd4f049a2406aa004483e10443069	0
+2016-09-27 11:57:11.3573	4ebcd4f049a2406aa004483e10443069	16	
+2016-09-27 12:04:48.7005	100113eb1c4d492faa1c4ce9dde74265	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:04:48 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"62d0d57c-c105-4404-9c76-970c0ce0dfdb",AgentUsername:"Administrator",RemoteAddr:"[::1]:17385",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:04:51.9161	100113eb1c4d492faa1c4ce9dde74265	0
+2016-09-27 12:06:24.6128	133c802793584b2cab96087589877330	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:06:24 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"98b7bf67-5971-4f2f-8a47-b98dece74040",AgentUsername:"Administrator",RemoteAddr:"[::1]:18525",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:06:28.0831	133c802793584b2cab96087589877330	0
+2016-09-27 12:08:27.4329	e5c91e2864aa407f98c481f0d37dedf0	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:08:27 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"78aa2777-8607-46a5-b7da-6ecb9d87198b",AgentUsername:"Administrator",RemoteAddr:"[::1]:19950",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:08:31.1073	e5c91e2864aa407f98c481f0d37dedf0	0
+2016-09-27 12:10:18.2001	42d74cdafe0f49ae917c4da7b1ab1ad5	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:10:17 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"7d26f909-4d0c-4daf-9fdd-3a99db7cbc17",AgentUsername:"Administrator",RemoteAddr:"[::1]:21234",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:10:21.8161	42d74cdafe0f49ae917c4da7b1ab1ad5	0
+2016-09-27 12:10:29.9633	42d74cdafe0f49ae917c4da7b1ab1ad5	16	My New addin (MyTestDemoAddin)
+2016-09-27 12:10:37.9579	42d74cdafe0f49ae917c4da7b1ab1ad5	16	My New addin (MyTestDemoAddin)
+2016-09-27 12:11:37.9078	42d74cdafe0f49ae917c4da7b1ab1ad5	1
+2016-09-27 12:11:48.8156	42d74cdafe0f49ae917c4da7b1ab1ad5	13	Company
+2016-09-27 12:12:03.8674	42d74cdafe0f49ae917c4da7b1ab1ad5	50	Company
+2016-09-27 12:12:13.4377	42d74cdafe0f49ae917c4da7b1ab1ad5	29	2	2
+2016-09-27 12:12:17.0518	42d74cdafe0f49ae917c4da7b1ab1ad5	50	Company
+2016-09-27 12:14:11.4442	42d74cdafe0f49ae917c4da7b1ab1ad5	50	Company
+2016-09-27 12:28:17.3087	11b5177c77dd4a3897469f106891ce45	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:28:17 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"02f33002-3221-45f3-b9b3-5d4f102eb5e1",AgentUsername:"Administrator",RemoteAddr:"[::1]:33580",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:28:22.3327	11b5177c77dd4a3897469f106891ce45	1
+2016-09-27 12:28:33.6612	11b5177c77dd4a3897469f106891ce45	13	Company
+2016-09-27 12:28:37.4879	11b5177c77dd4a3897469f106891ce45	50	Company
+2016-09-27 12:37:22.5191	11b5177c77dd4a3897469f106891ce45	50	Company
+2016-09-27 12:37:58.3983	11b5177c77dd4a3897469f106891ce45	28	2
+2016-09-27 12:38:01.8954	11b5177c77dd4a3897469f106891ce45	1
+2016-09-27 12:38:05.4086	11b5177c77dd4a3897469f106891ce45	13	Company
+2016-09-27 12:38:09.1888	11b5177c77dd4a3897469f106891ce45	51	Company
+2016-09-27 12:38:17.3383	11b5177c77dd4a3897469f106891ce45	28	2
+2016-09-27 12:38:19.6254	11b5177c77dd4a3897469f106891ce45	1
+2016-09-27 12:38:22.1646	11b5177c77dd4a3897469f106891ce45	13	Person
+2016-09-27 12:38:28.4979	11b5177c77dd4a3897469f106891ce45	57	Person
+2016-09-27 12:38:29.3650	11b5177c77dd4a3897469f106891ce45	50	Person
+2016-09-27 12:43:37.2602	9897c8116bdc40028d3a0f32914102de	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:43:36 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"cb6c2864-cc02-425a-97c9-5a8e90828a40",AgentUsername:"Administrator",RemoteAddr:"[::1]:44240",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:43:40.3155	9897c8116bdc40028d3a0f32914102de	1
+2016-09-27 12:43:43.9554	9897c8116bdc40028d3a0f32914102de	13	Company
+2016-09-27 12:43:47.0177	9897c8116bdc40028d3a0f32914102de	50	Company
+2016-09-27 12:45:01.3101	9897c8116bdc40028d3a0f32914102de	28	2
+2016-09-27 12:45:09.3122	9897c8116bdc40028d3a0f32914102de	1
+2016-09-27 12:45:12.1762	9897c8116bdc40028d3a0f32914102de	13	Company
+2016-09-27 12:45:15.4183	9897c8116bdc40028d3a0f32914102de	50	Company
+2016-09-27 12:50:02.3756	58dde2df62ea430f84e519482a0027f9	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:50:01 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"dcc07407-daf2-47d9-8894-8306d360c787",AgentUsername:"Administrator",RemoteAddr:"[::1]:48855",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:50:06.2088	58dde2df62ea430f84e519482a0027f9	1
+2016-09-27 12:50:09.3190	58dde2df62ea430f84e519482a0027f9	13	Company
+2016-09-27 12:50:12.4532	58dde2df62ea430f84e519482a0027f9	50	Company
+2016-09-27 12:54:27.4029	60067dcbe7684e868299aea756a2e1fb	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:54:27 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"3227d67d-38d3-48e8-b50c-017bb8edbd7a",AgentUsername:"Administrator",RemoteAddr:"[::1]:51902",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:54:47.5681	60067dcbe7684e868299aea756a2e1fb	1
+2016-09-27 12:54:50.8083	60067dcbe7684e868299aea756a2e1fb	13	Company
+2016-09-27 12:54:53.9615	60067dcbe7684e868299aea756a2e1fb	50	Company
+2016-09-27 12:59:18.5623	ed023677896d486a9a93814d9dbaa413	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 12:59:18 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"eb9f29a7-b949-4110-9777-48b78a98a8b6",AgentUsername:"Administrator",RemoteAddr:"[::1]:55533",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 12:59:22.3055	ed023677896d486a9a93814d9dbaa413	1
+2016-09-27 12:59:25.1747	ed023677896d486a9a93814d9dbaa413	13	Company
+2016-09-27 12:59:28.4619	ed023677896d486a9a93814d9dbaa413	50	Company
+2016-09-27 13:13:45.4263	f12afb8c884640fb84ee80f9d9fbe290	27	{Browser:"Chrome, 53.0.2785.116",Engine:"WebKit, 537.36",OS:"Windows, , Desktop",Strict:true,BrowserLang:"en-US",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Tue Sep 27 2016 13:13:45 GMT+0300 (FLE Daylight Time)",Screen:"1366x768",UserAgent:"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",Thumbprint:256391715,AgentInstanceID:"39077d47-8be7-4d1a-9c92-0cd621e5e908",AgentUsername:"Administrator",RemoteAddr:"[::1]:1054",AutoLogon:false,LogonMode:"EvdLogon"}
+2016-09-27 13:13:48.9925	f12afb8c884640fb84ee80f9d9fbe290	1
+2016-09-27 13:13:52.3067	f12afb8c884640fb84ee80f9d9fbe290	13	Company
+2016-09-27 13:13:55.6299	f12afb8c884640fb84ee80f9d9fbe290	50	Company

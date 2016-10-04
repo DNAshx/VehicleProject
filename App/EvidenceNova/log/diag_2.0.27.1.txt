@@ -1,4 +1,0 @@
-V1, Diagnostic Data, nova 2.0.27.1
-2016-09-26 13:37:26.4996	04461adf973842fc89089bcbdf6058b1	28	{Browser:"IE, 11.0",Engine:"Trident, 7.0",OS:"Windows, , Desktop",Strict:true,BrowserLang:"de-CH",EXTJS:"6.0.0.640",JQuery:"1.11.1",ClientTimestamp:"Mon Sep 26 2016 13:37:26 GMT+0200 (W. Europe Daylight Time)",Screen:"1920x1200",UserAgent:"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko",Thumbprint:2433336412,AgentInstanceID:"ab06b6bc-3150-4236-a0e3-3b735a41c5e7",AgentUsername:"Administrator",RemoteAddr:"[::1]:6288",AutoLogon:false,LogonMode:"EvdLogon"}
-2016-09-26 13:37:29.5009	04461adf973842fc89089bcbdf6058b1	6	Person
-2016-09-26 13:37:31.9991	04461adf973842fc89089bcbdf6058b1	29	2

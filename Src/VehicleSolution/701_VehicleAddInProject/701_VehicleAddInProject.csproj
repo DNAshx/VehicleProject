@@ -7,10 +7,11 @@
     <ProjectGuid>{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vehicle</RootNamespace>
-    <AssemblyName>Vehicle</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>GreenTransport</RootNamespace>
+    <AssemblyName>GlauxSoft.GreenTransport.BookingAddIn</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,6 +37,9 @@
     <Reference Include="EvidenceXPCommon">
       <HintPath>D:\Projects\Vehicle\Lib\EvidenceXPCommon.dll</HintPath>
     </Reference>
+    <Reference Include="GlauxSoft.GreenTransport.Repository">
+      <HintPath>..\..\..\Lib\GlauxSoft.GreenTransport.Repository.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,10 +54,10 @@
     <Compile Include="ProjectConfig.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".\NovaForms\DemoView\DemoViewController.cs" />
-    <Compile Include=".\NovaForms\DemoView\DemoView.cs" />
-    <Compile Include=".\NovaForms\DemoView\DemoViewModel.cs" />
-    <EmbeddedResource Include=".\NovaForms\DemoView\DemoView.xml" />
+    <Compile Include="BookingForms\FirstStepView\FirstStepViewController.cs" />
+    <Compile Include="BookingForms\FirstStepView\FirstStepView.cs" />
+    <Compile Include="BookingForms\FirstStepView\FirstStepViewModel.cs" />
+    <EmbeddedResource Include="BookingForms\FirstStepView\FirstStepView.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\demoaddin.svg" />
@@ -63,7 +67,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\App\EvidenceNova"
+    <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\App\EvidenceNova"
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlauxSoft.Vehicle.Common
+namespace GlauxSoft.GreenTransport.Common
 {
     public class Vehicle : GlauxSoft.GreenTransport.Repository.Vehicle
     { 

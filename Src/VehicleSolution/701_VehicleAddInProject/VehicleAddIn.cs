@@ -3,7 +3,7 @@ using Evidence.Nova.Common;
 using Evidence.Nova.Common.Extensibility;
 using Vehicle.NovaForms.DemoView;
 
-namespace Vehicle
+namespace GlauxSoft.GreenTransport.BookAddIn
 {
     //if you do change name of this class or namespace you also have to change it inside nova.config
     public class VehicleAddIn : NovaAddinBase

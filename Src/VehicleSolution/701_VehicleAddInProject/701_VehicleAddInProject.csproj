@@ -50,10 +50,10 @@
     <Compile Include="ProjectConfig.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Projects\Vehicle\Src\VehicleAddInProject\NovaForms\DemoView\DemoViewController.cs" />
-    <Compile Include="D:\Projects\Vehicle\Src\VehicleAddInProject\NovaForms\DemoView\DemoView.cs" />
-    <Compile Include="D:\Projects\Vehicle\Src\VehicleAddInProject\NovaForms\DemoView\DemoViewModel.cs" />
-    <EmbeddedResource Include="D:\Projects\Vehicle\Src\VehicleAddInProject\NovaForms\DemoView\DemoView.xml" />
+    <Compile Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoViewController.cs" />
+    <Compile Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoView.cs" />
+    <Compile Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoViewModel.cs" />
+    <EmbeddedResource Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoView.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\demoaddin.svg" />
@@ -63,9 +63,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-	    xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\App\EvidenceNova"
-    </PostBuildEvent>
+    <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\App\EvidenceNova"
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

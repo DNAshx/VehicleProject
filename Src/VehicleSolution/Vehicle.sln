@@ -1,8 +1,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{399396E0-CDAF-4FEE-8B2A-7D37B61A6F43}") = "VehicleAddInProject", "VehicleAddInProject\VehicleAddInProject.csproj", "{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "701_VehicleAddInProject", "701_VehicleAddInProject\701_VehicleAddInProject.csproj", "{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_GlauxSoft.Vehicle.Common", "001_GlauxSoft.Vehicle.Common\001_GlauxSoft.Vehicle.Common.csproj", "{285E4C7D-B3BC-41FF-939D-05DD51897C23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +16,10 @@ Global
 		{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

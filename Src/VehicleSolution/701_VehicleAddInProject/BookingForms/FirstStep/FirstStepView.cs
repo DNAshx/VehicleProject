@@ -1,5 +1,5 @@
 using Evidence.Nova.Common;
-namespace GreenTransport.BookingForms.FirstStepView
+namespace GreenTransport.BookingForms.FirstStep
 {
     public class FirstStepView : NovaViewBase
     {

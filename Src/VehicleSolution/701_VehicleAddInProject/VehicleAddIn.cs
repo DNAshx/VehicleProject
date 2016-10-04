@@ -1,7 +1,7 @@
 using System;
 using Evidence.Nova.Common;
 using Evidence.Nova.Common.Extensibility;
-using GreenTransport.BookingForms.FirstStepView;
+using GreenTransport.BookingForms.FirstStep;
 
 namespace GreenTransport
 {

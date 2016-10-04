@@ -1,6 +1,6 @@
 using Evidence.Business;
 
-namespace GreenTransport.BookingForms.FirstStepView
+namespace GreenTransport.BookingForms.FirstStep
 {
     public sealed class FirstStepViewModel : Evidence.Nova.Common.ViewModelObject
     {

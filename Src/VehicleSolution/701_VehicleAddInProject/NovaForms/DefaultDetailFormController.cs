@@ -1,44 +1,65 @@
-using System.IO;
-using Evidence.Nova.Common;
 using Evidence.Business;
+using Evidence.Nova.Common;
+using Evidence.Services;
 
-namespace GreenTransport.BookingForms.FirstStepView
+namespace GreenTransport.NovaForms
 {
-	[DefaultView(typeof(FirstStepView))]
-    public class FirstStepViewController : ControllerBase<FirstStepViewModel>
+    [DefaultView(typeof(DefaultDetailFormView))]
+    public class DefaultDetailFormController : ControllerBase<DefaultDetailFormViewModel>
     {
-        public ActionResult Index()
+        public ActionComposer Index()
         {
-            var view = GetView<FirstStepView>();
-            var form = view.Root as NovaForm;
-            //view.AddinName = "GreenTransport AddIn";
-            using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
+            var composer = new ActionComposer();
+
+            var dlg = base.GetArgument<NovaEvidenceObjectDialog>();
+
+            if (dlg != null)
             {
-                if (stream != null)
-                {
-                    byte[] ba = new byte[stream.Length];
-                    stream.Read(ba, 0, ba.Length);
-                    view.Image.ImageContent.SetContent(ba, ".jpg");
-                }
+                ViewModel.DialogResponseAction = dlg.DialogResponseAction;
+                var cls = this.BusinessDirectory.get_ClassDescriptor(dlg.ClassID);
+                //AN: TODO NovaEvidenceObjectDialog also has properties RequestSource, CandidateObjectId, CandidateObjectClass, InputOutputParameter which may need to be processed some way 
+                if (cls != null)
+                    InitView(cls, dlg.IsReadonly);
             }
 
-            
-            if (form == null) throw new NovaException("Wrong type " + view.Root.GetType());
-            form.Title = "Booking process.";
-
-            return new NovaMessageBoxDialog()
+            composer.Add(() =>
             {
-                Text = "Hello Nova AddIn!",
-                Title = "Hello Nova AddIn!",
-                Buttons = NovaMessageBoxButtons.Ok,
-                DefaultButton = NovaMessageBoxButtonDefault.No,
-                Icon = NovaMessageBoxIcon.Info
-            };
+                // Call the index-function of the base class
+                return composer.SubControllerAction(() => this.RuntimeFormIndex());
+            });
+            composer.Add(() =>
+            {
+                // do some after loading stuff...
+                return null;
+            });
+            composer.Finally(() =>
+            {
+                // clean up...
+            });
+
+            return composer;
         }
 
-        public ActionResult FormClose()
+        public ActionComposer FormClose()
         {
-            return new CloseDialogResult(true, null);
+            var composer = new ActionComposer();
+            composer.Add(() =>
+            {
+                // do some before-save stuff here...
+                return null;
+            });
+            composer.Add(() =>
+            {
+                // call the formsave from the base controller
+                return composer.SubControllerAction(() => this.RuntimeFormClose());
+            });
+            composer.Add(() =>
+            {
+                DialogAction ret = new NovaEvidenceObjectDialog(ViewModel.EvdObj.ClassID, ViewModel.EvdObj.ObjectID);
+                ret.DialogResponseAction = ViewModel.DialogResponseAction;
+                return new CloseDialogResult(ViewModel.IsChanged, ret);
+            });
+            return composer;
         }
 
 
@@ -70,17 +91,7 @@ namespace GreenTransport.BookingForms.FirstStepView
 
         private void InitView(EvidenceClass evdClass, bool viewOnly)
         {
-            var view = GetView<FirstStepView>();
-            view.AddinName = "GreenTransport AddIn";
-            using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
-            {
-                if (stream != null)
-                {
-                    byte[] ba = new byte[stream.Length];
-                    stream.Read(ba, 0, ba.Length);
-                    view.Image.ImageContent.SetContent(ba, ".jpg");
-                }
-            }
+            var view = GetView<DefaultDetailFormView>();
 
             var form = view.Root as NovaForm;
             if (form == null) throw new NovaException("Wrong type " + view.Root.GetType());
@@ -88,6 +99,7 @@ namespace GreenTransport.BookingForms.FirstStepView
 
             //TODO already initialized, see bug NOVA-955 Runtime form Index method is called twice 
             if (form.UIElementTree.Count > 0) return;
+
             foreach (EvidenceAttribute attrib in evdClass.Attrs)
             {
                 if (!attrib.VisibleToUser)
@@ -96,7 +108,7 @@ namespace GreenTransport.BookingForms.FirstStepView
                 switch (attrib.ExprType)
                 {
                     case AttributeType.XBoolean:
-                        form.UIElementTree.Add(new NovaCheckBox { EvdSourceAttr = sourceAttr, IsEnabled = !viewOnly });
+                        form.UIElementTree.Add(new NovaCheckBox {EvdSourceAttr = sourceAttr, IsEnabled = !viewOnly});
                         break;
                     case AttributeType.XDataTime:
                         form.UIElementTree.Add(new NovaDateTime { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly, });
@@ -143,7 +155,7 @@ namespace GreenTransport.BookingForms.FirstStepView
                         form.UIElementTree.Add(new NovaText { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly });
                         break;
                     case AttributeType.XVDocument:
-                        form.UIElementTree.Add(new NovaDoc { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly, HasDocPreview = true });
+                        form.UIElementTree.Add(new NovaDoc { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly, HasDocPreview = true});
                         break;
                     case AttributeType.XWebLink:
                         form.UIElementTree.Add(new NovaWeb { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly });
@@ -153,3 +165,4 @@ namespace GreenTransport.BookingForms.FirstStepView
         }
     }
 }
+

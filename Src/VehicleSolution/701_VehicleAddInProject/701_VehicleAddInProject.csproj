@@ -50,10 +50,10 @@
     <Compile Include="ProjectConfig.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoViewController.cs" />
-    <Compile Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoView.cs" />
-    <Compile Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoViewModel.cs" />
-    <EmbeddedResource Include="D:\Projects\Vehicle\Src\VehicleSolution\701_VehicleAddInProject\NovaForms\DemoView\DemoView.xml" />
+    <Compile Include=".\NovaForms\DemoView\DemoViewController.cs" />
+    <Compile Include=".\NovaForms\DemoView\DemoView.cs" />
+    <Compile Include=".\NovaForms\DemoView\DemoViewModel.cs" />
+    <EmbeddedResource Include=".\NovaForms\DemoView\DemoView.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\demoaddin.svg" />

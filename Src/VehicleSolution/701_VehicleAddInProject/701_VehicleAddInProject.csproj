@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Evidence.Nova.Common">
-      <HintPath>D:\Projects\Vehicle\Lib\Evidence.Nova.Common.dll</HintPath>
+      <HintPath>..\..\..\Lib\Evidence.Nova.Common.dll</HintPath>
     </Reference>
     <Reference Include="EvidenceXPCommon">
-      <HintPath>D:\Projects\Vehicle\Lib\EvidenceXPCommon.dll</HintPath>
+      <HintPath>..\..\..\Lib\EvidenceXPCommon.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

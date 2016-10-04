@@ -18,7 +18,7 @@
   <xSysKey>
     <Id>4</Id>
     <KeyName>LastId_xDescriptionLink</KeyName>
-    <KeyValue>6452</KeyValue>
+    <KeyValue>6508</KeyValue>
   </xSysKey>
   <xSysKey>
     <Id>5</Id>
@@ -3543,12 +3543,13 @@ Imports Evidence.WebSolution
     <Name>QtPassengers</Name>
     <CaptionId>6301</CaptionId>
     <ClassId>251</ClassId>
-    <TypeId>0</TypeId>
-    <ValLength>100</ValLength>
+    <TypeId>1</TypeId>
+    <ValLength>0</ValLength>
     <IsIDAttr>false</IsIDAttr>
     <HasChangeHistory>false</HasChangeHistory>
     <Required>false</Required>
     <CompareMethod>0</CompareMethod>
+    <IsMapedToRoleA>false</IsMapedToRoleA>
   </xClsAttribute>
   <xClsAttribute>
     <Id>2762</Id>
@@ -3567,24 +3568,27 @@ Imports Evidence.WebSolution
     <Name>ProdDate</Name>
     <CaptionId>6303</CaptionId>
     <ClassId>251</ClassId>
-    <TypeId>0</TypeId>
-    <ValLength>100</ValLength>
+    <TypeId>4</TypeId>
+    <ValLength>0</ValLength>
     <IsIDAttr>false</IsIDAttr>
     <HasChangeHistory>false</HasChangeHistory>
     <Required>false</Required>
+    <Format>G</Format>
     <CompareMethod>0</CompareMethod>
+    <IsMapedToRoleA>false</IsMapedToRoleA>
   </xClsAttribute>
   <xClsAttribute>
     <Id>2764</Id>
     <Name>Value</Name>
     <CaptionId>6304</CaptionId>
     <ClassId>251</ClassId>
-    <TypeId>0</TypeId>
-    <ValLength>100</ValLength>
+    <TypeId>2</TypeId>
+    <ValLength>0</ValLength>
     <IsIDAttr>false</IsIDAttr>
     <HasChangeHistory>false</HasChangeHistory>
     <Required>false</Required>
     <CompareMethod>0</CompareMethod>
+    <IsMapedToRoleA>false</IsMapedToRoleA>
   </xClsAttribute>
   <xClsAttribute>
     <Id>2766</Id>

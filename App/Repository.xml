@@ -18,7 +18,7 @@
   <xSysKey>
     <Id>4</Id>
     <KeyName>LastId_xDescriptionLink</KeyName>
-    <KeyValue>6269</KeyValue>
+    <KeyValue>6452</KeyValue>
   </xSysKey>
   <xSysKey>
     <Id>5</Id>
@@ -28,12 +28,12 @@
   <xSysKey>
     <Id>6</Id>
     <KeyName>LastId_xEnum</KeyName>
-    <KeyValue>301</KeyValue>
+    <KeyValue>304</KeyValue>
   </xSysKey>
   <xSysKey>
     <Id>7</Id>
     <KeyName>LastId_xEnumValue</KeyName>
-    <KeyValue>2612</KeyValue>
+    <KeyValue>2620</KeyValue>
   </xSysKey>
   <xSysKey>
     <Id>8</Id>
@@ -48,7 +48,7 @@
   <xSysKey>
     <Id>10</Id>
     <KeyName>LastId_xClsAttribute</KeyName>
-    <KeyValue>2754</KeyValue>
+    <KeyValue>2770</KeyValue>
   </xSysKey>
   <xSysKey>
     <Id>11</Id>
@@ -1104,6 +1104,181 @@
     <LangId>7</LangId>
     <TextValue>IsActive</TextValue>
   </xDescription>
+  <xDescription>
+    <Id>6284</Id>
+    <LangId>7</LangId>
+    <TextValue>Fahrzeugtyp</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6285</Id>
+    <LangId>7</LangId>
+    <TextValue>Auto</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6285</Id>
+    <LangId>12</LangId>
+    <TextValue>Voiture</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6285</Id>
+    <LangId>1033</LangId>
+    <TextValue>Car</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6286</Id>
+    <LangId>7</LangId>
+    <TextValue>Fahrrad</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6286</Id>
+    <LangId>12</LangId>
+    <TextValue>Vélo</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6286</Id>
+    <LangId>1033</LangId>
+    <TextValue>Bicycle</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6287</Id>
+    <LangId>7</LangId>
+    <TextValue>FahrradTyp</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6290</Id>
+    <LangId>7</LangId>
+    <TextValue>AutoTyp</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6291</Id>
+    <LangId>7</LangId>
+    <TextValue>Der Hybridantrieb</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6291</Id>
+    <LangId>12</LangId>
+    <TextValue>Lecteur Hybride</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6291</Id>
+    <LangId>1033</LangId>
+    <TextValue>Hybrid Drive</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6292</Id>
+    <LangId>7</LangId>
+    <TextValue>Benzin</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6292</Id>
+    <LangId>12</LangId>
+    <TextValue>Essence</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6292</Id>
+    <LangId>1033</LangId>
+    <TextValue>Petrol</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6293</Id>
+    <LangId>7</LangId>
+    <TextValue>Diesel</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6293</Id>
+    <LangId>12</LangId>
+    <TextValue>Diesel</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6293</Id>
+    <LangId>1033</LangId>
+    <TextValue>Diesel</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6294</Id>
+    <LangId>7</LangId>
+    <TextValue>Elektrisch</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6294</Id>
+    <LangId>12</LangId>
+    <TextValue>Électrique</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6294</Id>
+    <LangId>1033</LangId>
+    <TextValue>Electric</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6295</Id>
+    <LangId>7</LangId>
+    <TextValue>Art</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6296</Id>
+    <LangId>7</LangId>
+    <TextValue>Marke</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6297</Id>
+    <LangId>7</LangId>
+    <TextValue>NewAttribute1</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6298</Id>
+    <LangId>7</LangId>
+    <TextValue>Motor</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6299</Id>
+    <LangId>7</LangId>
+    <TextValue>Energieeffizienz</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6300</Id>
+    <LangId>7</LangId>
+    <TextValue>CO2</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6301</Id>
+    <LangId>7</LangId>
+    <TextValue>MnPassagiere</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6302</Id>
+    <LangId>7</LangId>
+    <TextValue>Instandhaltung</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6303</Id>
+    <LangId>7</LangId>
+    <TextValue>ProdDatum</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6304</Id>
+    <LangId>7</LangId>
+    <TextValue>Wert</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6306</Id>
+    <LangId>7</LangId>
+    <TextValue>Beschreibung</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6307</Id>
+    <LangId>7</LangId>
+    <TextValue>Feature</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6308</Id>
+    <LangId>7</LangId>
+    <TextValue>Lage</TextValue>
+  </xDescription>
+  <xDescription>
+    <Id>6424</Id>
+    <LangId>7</LangId>
+    <TextValue>Foto</TextValue>
+  </xDescription>
   <xDescriptionLink>
     <Id>-24</Id>
   </xDescriptionLink>
@@ -1743,6 +1918,81 @@
   <xDescriptionLink>
     <Id>6241</Id>
   </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6284</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6285</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6286</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6287</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6288</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6289</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6290</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6291</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6292</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6293</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6294</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6295</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6296</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6297</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6298</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6299</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6300</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6301</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6302</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6303</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6304</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6306</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6307</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6308</Id>
+  </xDescriptionLink>
+  <xDescriptionLink>
+    <Id>6424</Id>
+  </xDescriptionLink>
   <xEnum>
     <Id>1</Id>
     <Name>AddressingForm</Name>
@@ -1792,6 +2042,21 @@
     <Id>301</Id>
     <Name>s_VehicleLabel</Name>
     <CaptionId>6234</CaptionId>
+  </xEnum>
+  <xEnum>
+    <Id>302</Id>
+    <Name>VehicleType</Name>
+    <CaptionId>6284</CaptionId>
+  </xEnum>
+  <xEnum>
+    <Id>303</Id>
+    <Name>BicycleType</Name>
+    <CaptionId>6287</CaptionId>
+  </xEnum>
+  <xEnum>
+    <Id>304</Id>
+    <Name>CarType</Name>
+    <CaptionId>6290</CaptionId>
   </xEnum>
   <xEnumValue>
     <Id>1</Id>
@@ -2023,6 +2288,70 @@
     <OrderId>0</OrderId>
     <TextId>5931</TextId>
     <Name>PersonLabel_1C6632633EB9451B99A865A861B24DFA</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2613</Id>
+    <EnumId>302</EnumId>
+    <OrderId>0</OrderId>
+    <TextId>6285</TextId>
+    <Name>Car</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2614</Id>
+    <EnumId>302</EnumId>
+    <OrderId>1</OrderId>
+    <TextId>6286</TextId>
+    <Name>Bicycle</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2615</Id>
+    <EnumId>303</EnumId>
+    <OrderId>1</OrderId>
+    <TextId>6288</TextId>
+    <Name>Electric</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2616</Id>
+    <EnumId>303</EnumId>
+    <OrderId>0</OrderId>
+    <TextId>6289</TextId>
+    <Name>Ordinary</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2617</Id>
+    <EnumId>304</EnumId>
+    <OrderId>0</OrderId>
+    <TextId>6291</TextId>
+    <Name>Hybrid</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2618</Id>
+    <EnumId>304</EnumId>
+    <OrderId>1</OrderId>
+    <TextId>6292</TextId>
+    <Name>Petrol</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2619</Id>
+    <EnumId>304</EnumId>
+    <OrderId>2</OrderId>
+    <TextId>6293</TextId>
+    <Name>Diesel</Name>
+    <Deleted>false</Deleted>
+  </xEnumValue>
+  <xEnumValue>
+    <Id>2620</Id>
+    <EnumId>304</EnumId>
+    <OrderId>3</OrderId>
+    <TextId>6294</TextId>
+    <Name>Electric</Name>
     <Deleted>false</Deleted>
   </xEnumValue>
   <xImage>
@@ -3134,6 +3463,177 @@ Imports Evidence.WebSolution
     <HasChangeHistory>false</HasChangeHistory>
     <Required>false</Required>
     <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2755</Id>
+    <Name>Type</Name>
+    <CaptionId>6295</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>5</TypeId>
+    <EnumId>302</EnumId>
+    <ValLength>0</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+    <IsMapedToRoleA>false</IsMapedToRoleA>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2756</Id>
+    <Name>Brand</Name>
+    <CaptionId>6296</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2757</Id>
+    <Name>Fuel</Name>
+    <CaptionId>6297</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2758</Id>
+    <Name>Engine</Name>
+    <CaptionId>6298</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2759</Id>
+    <Name>Efficiency</Name>
+    <CaptionId>6299</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2760</Id>
+    <Name>CO2</Name>
+    <CaptionId>6300</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2761</Id>
+    <Name>QtPassengers</Name>
+    <CaptionId>6301</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2762</Id>
+    <Name>Maintenance</Name>
+    <CaptionId>6302</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2763</Id>
+    <Name>ProdDate</Name>
+    <CaptionId>6303</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2764</Id>
+    <Name>Value</Name>
+    <CaptionId>6304</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2766</Id>
+    <Name>Description</Name>
+    <CaptionId>6306</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2767</Id>
+    <Name>Feature</Name>
+    <CaptionId>6307</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2768</Id>
+    <Name>Location</Name>
+    <CaptionId>6308</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>0</TypeId>
+    <ValLength>100</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+  </xClsAttribute>
+  <xClsAttribute>
+    <Id>2770</Id>
+    <Name>Photo</Name>
+    <CaptionId>6424</CaptionId>
+    <ClassId>251</ClassId>
+    <TypeId>7</TypeId>
+    <ValLength>0</ValLength>
+    <IsIDAttr>false</IsIDAttr>
+    <HasChangeHistory>false</HasChangeHistory>
+    <Required>false</Required>
+    <CompareMethod>0</CompareMethod>
+    <IsMapedToRoleA>false</IsMapedToRoleA>
   </xClsAttribute>
   <xStrResource>
     <Id>196</Id>

@@ -32,3 +32,7 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+App/EvidenceNova/log
+App/evidenceServer/EvidenceXPServerWinShell.config
+App/evidenceServer/log
+App/EvidenceNova/App_Data/store

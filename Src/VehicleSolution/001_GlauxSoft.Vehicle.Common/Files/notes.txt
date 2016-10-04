@@ -1,0 +1,34 @@
+V1
+V2
+
+V1 ->  1.10 - 5.10 TO. 6.10 - 10.10 B 
+
+VehicleSchedule
+ Id-Veh, Date, Status, 
+
+ Service -> 
+ Booked ->
+ Frozen ->
+ Inactive->
+ Free ->
+
+Book -> Edit form (Service, Booking) -> Vehicle, Service 
+
+Booking/Order (BookService, Order)
+
+1. Booking/Order VehicleOrder -> ID, date range, Stage (Service, booking) .. Status ( Open, ..)
+
+2. VehicleSchedule -> 1.10 -> 5.10 -> 5 record
+3. 
+
+Vehicle (Type,.. , Price, Active)
+VehiclePrice (veh-id,
+Customer ( price level, discount)
+
+
+VehicleSchedule ( Veh-id, date range, Schedule_Type = Serivce, Inactive, Booked, Status - Open, Deleted, Canceled)
+
+VehicleHistory
+ day, veh-id, status, ...
+
+VehicleOrder ( schedule-Id, veh-id, person-id, company-id, schedule-Id, status, Price Total, Paid, Refund)

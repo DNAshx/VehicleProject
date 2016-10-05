@@ -13,6 +13,19 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             get { return FindElementByName<NovaImg>(); }
         }
+
+        internal NovaRef Contact
+        {
+            get { return FindElementByName<NovaRef>(); }
+        }
+        internal NovaDateTime StartDate
+        {
+            get { return FindElementByName<NovaDateTime>(); }
+        }
+        internal NovaDateTime EndDate
+        {
+            get { return FindElementByName<NovaDateTime>(); }
+        }
         public NovaForm FrmDefaultDetailForm
         {
             get { return base.FindElementByName<NovaForm>("frmGreenTransportStartView"); }

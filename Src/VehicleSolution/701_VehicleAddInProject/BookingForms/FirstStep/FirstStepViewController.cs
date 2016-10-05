@@ -1,6 +1,10 @@
 using System.IO;
 using Evidence.Nova.Common;
 using Evidence.Business;
+using System;
+using GlauxSoft.Common;
+using GlauxSoft.GreenTransport.Repository;
+using GlauxSoft.Business;
 
 namespace GreenTransport.BookingForms.FirstStep
 {
@@ -11,7 +15,24 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             var view = GetView<FirstStepView>();
             var form = view.Root as NovaForm;
-            //view.AddinName = "GreenTransport AddIn";
+            view.AddinName = string.Format("Order No. {0}", new Random().Next(1, 100));
+            Random houseNo = new Random();
+            Random countryCode = new Random(1000);
+            Person p = BusinessObject.Create<Person>();
+
+            p.FirstName = RandomProvider.NextFirstName();
+            p.Nachname = RandomProvider.NextLastName();
+            p.CityName = RandomProvider.NextCity();
+            p.TelefonPrivat = RandomProvider.NextPhoneNumber();
+            p.Adresse = RandomProvider.NextStreet();
+            p.CountryCode = countryCode.Next(4000).ToString();
+            p.Hausnummer = houseNo.Next(1, 40).ToString();
+            p.Save();
+            view.Contact.RefClassId = p.ClassID;
+            view.Contact.IsRequired = true;
+
+            view.StartDate.Value = DateTime.Today;
+            view.EndDate.Value = DateTime.Today.AddDays(1);
             using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
             {
                 if (stream != null)

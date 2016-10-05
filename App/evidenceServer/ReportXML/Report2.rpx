@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="10650" DocumentName="ARNet Document" ScriptLang="C#" UserData="DataDynamics.ActiveReports.Design.Designer" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; " />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold; " />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; " />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold; " />
+    <Style Name="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black; ddo-char-set: 204; " Value="" />
+    <Style Name="font-size: 16pt; font-weight: bold; " Value="" />
+    <Style Name="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic; " Value="" />
+    <Style Name="font-size: 13pt; font-weight: bold; " Value="" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader1" Visible="0" Height="360" BackColor="16777215" CanShrink="1" />
+    <Section Type="PageHeader" Name="PageHeader" Height="1230" BackColor="16777215">
+      <Control Type="AR.Shape" Name="Shape2" Left="0" Top="113.3858" Width="10544.88" Height="850.3936" BackStyle="1" RoundingRadius="9.999999" />
+      <Control Type="AR.Field" Name="tbHeaderTitle" Left="113.3858" Top="340.1575" Width="8447.244" Height="453.5433" Text="Lieferschein für adressierte Briefpost Form-Nr. 310" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 14pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Image" Name="picPostLogo" Left="8560.63" Top="283.4646" Width="1927.56" Height="510.2362" LineWeight="0" HyperLink="" SizeMode="1" />
+    </Section>
+    <Section Type="GroupHeader" Name="GroupHeader1" Height="4839" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Field" Name="tbFrankierterBetrag" DataField="Frankierter Betrag" Visible="0" Tag="23" Left="7710.237" Top="3061.417" Width="2891.339" Height="340.1575" Text="[Frankierter Betrag]" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="tbFrankierart" DataField="Frankierart" Visible="0" Tag="16" Left="7029.92" Top="2721.26" Width="3571.654" Height="340.1577" Text="[Frankierart]" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="tbAbsenderAnschrift" Left="226.7716" Top="453.5433" Width="4988.977" Height="1360.63" Text="Absender Anschrift" CanGrow="0" CanShrink="1" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; background-color: Gray; font-size: 10pt; font-family: Microsoft Sans Serif; white-space: nowrap; " />
+      <Control Type="AR.Label" Name="lblAbsenderTop" Left="226.7716" Top="170.0788" Width="1133.858" Height="226.7715" Caption="Absender    /" Style="ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblAufgeber" Left="226.7716" Top="2097.638" Width="1133.858" Height="226.7716" Caption="Aufgeber" Style="ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblRechnungsReferenz" Left="1417.323" Top="170.0788" Width="1984.252" Height="226.7716" Caption="Rechnungs-Referenz-Nr:" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 9pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblAufgabeart" Visible="0" Left="5896.063" Top="2381.103" Width="1133.858" Height="340.1577" Caption="Aufgabeart:" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Shape" Name="shPriorityBox" Visible="0" Left="5896.063" Top="170.0788" Width="4195.276" Height="1700.787" BackStyle="1" RoundingRadius="9.999999" />
+      <Control Type="AR.Field" Name="tbContainsAPriorityFront" Visible="0" Left="6066.142" Top="680.315" Width="850.3936" Height="907.0867" Text="A-" Multiline="0" CanGrow="0" Style="color: Gray; ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 36pt; font-family: Frutiger 45 Light; vertical-align: top; " />
+      <Control Type="AR.Field" Name="TextBox1" DataField="Kundenreferenz" Tag="22" Left="2381.103" Top="4251.969" Width="3061.417" Height="340.1575" Text="[Kundenreferenz]" Style="color: Black; ddo-char-set: 1; font-size: 12pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblKundenreferenz" Left="226.7716" Top="4251.969" Width="2040.945" Height="340.1575" Caption="Kundenreferenz:" Style="color: Black; ddo-char-set: 1; font-weight: bold; font-size: 12pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblFrankierart" Visible="0" Left="5896.063" Top="2721.26" Width="1133.858" Height="340.1575" Caption="Frankierart:" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Field" Name="tbAufgabeart" DataField="Aufgabeart" Visible="0" Tag="17" Left="7029.92" Top="2381.103" Width="3571.654" Height="340.1574" Text="[Aufgabeart]" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="tbRechnungsReferenzNr" Left="3401.575" Top="170.0788" Width="2040.945" Height="226.7716" Text="[RRNRechnungsreferenz-Nummer]" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-size: 9pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="tbContainsAPriorityBack" Visible="0" Left="6973.229" Top="907.0867" Width="2154.331" Height="680.315" Text="Priority" Multiline="0" CanGrow="0" Style="color: Gray; ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 22pt; font-family: Frutiger 45 Light; " />
+      <Control Type="AR.Label" Name="lblFrankierterBetrag" Visible="0" Left="5896.063" Top="3061.417" Width="1814.172" Height="340.1574" Caption="Frankierter Betrag:" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Field" Name="tbAufgeberAnschrift" Left="226.7716" Top="2381.103" Width="4988.977" Height="1474.016" Text="Aufgeber Anschrift" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 10pt; font-family: Microsoft Sans Serif; white-space: nowrap; " />
+      <Control Type="AR.Field" Name="tbAuftragsnummer" DataField="Auftragsnummer (ABRID)" Visible="0" Tag="15" Left="7483.464" Top="3401.575" Width="3118.11" Height="340.1575" Text="[Auftragsnummer (ABRID)]" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Field" Name="tbLabelPriority" Visible="0" Left="6009.45" Top="283.4646" Width="907.0868" Height="283.4646" Text="Enthält:" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 9pt; font-family: Frutiger 45 Light; " />
+      <Control Type="AR.Label" Name="lblAuftragsnummer" Visible="0" Left="5896.063" Top="3401.575" Width="1587.403" Height="340.1575" Caption="Auftragsnummer:" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 8.25pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="793" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Subreport" Name="sbrAVZPositionen" Tag="Evidence.Reports.EvidenceWinSubreport" Left="0" Top="623.6221" Width="10544.88" Height="56.69289" ReportName="AVZLieferscheinBreifpostPositionDE" />
+      <Control Type="AR.Label" Name="lblAnzahl" Left="113.3858" Top="170.0788" Width="1020.472" Height="340.1572" Caption="Anzahl" Style="ddo-char-set: 1; text-decoration: underline; font-weight: bold; font-size: 11pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblProduktZusatzleistungen" Left="1247.244" Top="170.0788" Width="3174.803" Height="340.1574" Caption="Produkt / Zusatzleistungen" Style="ddo-char-set: 1; text-decoration: underline; font-weight: bold; font-size: 11pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblGewicht" Left="7483.464" Top="170.0788" Width="2607.875" Height="340.1572" Caption="Gewicht / Sendung [kg]" Style="ddo-char-set: 1; text-decoration: underline; font-weight: bold; font-size: 11pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+    </Section>
+    <Section Type="GroupFooter" Name="GroupFooter1" Visible="0" PrintAtBottom="1" Height="360" BackColor="16777215" CanShrink="1" />
+    <Section Type="PageFooter" Name="PageFooter" Height="728" BackColor="16777215" CanShrink="1">
+      <Control Type="AR.Shape" Name="Shape1" Left="8900.79" Top="170.0788" Width="1587.401" Height="453.5434" BackColor="16777215" RoundingRadius="9.999999" />
+      <Control Type="AR.ReportInfo" Name="ReportInfo1" Left="9070.865" Top="283.4646" Width="1303.937" Height="226.7716" FormatString="Seite {PageNumber} / {PageCount}" Multiline="0" Style="ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: top; " />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter1" PrintAtBottom="1" Height="3089" BackColor="16777215" KeepTogether="1" CanGrow="0">
+      <Control Type="AR.Shape" Name="Shape3" Left="6292.914" Top="737.0079" Width="4308.662" Height="2154.331" BackStyle="1" RoundingRadius="9.999999" />
+      <Control Type="AR.Shape" Name="Shape4" Left="8900.79" Top="2551.18" Width="1587.401" Height="453.5434" BackColor="16777215" RoundingRadius="9.999999" />
+      <Control Type="AR.Label" Name="lblGescannt" Left="226.7716" Top="850.3936" Width="1247.244" Height="340.1577" Caption="gescannt" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 9.75pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.CheckBox" Name="cb" Left="1474.016" Top="850.3936" Width="340.1575" Height="340.1577" Caption="" Style="ddo-char-set: 1; font-size: 12pt; " ContentAlign="32" />
+      <Control Type="AR.CheckBox" Name="cbChecked" Left="1474.016" Top="1303.937" Width="340.1575" Height="340.1577" Caption="" ContentAlign="32" />
+      <Control Type="AR.Line" Name="Line2" X1="0" Y1="453.5433" X2="10601.58" Y2="453.5433" />
+      <Control Type="AR.Field" Name="tbErstelltDurch" Left="226.7716" Top="2494.488" Width="5442.52" Height="340.1574" Text="Erstellt durch" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 9.75pt; font-family: Frutiger 45 Light; vertical-align: middle; " />
+      <Control Type="AR.Label" Name="lblBarcode" Left="113.3858" Top="510.2362" Width="907.0867" Height="226.7716" Caption="Barcode:" Style="ddo-char-set: 1; text-decoration: underline; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.ReportInfo" Name="lblPageCount" Left="9070.865" Top="2664.567" Width="1303.937" Height="226.7716" FormatString="Seite {PageNumber} / {PageCount}" Multiline="0" Style="ddo-char-set: 1; font-weight: bold; font-style: normal; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: top; " />
+      <Control Type="AR.Label" Name="lblBemerkungen" Left="6406.3" Top="850.3936" Width="1360.63" Height="340.1577" Caption="Bemerkungen:" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblFreigegeben" Left="226.7716" Top="1757.48" Width="1247.244" Height="340.1574" Caption="freigegeben" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 9.75pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Label" Name="lblWirdDurchPost" Left="113.3858" Top="56.6929" Width="2948.031" Height="340.1575" Caption="Wird durch die Post ausgefüllt:" Style="ddo-char-set: 1; font-style: italic; font-size: 10pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.CheckBox" Name="cbFreigegeben" Left="1474.016" Top="1757.48" Width="340.1575" Height="340.1577" Caption="" ContentAlign="32" />
+      <Control Type="AR.Label" Name="lblChecked" Left="226.7716" Top="1303.937" Width="1247.244" Height="340.1574" Caption="geprüft" Style="ddo-char-set: 1; font-weight: normal; font-style: normal; font-size: 9.75pt; font-family: Frutiger 45 Light; vertical-align: middle; " Multiline="0" />
+      <Control Type="AR.Field" Name="tbAVZBarcode" DataField="AVZ Barcode-Nr." Visible="0" Tag="31" Left="2040.945" Top="2040.945" Width="2040.945" Height="340.1574" Text="[AVZ Barcode-Nr.]" Multiline="0" CanGrow="0" Style="ddo-char-set: 1; font-family: Frutiger 45 Light; " />
+      <Control Type="AR.Image" Name="picBarcode" DataField="AVZ Barcode Image" Tag="34" Left="2211.024" Top="907.0867" Width="3458.268" Height="737.0079" LineWeight="0" HyperLink="" SizeMode="1" />
+    </Section>
+  </Sections>
+  <ReportComponentTray />
+  <PageSettings LeftMargin="567" RightMargin="567" TopMargin="567" BottomMargin="567" />
+  <Parameters />
+</ActiveReportsLayout>

@@ -37,7 +37,15 @@
     <Reference Include="EvidenceXPCommon">
       <HintPath>..\..\..\Lib\EvidenceXPCommon.dll</HintPath>
     </Reference>
-    <Reference Include="GlauxSoft.GreenTransport.Repository">
+    <Reference Include="GlauxSoft, Version=1.33.2061.717, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\GlauxSoft.dll</HintPath>
+    </Reference>
+    <Reference Include="GlauxSoft.GreenTransport.Common">
+      <HintPath>..\..\..\Lib\GlauxSoft.GreenTransport.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GlauxSoft.GreenTransport.Repository, Version=1.0.6122.25952, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Lib\GlauxSoft.GreenTransport.Repository.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -68,7 +76,6 @@
     <EmbeddedResource Include="Images\company.svg" />
     <EmbeddedResource Include="Images\owls.jpg" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="NovaForms\DefaultDetailFormView.xml" />
   </ItemGroup>

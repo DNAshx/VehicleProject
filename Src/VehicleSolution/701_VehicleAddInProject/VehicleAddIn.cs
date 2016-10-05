@@ -17,7 +17,7 @@ namespace GreenTransport
                 Image = NovaResourceLinker.CreateLink("GreenTransport.Images.demoaddin.svg"),
                 TargetController = typeof(FirstStepViewController),
                 TargetAction = "Index"
-            });
+            });            
         }
     }
 }

@@ -3,11 +3,11 @@ namespace GreenTransport.BookingForms.FirstStep
 {
     public class FirstStepView : NovaViewBase
     {
-        internal string AddinName
-        {
-            get { return FindElementByName<NovaText>().Text; }
-            set { FindElementByName<NovaText>().Text = value; }
-        }
+        //internal string OrderName
+        //{
+        //    get { return FindElementByName<NovaText>().Text; }
+        //    set { FindElementByName<NovaText>().Text = value; }
+        //}
 
 		internal NovaImg Image
         {
@@ -18,6 +18,12 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             get { return FindElementByName<NovaRef>(); }
         }
+
+        internal NovaRef Vehicle
+        {
+            get { return FindElementByName<NovaRef>(); }
+        }
+
         internal NovaDateTime StartDate
         {
             get { return FindElementByName<NovaDateTime>(); }
@@ -26,7 +32,7 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             get { return FindElementByName<NovaDateTime>(); }
         }
-        public NovaForm FrmDefaultDetailForm
+        public NovaForm FrmFirstStepView
         {
             get { return base.FindElementByName<NovaForm>("frmGreenTransportStartView"); }
         }

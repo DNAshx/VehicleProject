@@ -21,5 +21,11 @@ namespace GreenTransport.BookingForms.FirstStep
             get { return (bool)base.GetValue(); }
             set { base.SetValue(value); }
         }
+
+        public byte CurrentPageNumber
+        {
+            get { return (byte)GetValue(); }
+            set { SetValue(value); }
+        }
     }
 }

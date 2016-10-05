@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NovaForm Name="frmGreenTransportStartView" Title="FirstStepView" DialogBehavior="OkAndCancel" FormType="Wizard" xmlns="http://www.evidence.ch/nova/forms" 
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.evidence.ch/nova/forms http://rnd.glauxsoft.ch/nova/2.0.25.0/NovaForm.xsd">
-  <NovaText Name="AddinName" Label="Order Name"/>
+  
   
   <NovaWizardPage Name="pageVehicle" Layout="w:16">
     <NovaGroup Name="groupVehicle" Layout="w:16">
       <NovaDateTime Name="StartDate" Label="From:" />
       <NovaDateTime Name="EndDate" Label="To:" />
-      <NovaRef Name="Contact" Label="Contact" />
+      <NovaRef Name="Vehicle" Label="Choose Vehicle" />
     </NovaGroup>
   </NovaWizardPage>
+  
   <NovaWizardPage Name="pageContact" Layout="w:30">
     <NovaGroup Name="groupContact" Layout="w:30">
       <NovaRef Name="Contact" Label="Contact" />

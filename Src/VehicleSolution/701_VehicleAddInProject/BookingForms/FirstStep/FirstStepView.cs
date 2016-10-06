@@ -1,4 +1,5 @@
 using Evidence.Nova.Common;
+
 namespace GreenTransport.BookingForms.FirstStep
 {
     public class FirstStepView : NovaViewBase
@@ -35,6 +36,20 @@ namespace GreenTransport.BookingForms.FirstStep
         public NovaForm FrmFirstStepView
         {
             get { return base.FindElementByName<NovaForm>("frmGreenTransportStartView"); }
+        }
+
+        internal NovaCombo VehicleType
+        {
+            get { return FindElementByName<NovaCombo>(); }
+        }
+        internal NovaCombo VehicleClass
+        {
+            get { return FindElementByName<NovaCombo>(); }
+        }
+
+        internal NovaGrid GridVehicles
+        {
+            get { return FindElementByName<NovaGrid>(); }
         }
     }
 }

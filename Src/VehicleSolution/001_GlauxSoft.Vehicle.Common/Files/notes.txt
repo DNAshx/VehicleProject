@@ -26,3 +26,46 @@ VehicleHistory ( -------- ??? (maybe not need)
  day, veh-id, status, ...
 
 ALEX - VehicleOrder ( schedule-Id, veh-id, person-id, company-id, schedule-Id, status, Price Total, Paid, Refund)
+
+
+1. Nova - web
+
+   Wireframe  / Dashboard ( Vehicle, Vehicle Order)
+   
+   Vehicle, Vehicle Order
+   https://creately.com/app/?tempID=hp21djew1&login_type=demo#
+
+   New Order -> Wizard
+   
+   Step 1:
+    
+	 VS asp/mvc partial -> 
+     Date range, Car Type, -> result as gridview -> select Vehicle
+   
+
+     Vehicle selection -> ? 
+	 Person select
+     
+	 Date Fr, Date To
+	  -> get Orders that
+
+
+   
+
+   Once Vehicle is booked -> returned -> add VehicleOrder -> service for few hours -> cleanUp/repair
+
+
+   Use Case 1
+    Wizard Step 1 ( Date Range, Class, Type -> List Available Vehicles)
+
+
+
+
+
+	ToDo
+ - give access to confluence -> with API, wiki for controls / methods
+
+
+
+ Questions
+  - 

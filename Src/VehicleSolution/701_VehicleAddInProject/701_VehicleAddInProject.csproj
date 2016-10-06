@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingForms\FirstStep\VehicleModelObject.cs" />
     <Compile Include="NovaForms\DefaultDetailFormController.cs" />
     <Compile Include="NovaForms\DefaultDetailFormView.cs" />
     <Compile Include="NovaForms\DefaultDetailFormViewModel.cs" />

@@ -7,7 +7,22 @@
     <NovaGroup Name="groupVehicle" Layout="w:16">
       <NovaDateTime Name="StartDate" Label="From:" />
       <NovaDateTime Name="EndDate" Label="To:" />
-      <NovaRef Name="Vehicle" Label="Choose Vehicle" />
+      <NovaCombo EvdSourceAttr="EvdObj.s_Language" Name="VehicleType" Label="Vehicle Class:" />
+      <NovaCombo EvdSourceAttr="EvdObj.s_Language" Name="VehicleClass" Label="Vehicle Type:" />
+
+      <!--<NovaRef Name="Vehicle" Label="Choose Vehicle" />-->    
+      <NovaGrid Name="GridVehicles" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
+        <Actions>
+          <ActionItem Caption="{Resource Searching}" IsQuickAccess="true" Action="SearchEvent" />
+          <ActionItem Caption="{Resource Fetching}" IsQuickAccess="true" Action="FetchObject" />
+          <ActionItem Caption="{Resource New}" IsQuickAccess="true" Action="CreateObject" />
+        </Actions>
+        <Columns>
+          <NovaGridColumn ValueBinding="Brand" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="QtPassengers"  IsSortable="true" ColumnWidth="60" />
+          <NovaGridColumn ValueBinding="PriceDay"  IsSortable="true" ColumnWidth="60" />
+        </Columns>
+      </NovaGrid>
     </NovaGroup>
   </NovaWizardPage>
   

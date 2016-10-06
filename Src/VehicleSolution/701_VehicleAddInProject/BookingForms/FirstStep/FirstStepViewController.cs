@@ -134,8 +134,8 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             var view = GetView<FirstStepView>();
             var form = view.Root as NovaForm;
-            var dateFr = view.StartDate.Value;
-            var dateTo = view.EndDate.Value;
+            var dateFr = view.StartDate.Value.GetValueOrDefault();
+            var dateTo = view.EndDate.Value.GetValueOrDefault();
             //var vType = view.VehicleClass.SelectedItem.ItemId;
             Random cnt = new Random();
             var num = cnt.Next(10);

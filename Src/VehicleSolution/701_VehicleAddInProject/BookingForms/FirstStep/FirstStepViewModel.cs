@@ -1,3 +1,4 @@
+using System;
 using Evidence.Business;
 using Evidence.Nova.Common;
 using GreenTransport.ViewModels;
@@ -35,6 +36,9 @@ namespace GreenTransport.BookingForms.FirstStep
             get { return (byte)GetValue(); }
             set { SetValue(value); }
         }
+
+        public DateTime StartDate { get { return (DateTime)GetValue(); } set { SetValue(value); } }
+        public DateTime EndDate { get { return (DateTime)GetValue(); } set { SetValue(value); } }
 
         public ViewModelList<VehicleModelObject> VehicleList
         {

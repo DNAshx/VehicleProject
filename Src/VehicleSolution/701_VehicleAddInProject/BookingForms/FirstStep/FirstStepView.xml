@@ -18,9 +18,9 @@
           <ActionItem Caption="A3" IsQuickAccess="true" Action="SearchEvent" />
         </Actions>
         <Columns>
-          <NovaGridColumn ValueBinding="Brand" IsSortable="true" ColumnWidth="100" />
-          <NovaGridColumn ValueBinding="QtPassengers"  IsSortable="true" ColumnWidth="60" />
-          <NovaGridColumn ValueBinding="PriceDay"  IsSortable="true" ColumnWidth="60" />
+          <NovaGridColumn ValueBinding="Brand" IsSortable="true" ColumnWidth="100" Text="Brand" ContentAlignment ="Left" />
+          <NovaGridColumn ValueBinding="QtPassengers"  IsSortable="true" ColumnWidth="60" Text="Qty Passengers" ContentAlignment ="Center"/>
+          <NovaGridColumn ValueBinding="PriceDay"  IsSortable="true" ColumnWidth="60" Text="Price/day" ContentAlignment ="Right" OutputFormat="C2"/>
         </Columns>
       </NovaGrid>
     </NovaGroup>

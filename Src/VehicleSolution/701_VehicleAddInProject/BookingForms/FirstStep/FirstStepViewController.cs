@@ -90,6 +90,23 @@ namespace GreenTransport.BookingForms.FirstStep
             return new DoNothingResult();
         }
 
+        #region Wizzard Navigation
+        public ActionResult FrmWizardBack()
+        {
+            var form = View.FindElementByName<NovaForm>("frmGreenTransportStartView");
+            if (form != null && form.WizardCanGoBack())
+            {
+                form.WizardGoBack();
+                ViewModel.CurrentPageNumber--;               
+            }
+            return new DoNothingResult();
+        }
+
+        public ActionResult FrmWizardCancel()
+        {
+            return new NavigateBackResult();
+        }
+
         public ActionResult FrmWizardFinish()
         {
             //var order = BusinessObject.Create<VehicleOrder>();
@@ -103,6 +120,9 @@ namespace GreenTransport.BookingForms.FirstStep
                     Icon = NovaMessageBoxIcon.Info
                 };
         }
+
+        #endregion
+
         /// <summary>
         /// Call the FormSave-function to save the evidence object
         /// </summary>

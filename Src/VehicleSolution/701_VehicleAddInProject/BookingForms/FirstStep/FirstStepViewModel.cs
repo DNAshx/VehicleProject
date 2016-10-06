@@ -1,9 +1,12 @@
 using Evidence.Business;
 using Evidence.Nova.Common;
+using GreenTransport.ViewModels;
+
+using GlauxSoft.GreenTransport.Repository;
 
 namespace GreenTransport.BookingForms.FirstStep
 {
-    public sealed class FirstStepViewModel : Evidence.Nova.Common.ViewModelObject
+    public sealed class FirstStepViewModel : ViewModelBase
     {
         public FirstStepViewModel()
         {
@@ -38,6 +41,5 @@ namespace GreenTransport.BookingForms.FirstStep
             get { return (ViewModelList<VehicleModelObject>)GetValue(); }
             private set { SetValue(value); }
         }
-
     }
 }

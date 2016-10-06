@@ -21,7 +21,7 @@ namespace GreenTransport.BookingForms.FirstStep
             var form = view.Root as NovaForm;
             //view.OrderName = string.Format("Order No. {0}", new Random().Next(1, 100));
             view.Contact.RefClassId = ((BusinessObject)(new Person())).ClassID;
-            view.Vehicle.RefClassId = ((BusinessObject)(new Vehicle())).ClassID;
+            //view.Vehicle.RefClassId = ((BusinessObject)(new Vehicle())).ClassID;
             view.GridVehicles.ItemsSource = ViewModel.VehicleList;
 
             #region ///add contacts
@@ -43,8 +43,6 @@ namespace GreenTransport.BookingForms.FirstStep
 
             view.StartDate.Value = DateTime.Today;
             view.EndDate.Value = DateTime.Today.AddDays(1);
-            //GlauxSoft.GreenTransport.Repository.Enums.CarClass
-            //Vehicle v;
            
             //view.VehicleType.FillFromEnum(new EvidenceEnum(   ,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle);
             //view.VehicleClass.FillFromEnum(new EvidenceEnum( ,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small);
@@ -141,14 +139,15 @@ namespace GreenTransport.BookingForms.FirstStep
             //var vType = view.VehicleClass.SelectedItem.ItemId;
             Random cnt = new Random();
             var num = cnt.Next(10);
+            ViewModel.VehicleList.Clear();
             for (int i = 0; i < num; ++i)
             {
                 ViewModel.VehicleList.Add(new VehicleModelObject(
                     new Vehicle()
                     {
                         Brand = RandomProvider.NextCompany(),
-                        QtPassengers = RandomProvider.NextInt(1, 6),
-                        PriceDay = RandomProvider.NextDouble(1, 100)
+                        QtPassengers = RandomProvider.NextInt(2, 6),
+                        PriceDay = RandomProvider.NextDouble(5, 100)
                     }));
             }
             //Random countryCode = new Random(1000);

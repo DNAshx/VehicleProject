@@ -58,18 +58,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookingForms\FirstStep\VehicleModelObject.cs" />
+    <Compile Include="Controllers\BaseControllers.cs" />
     <Compile Include="NovaForms\DefaultDetailFormController.cs" />
     <Compile Include="NovaForms\DefaultDetailFormView.cs" />
     <Compile Include="NovaForms\DefaultDetailFormViewModel.cs" />
     <Compile Include="VehicleAddIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProjectConfig.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookingForms\FirstStep\FirstStepViewController.cs" />
     <Compile Include="BookingForms\FirstStep\FirstStepView.cs" />
     <Compile Include="BookingForms\FirstStep\FirstStepViewModel.cs" />
-    <EmbeddedResource Include="BookingForms\FirstStep\FirstStepView.xml" />
+    <EmbeddedResource Include="BookingForms\FirstStep\FirstStepView.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\demoaddin.svg" />

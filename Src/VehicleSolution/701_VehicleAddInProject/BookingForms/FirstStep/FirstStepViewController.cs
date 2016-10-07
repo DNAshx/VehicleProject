@@ -9,11 +9,12 @@ using Evidence.Nova.Common;
 using GlauxSoft.Common;
 using GlauxSoft.GreenTransport.Repository;
 using GlauxSoft.Business;
+using GreenTransport.Controllers;
 
 namespace GreenTransport.BookingForms.FirstStep
 {
 	[DefaultView(typeof(FirstStepView))]
-    public class FirstStepViewController : ControllerBase<FirstStepViewModel>
+    public class FirstStepViewController : BaseController<FirstStepViewModel>
     {        
         public ActionResult Index()
         {
@@ -47,15 +48,15 @@ namespace GreenTransport.BookingForms.FirstStep
             //view.VehicleType.FillFromEnum(new EvidenceEnum(   ,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle);
             //view.VehicleClass.FillFromEnum(new EvidenceEnum( ,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small);
             
-            using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
-            {
-                if (stream != null)
-                {
-                    byte[] ba = new byte[stream.Length];
-                    stream.Read(ba, 0, ba.Length);
-                    view.Image.ImageContent.SetContent(ba, ".jpg");
-                }
-            }
+            //using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
+            //{
+            //    if (stream != null)
+            //    {
+            //        byte[] ba = new byte[stream.Length];
+            //        stream.Read(ba, 0, ba.Length);
+            //        view.Image.ImageContent.SetContent(ba, ".jpg");
+            //    }
+            //}
 
             
             if (form == null) throw new NovaException("Wrong type " + view.Root.GetType());
@@ -77,18 +78,20 @@ namespace GreenTransport.BookingForms.FirstStep
             return new CloseDialogResult(true, null);
         }
 
+
+
+        #region Wizzard Navigation
+
         public ActionResult FrmWizardNext()
         {
             var form = View.FindElementByName<NovaForm>("frmGreenTransportStartView");
             if (form != null && form.WizardCanGoNext())
             {
                 form.WizardGoNext();
-                ViewModel.CurrentPageNumber++;                
+                ViewModel.CurrentPageNumber++;
             }
             return new DoNothingResult();
         }
-
-        #region Wizzard Navigation
         public ActionResult FrmWizardBack()
         {
             var form = View.FindElementByName<NovaForm>("frmGreenTransportStartView");
@@ -121,14 +124,7 @@ namespace GreenTransport.BookingForms.FirstStep
 
         #endregion
 
-        /// <summary>
-        /// Call the FormSave-function to save the evidence object
-        /// </summary>
-        /// <returns></returns>
-        public ActionResult FormSave()
-        {            
-            return new DoNothingResult();
-        }
+        #region helper
 
         private void InitGrid()
         {
@@ -307,14 +303,24 @@ namespace GreenTransport.BookingForms.FirstStep
             //        }
             //    }
             //}
-        }
+        }           
+        
+        #endregion
 
+        #region events
         public ActionResult SearchEvent()
         {
             InitGrid();
             return new DoNothingResult();
         }
 
-              
+        public ActionResult SelectContact()
+        {
+            var view = GetView<FirstStepView>();
+            view.Contact.ActionAfterSelectedObjectChanged = "SelectContact";
+
+            return new DoNothingResult();
+        }
+        #endregion
     }
 }

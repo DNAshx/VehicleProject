@@ -19,28 +19,9 @@ namespace GreenTransport.BookingForms.FirstStep
         public ActionResult Index()
         {
             var view = GetView<FirstStepView>();
-            var form = view.Root as NovaForm;
-            //view.OrderName = string.Format("Order No. {0}", new Random().Next(1, 100));
-            view.Contact.RefClassId = ((BusinessObject)(new Person())).ClassID;
-            //view.Vehicle.RefClassId = ((BusinessObject)(new Vehicle())).ClassID;
-            view.GridVehicles.ItemsSource = ViewModel.VehicleList;
-
-            #region ///add contacts
-            //Random houseNo = new Random();
-            //Random countryCode = new Random(1000);
-            //Person p = BusinessObject.Create<Person>();
-
-            //p.FirstName = RandomProvider.NextFirstName();
-            //p.Nachname = RandomProvider.NextLastName();
-            //p.CityName = RandomProvider.NextCity();
-            //p.TelefonPrivat = RandomProvider.NextPhoneNumber();
-            //p.Adresse = RandomProvider.NextStreet();
-            //p.CountryCode = countryCode.Next(4000).ToString();
-            //p.Hausnummer = houseNo.Next(1, 40).ToString();
-            //p.Save();
-            //view.Contact.RefClassId = p.ClassID;
-            //view.Contact.IsRequired = true;
-            #endregion
+            var form = view.Root as NovaForm;            
+            view.Contact.RefClassId = ((BusinessObject)(new Person())).ClassID;            
+            view.GridVehicles.ItemsSource = ViewModel.VehicleList;            
 
             view.StartDate.Value = DateTime.Today;
             view.EndDate.Value = DateTime.Today.AddDays(1);
@@ -62,14 +43,7 @@ namespace GreenTransport.BookingForms.FirstStep
             if (form == null) throw new NovaException("Wrong type " + view.Root.GetType());
             form.Title = "Booking process.";
 
-            return new DoNothingResult();//NovaMessageBoxDialog()
-            //{
-            //    Text = "Hello Nova AddIn!",
-            //    Title = "Hello Nova AddIn!",
-            //    Buttons = NovaMessageBoxButtons.Ok,
-            //    DefaultButton = NovaMessageBoxButtonDefault.No,
-            //    Icon = NovaMessageBoxIcon.Info
-            //};
+            return new DoNothingResult();
         }
 
 

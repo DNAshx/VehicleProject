@@ -1,13 +1,13 @@
 using Evidence.Nova.Common;
 
-namespace GreenTransport.BookingForms.FirstStep
+namespace GreenTransport.NovaForms.FirstStep
 {
     public class FirstStepView : NovaViewBase
     {
         //internal string OrderName
         //{
         //    get { return FindElementByName<NovaText>().Text; }
-        //    set { FindElementByName<NovaText>().Text = value; }
+        //    set { FindElementByName<NovaText>().Text = value; } 
         //}		
 
         internal NovaRef Contact
@@ -45,6 +45,16 @@ namespace GreenTransport.BookingForms.FirstStep
         internal NovaGrid GridVehicles
         {
             get { return FindElementByName<NovaGrid>(); }
+        }
+
+        public NovaGrid GridPersons
+        {
+            get { return base.FindElementByName<NovaGrid>("gridPersons"); }
+        }
+
+        public NovaText SearchPersonField
+        {
+            get { return base.FindElementByName<NovaText>(); }
         }
     }
 }

@@ -57,11 +57,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingForms\FirstStep\VehicleModelObject.cs" />
     <Compile Include="Controllers\BaseControllers.cs" />
     <Compile Include="NovaForms\DefaultDetailFormController.cs" />
     <Compile Include="NovaForms\DefaultDetailFormView.cs" />
     <Compile Include="NovaForms\DefaultDetailFormViewModel.cs" />
+    <Compile Include="NovaForms\FirstStep\FirstStepView.cs" />
+    <Compile Include="NovaForms\FirstStep\FirstStepViewController.cs" />
+    <Compile Include="NovaForms\FirstStep\FirstStepViewModel.cs" />
+    <Compile Include="NovaForms\FirstStep\PersonGridViewModel.cs" />
+    <Compile Include="NovaForms\FirstStep\VehicleModelObject.cs" />
+    <Compile Include="NovaForms\Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,11 +82,9 @@
     <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingForms\FirstStep\FirstStepViewController.cs" />
-    <Compile Include="BookingForms\FirstStep\FirstStepView.cs" />
-    <Compile Include="BookingForms\FirstStep\FirstStepViewModel.cs" />
-    <EmbeddedResource Include="BookingForms\FirstStep\FirstStepView.xml">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Include="NovaForms\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -93,10 +100,19 @@
   <ItemGroup>
     <EmbeddedResource Include="NovaForms\DefaultDetailFormView.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NovaForms\FirstStep\FirstStepView.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BookingForms\FirstStep\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\App\EvidenceNova"
-</PostBuildEvent>
+xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\Lib"
+xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\App\evidenceServer"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

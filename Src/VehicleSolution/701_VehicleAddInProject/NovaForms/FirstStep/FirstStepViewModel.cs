@@ -5,31 +5,13 @@ using GreenTransport.ViewModels;
 
 using GlauxSoft.GreenTransport.Repository;
 
-namespace GreenTransport.BookingForms.FirstStep
+namespace GreenTransport.NovaForms.FirstStep
 {
     public sealed class FirstStepViewModel : ViewModelBase
     {
         public FirstStepViewModel()
         {
             VehicleList = new ViewModelList<VehicleModelObject>();
-        }
-        public EvidenceObject EvdObj
-        {
-            get { return (EvidenceObject)base.GetValue(); }
-            set { base.SetValue(value); }
-        }
-        
-
-        public string DialogResponseAction
-        {
-            get { return (string)base.GetValue(); }
-            set { base.SetValue(value); }
-        }
-
-        public bool IsChanged
-        {
-            get { return (bool)base.GetValue(); }
-            set { base.SetValue(value); }
         }
 
         public byte CurrentPageNumber
@@ -50,6 +32,12 @@ namespace GreenTransport.BookingForms.FirstStep
         public int PersonID
         {
             get { return (int)GetValue(); }
+            set { SetValue(value); }
+        }
+
+        public ViewModelList<PersonGridViewModel> PersonList
+        {
+            get { return (ViewModelList<PersonGridViewModel>)GetValue(); }
             set { SetValue(value); }
         }
     }

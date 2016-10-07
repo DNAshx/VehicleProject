@@ -11,17 +11,23 @@ using GlauxSoft.GreenTransport.Repository;
 using GlauxSoft.Business;
 using GreenTransport.Controllers;
 
-namespace GreenTransport.BookingForms.FirstStep
+namespace GreenTransport.NovaForms.FirstStep
 {
 	[DefaultView(typeof(FirstStepView))]
     public class FirstStepViewController : BaseController<FirstStepViewModel>
-    {        
+    {
+        public FirstStepView CurrentView
+        {
+            get { return GetView<FirstStepView>(); }
+        }
+
         public ActionResult Index()
         {
             var view = GetView<FirstStepView>();
             var form = view.Root as NovaForm;            
             view.Contact.RefClassId = ((BusinessObject)(new Person())).ClassID;            
-            view.GridVehicles.ItemsSource = ViewModel.VehicleList;            
+            view.GridVehicles.ItemsSource = ViewModel.VehicleList;
+            CurrentView.GridPersons.ItemsSource = ViewModel.PersonList;
 
             view.StartDate.Value = DateTime.Today;
             view.EndDate.Value = DateTime.Today.AddDays(1);
@@ -66,6 +72,7 @@ namespace GreenTransport.BookingForms.FirstStep
             }
             return new DoNothingResult();
         }
+
         public ActionResult FrmWizardBack()
         {
             var form = View.FindElementByName<NovaForm>("frmGreenTransportStartView");
@@ -277,8 +284,50 @@ namespace GreenTransport.BookingForms.FirstStep
             //        }
             //    }
             //}
-        }           
-        
+        }
+
+        private void InitPersonGrid()
+        {            
+            var filterName = CurrentView.SearchPersonField;
+            var fctext = string.IsNullOrWhiteSpace(filterName.Text) ? string.Empty : filterName.Text.Trim();
+
+            if (ViewModel.PersonList == null)
+            {
+                ViewModel.PersonList = new ViewModelList<PersonGridViewModel>();
+            }
+
+            if (!string.IsNullOrEmpty(fctext))
+            {
+                var allP = GlauxSoft.GreenTransport.Queries.QueryFactory.Person.SearchPerson.GetObjects<Person>(fctext);                
+
+                if (!string.IsNullOrWhiteSpace(fctext))
+                {
+                    for (int i = 0; i < allP.Count; ++i)
+                    {
+                        Person p = allP[i];
+                        var pFirstName = p.FirstName != null ? p.FirstName.Trim().ToLower() : string.Empty;
+                        var pLastName = p.Nachname != null ? p.Nachname.Trim().ToLower() : string.Empty;
+
+                        bool ok1 = pFirstName.StartsWith(fctext.Trim().ToLower());
+                        bool ok2 = pLastName.StartsWith(fctext.Trim().ToLower());
+
+                        if (!ok1 && !ok2)
+                        {
+                            allP.RemoveAt(i);
+                            --i;
+                        }
+                    }
+                }
+                foreach (Person person in allP)
+                {
+                    if (person != null)
+                    {
+                        ViewModel.PersonList.Add(new PersonGridViewModel(person));
+                    }
+                }
+            }                
+        }
+
         #endregion
 
         #region events
@@ -292,6 +341,26 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             var view = GetView<FirstStepView>();
             view.Contact.ActionAfterSelectedObjectChanged = "SelectContact";
+
+            return new DoNothingResult();
+        }
+
+        public ActionResult SearchPersonEvent()
+        {
+            InitPersonGrid();
+            return new DoNothingResult();
+        }
+      
+        public ActionResult CreatePerson()
+        {
+            //NovaForm form = CurrentView.FrmRelationsWizard;
+            //if (form != null)
+            //{
+            //    form.WizardGoNext();
+
+            //    ViewModel.CurrentPageNumber = (byte)Pages.Create;
+            //    UpdateControls();
+            //}
 
             return new DoNothingResult();
         }

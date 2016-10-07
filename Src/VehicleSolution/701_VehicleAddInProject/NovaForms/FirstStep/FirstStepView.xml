@@ -26,29 +26,26 @@
     </NovaGroup>
   </NovaWizardPage>
   
-  <NovaWizardPage Name="pageContact" Layout="w:16">
-    <NovaGroup Name="groupContact" Layout="w:16">
-      
+  <NovaWizardPage Name="pageContact">
+    <NovaGroup Name="groupContact">
       <NovaRef Name="Contact" Label="Contact" ActionAfterSelectedObjectChanged="SelectContact" />      
-      <NovaText Name="SearchField" Label="Search" ActionChanged="SearchEvent" />
-      
-      <NovaGrid Name="gridSearch" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
+      <NovaText Name="SearchPersonField" Label="{Resource Search}" ActionChanged="SearchPersonEvent" />
+      <NovaGrid Name="gridPersons" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
         <Actions>
-          <ActionItem Caption="Searching" IsQuickAccess="true" Action="SearchEvent" />
-          <ActionItem Caption="Fetching" IsQuickAccess="true" Action="FetchObject" />
-          <ActionItem Caption="New" IsQuickAccess="true" Action="CreateObject" />
+          <ActionItem Caption="Searching" IsQuickAccess="true" Action="SearchPersonEvent" />          
+          <ActionItem Caption="New" IsQuickAccess="true" Action="CreatePerson" />
         </Actions>
         <Columns>
           <NovaGridColumn ValueBinding="ToSelect" ColumnType="Checkbox" ColumnWidth="50" />
           <NovaGridColumn ValueBinding="PersonID" IsVisible="false" />
           <NovaGridColumn ValueBinding="CompanyID" IsVisible="false" />
-          <NovaGridColumn ValueBinding="Nachname_Name" Text="FirstName" IsSortable="true" ColumnWidth="200" />
-          <NovaGridColumn ValueBinding="Vorname_Zusatz" Text="VornameZusatz" IsSortable="true" ColumnWidth="150" />
-          <NovaGridColumn ValueBinding="Street" Text="Street" IsSortable="true" ColumnWidth="150" />
-          <NovaGridColumn ValueBinding="HouseNumber" Text="StreetNo" IsSortable="true" ColumnWidth="100" />
-          <NovaGridColumn ValueBinding="PLZ" Text="PLZ" IsSortable="true" ColumnWidth="75" />
-          <NovaGridColumn ValueBinding="Ort" Text="City" IsSortable="true" ColumnWidth="100" />
-          <NovaGridColumn ValueBinding="AddressType" Text="AddressType" IsSortable="true" ColumnWidth="125" />
+          <NovaGridColumn ValueBinding="LastName" Text="{Resource LastName}" IsSortable="true" ColumnWidth="200" />
+          <NovaGridColumn ValueBinding="FirstName" Text="{Resource FirstName}" IsSortable="true" ColumnWidth="150" />
+          <NovaGridColumn ValueBinding="Street" Text="{Resource Street}" IsSortable="true" ColumnWidth="150" />
+          <NovaGridColumn ValueBinding="HouseNumber" Text="{Resource StreetNo}" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="PLZ" Text="{Resource PLZ}" IsSortable="true" ColumnWidth="75" />
+          <NovaGridColumn ValueBinding="City" Text="{Resource City}" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="AddressType" Text="{Resource AddressType}" IsSortable="true" ColumnWidth="125" />
         </Columns>
       </NovaGrid>
     </NovaGroup>

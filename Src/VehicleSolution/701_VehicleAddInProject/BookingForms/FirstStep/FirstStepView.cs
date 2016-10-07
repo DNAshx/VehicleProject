@@ -8,12 +8,7 @@ namespace GreenTransport.BookingForms.FirstStep
         //{
         //    get { return FindElementByName<NovaText>().Text; }
         //    set { FindElementByName<NovaText>().Text = value; }
-        //}
-
-		internal NovaImg Image
-        {
-            get { return FindElementByName<NovaImg>(); }
-        }
+        //}		
 
         internal NovaRef Contact
         {

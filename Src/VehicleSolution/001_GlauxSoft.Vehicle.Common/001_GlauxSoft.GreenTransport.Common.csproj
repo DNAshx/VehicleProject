@@ -53,6 +53,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehicle.cs" />
     <Compile Include="VehicleOrder.cs" />
+    <Compile Include="Queries\QueryFactory.cs" />
+    <Compile Include="Queries\QueryFactory.Vehicle.cs" />
+    <Compile Include="Queries\Vehicle\VehicleGetList.cs" />
+    <Compile Include="Queries\QueryFactory.VehicleOrder.cs" />
+    <Compile Include="Queries\VehicleOrder\VehicleOrderGetByDateRange.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Files\notes.txt" />

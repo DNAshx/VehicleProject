@@ -26,10 +26,29 @@
     </NovaGroup>
   </NovaWizardPage>
   
-  <NovaWizardPage Name="pageContact" Layout="w:30">
-    <NovaGroup Name="groupContact" Layout="w:30">
-      <NovaRef Name="Contact" Label="Contact" />
-      <NovaImg Name="Image" Layout="h:9" />
+  <NovaWizardPage Name="pageContact">
+    <NovaGroup Name="groupContact">
+      <NovaRef Name="Contact" Label="Contact" ActionAfterSelectedObjectChanged="SelectContact" />      
+      <NovaText Name="SearchField" Label="{Resource Search}" ActionChanged="SearchEvent" />
+      <NovaGrid Name="gridSearch" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
+        <Actions>
+          <ActionItem Caption="{Resource Searching}" IsQuickAccess="true" Action="SearchEvent" />
+          <ActionItem Caption="{Resource Fetching}" IsQuickAccess="true" Action="FetchObject" />
+          <ActionItem Caption="{Resource New}" IsQuickAccess="true" Action="CreateObject" />
+        </Actions>
+        <Columns>
+          <NovaGridColumn ValueBinding="ToSelect" ColumnType="Checkbox" ColumnWidth="50" />
+          <NovaGridColumn ValueBinding="PersonID" IsVisible="false" />
+          <NovaGridColumn ValueBinding="CompanyID" IsVisible="false" />
+          <NovaGridColumn ValueBinding="Nachname_Name" Text="{Resource NachnameName}" IsSortable="true" ColumnWidth="200" />
+          <NovaGridColumn ValueBinding="Vorname_Zusatz" Text="{Resource VornameZusatz}" IsSortable="true" ColumnWidth="150" />
+          <NovaGridColumn ValueBinding="Street" Text="{Resource Street}" IsSortable="true" ColumnWidth="150" />
+          <NovaGridColumn ValueBinding="HouseNumber" Text="{Resource StreetNo}" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="PLZ" Text="{Resource PLZ}" IsSortable="true" ColumnWidth="75" />
+          <NovaGridColumn ValueBinding="Ort" Text="{Resource City}" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="AddressType" Text="{Resource AddressType}" IsSortable="true" ColumnWidth="125" />
+        </Columns>
+      </NovaGrid>
     </NovaGroup>
   </NovaWizardPage>
 </NovaForm>

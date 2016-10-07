@@ -17,6 +17,7 @@ namespace GreenTransport.BookingForms.FirstStep
             get { return (EvidenceObject)base.GetValue(); }
             set { base.SetValue(value); }
         }
+        
 
         public string DialogResponseAction
         {
@@ -40,6 +41,12 @@ namespace GreenTransport.BookingForms.FirstStep
         {
             get { return (ViewModelList<VehicleModelObject>)GetValue(); }
             private set { SetValue(value); }
+        }
+
+        public int PersonID
+        {
+            get { return (int)GetValue(); }
+            set { SetValue(value); }
         }
     }
 }

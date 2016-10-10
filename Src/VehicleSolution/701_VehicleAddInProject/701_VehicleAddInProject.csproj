@@ -72,20 +72,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingForms\FirstStep\FirstStepView.cs" />
-    <Compile Include="BookingForms\FirstStep\FirstStepViewController.cs" />
-    <Compile Include="BookingForms\FirstStep\FirstStepViewModel.cs" />
-    <Compile Include="BookingForms\FirstStep\PersonGridViewModel.cs" />
-    <Compile Include="BookingForms\FirstStep\VehicleModelObject.cs" />
+    <Compile Include="NovaForms\RentWizzard\FirstStepView.cs" />
+    <Compile Include="NovaForms\RentWizzard\FirstStepViewController.cs" />
+    <Compile Include="NovaForms\RentWizzard\FirstStepViewModel.cs" />
+    <Compile Include="NovaForms\RentWizzard\PersonGridViewModel.cs" />
+    <Compile Include="NovaForms\RentWizzard\VehicleModelObject.cs" />
     <Compile Include="Controllers\BaseControllers.cs" />
     <Compile Include="NovaForms\DefaultDetailFormController.cs" />
     <Compile Include="NovaForms\DefaultDetailFormView.cs" />
     <Compile Include="NovaForms\DefaultDetailFormViewModel.cs" />
-    <Compile Include="NovaForms\FirstStep\FirstStepView.cs" />
-    <Compile Include="NovaForms\FirstStep\FirstStepViewController.cs" />
-    <Compile Include="NovaForms\FirstStep\FirstStepViewModel.cs" />
-    <Compile Include="NovaForms\FirstStep\PersonGridViewModel.cs" />
-    <Compile Include="NovaForms\FirstStep\VehicleModelObject.cs" />
     <Compile Include="NovaForms\Strings.Designer.cs">
       <DependentUpon>Strings.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -127,11 +122,8 @@
     <EmbeddedResource Include="NovaForms\DefaultDetailFormView.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="NovaForms\FirstStep\FirstStepView.xml">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <Folder Include="BookingForms\FirstStep\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="NovaForms\Strings.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -140,7 +132,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BookingForms\FirstStep\FirstStepView.xml">
+    <EmbeddedResource Include="NovaForms\RentWizzard\FirstStepView.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

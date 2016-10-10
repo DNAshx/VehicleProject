@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreenTransport.BookingForms.FirstStep
+namespace GreenTransport.NovaForms.RentWizzard
 {
     public sealed class PersonGridViewModel : ViewModelObject
     {

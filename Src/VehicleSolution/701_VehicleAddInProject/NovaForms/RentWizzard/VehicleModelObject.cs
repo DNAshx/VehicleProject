@@ -2,7 +2,7 @@
 using Evidence.Nova.Common;
 using GlauxSoft.GreenTransport.Repository;
 
-namespace GreenTransport.NovaForms.FirstStep
+namespace GreenTransport.NovaForms.RentWizzard
 {
     public sealed class VehicleModelObject : Evidence.Nova.Common.ViewModelObject
     {

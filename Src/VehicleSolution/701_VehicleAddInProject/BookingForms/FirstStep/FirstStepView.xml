@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NovaForm Name="frmGreenTransportStartView" Title="FirstStepView" DialogBehavior="OkAndCancel" FormType="Wizard" xmlns="http://www.evidence.ch/nova/forms" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.evidence.ch/nova/forms http://rnd.glauxsoft.ch/nova/2.0.25.0/NovaForm.xsd">
+  
+  
+  <NovaWizardPage Name="pageVehicle" Layout="w:16">
+    <NovaGroup Name="groupVehicle" Layout="w:16">
+      <NovaDateTime Name="StartDate" Label="From:" DateMode="DateTime" ActionChanged="SearchEvent"/>
+      <NovaDateTime Name="EndDate" Label="To:" DateMode="DateTime" ActionChanged="SearchEvent"/>
+      <NovaCombo Name="VehicleType" Label="Vehicle Class:" />
+      <NovaCombo Name="VehicleClass" Label="Vehicle Type:" />
+
+      <!--<NovaRef Name="Vehicle" Label="Choose Vehicle" />-->    
+      <NovaGrid Name="GridVehicles" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
+        <Actions>
+          <ActionItem Caption="A1" IsQuickAccess="true" Action="SearchEvent" />
+          <ActionItem Caption="A2" IsQuickAccess="true" Action="SearchEvent" />
+          <ActionItem Caption="A3" IsQuickAccess="true" Action="SearchEvent" />
+        </Actions>
+        <Columns>
+          <NovaGridColumn ValueBinding="Brand" IsSortable="true" ColumnWidth="100" Text="Brand" ContentAlignment ="Left" />
+          <NovaGridColumn ValueBinding="QtPassengers"  IsSortable="true" ColumnWidth="60" Text="Qty Passengers" ContentAlignment ="Center"/>
+          <NovaGridColumn ValueBinding="PriceDay"  IsSortable="true" ColumnWidth="60" Text="Price/day" ContentAlignment ="Right" OutputFormat="C2"/>
+        </Columns>
+      </NovaGrid>
+    </NovaGroup>
+  </NovaWizardPage>
+  
+  <NovaWizardPage Name="pageContact">
+    <NovaGroup Name="groupContact">
+      <NovaRef Name="Contact" Label="Contact" ActionAfterSelectedObjectChanged="SelectContact" />      
+      <NovaText Name="SearchPersonField" Label="{Resource Search}" ActionChanged="SearchPersonEvent" />
+      <NovaGrid Name="gridPersons" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
+        <Actions>
+          <ActionItem Caption="Searching" IsQuickAccess="true" Action="SearchPersonEvent" />          
+          <ActionItem Caption="New" IsQuickAccess="true" Action="CreatePerson" />
+        </Actions>
+        <Columns>
+          <NovaGridColumn ValueBinding="ToSelect" ColumnType="Checkbox" ColumnWidth="50" />
+          <NovaGridColumn ValueBinding="PersonID" IsVisible="false" />
+          <NovaGridColumn ValueBinding="CompanyID" IsVisible="false" />
+          <NovaGridColumn ValueBinding="LastName" Text="{Resource LastName}" IsSortable="true" ColumnWidth="200" />
+          <NovaGridColumn ValueBinding="FirstName" Text="{Resource FirstName}" IsSortable="true" ColumnWidth="150" />
+          <NovaGridColumn ValueBinding="Street" Text="{Resource Street}" IsSortable="true" ColumnWidth="150" />
+          <NovaGridColumn ValueBinding="HouseNumber" Text="{Resource StreetNo}" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="PLZ" Text="{Resource PLZ}" IsSortable="true" ColumnWidth="75" />
+          <NovaGridColumn ValueBinding="City" Text="{Resource City}" IsSortable="true" ColumnWidth="100" />
+          <NovaGridColumn ValueBinding="AddressType" Text="{Resource AddressType}" IsSortable="true" ColumnWidth="125" />
+        </Columns>
+      </NovaGrid>
+    </NovaGroup>
+  </NovaWizardPage>
+</NovaForm>

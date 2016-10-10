@@ -57,6 +57,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingForms\FirstStep\FirstStepView.cs" />
+    <Compile Include="BookingForms\FirstStep\FirstStepViewController.cs" />
+    <Compile Include="BookingForms\FirstStep\FirstStepViewModel.cs" />
+    <Compile Include="BookingForms\FirstStep\PersonGridViewModel.cs" />
+    <Compile Include="BookingForms\FirstStep\VehicleModelObject.cs" />
     <Compile Include="Controllers\BaseControllers.cs" />
     <Compile Include="NovaForms\DefaultDetailFormController.cs" />
     <Compile Include="NovaForms\DefaultDetailFormView.cs" />
@@ -71,6 +76,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="NovaForms\Strings.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,6 +92,7 @@
     <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="NovaForms\Strings.de-DE.resx" />
     <EmbeddedResource Include="NovaForms\Strings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
@@ -105,8 +116,18 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="BookingForms\FirstStep\" />
+    <EmbeddedResource Include="NovaForms\Strings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BookingForms\FirstStep\FirstStepView.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -5,7 +5,7 @@ using GreenTransport.ViewModels;
 
 using GlauxSoft.GreenTransport.Repository;
 
-namespace GreenTransport.NovaForms.FirstStep
+namespace GreenTransport.BookingForms.FirstStep
 {
     public sealed class FirstStepViewModel : ViewModelBase
     {

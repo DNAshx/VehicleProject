@@ -78,9 +78,9 @@
     <Compile Include="NovaForms\RentWizzard\PersonGridViewModel.cs" />
     <Compile Include="NovaForms\RentWizzard\VehicleModelObject.cs" />
     <Compile Include="Controllers\BaseControllers.cs" />
-    <Compile Include="NovaForms\DefaultDetailFormController.cs" />
-    <Compile Include="NovaForms\DefaultDetailFormView.cs" />
-    <Compile Include="NovaForms\DefaultDetailFormViewModel.cs" />
+    <Compile Include="NovaForms\DefaultDetailForm\DefaultDetailFormController.cs" />
+    <Compile Include="NovaForms\DefaultDetailForm\DefaultDetailFormView.cs" />
+    <Compile Include="NovaForms\DefaultDetailForm\DefaultDetailFormViewModel.cs" />
     <Compile Include="NovaForms\Strings.Designer.cs">
       <DependentUpon>Strings.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -119,11 +119,9 @@
     <EmbeddedResource Include="Images\owls.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="NovaForms\DefaultDetailFormView.xml" />
+    <EmbeddedResource Include="NovaForms\DefaultDetailForm\DefaultDetailFormView.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BookingForms\FirstStep\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="NovaForms\Strings.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

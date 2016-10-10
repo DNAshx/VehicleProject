@@ -1,4 +1,4 @@
-using GreenTransport.NovaForms;
+using GreenTransport.NovaForms.DefaultDetailForm;
 
 namespace GreenTransport
 {

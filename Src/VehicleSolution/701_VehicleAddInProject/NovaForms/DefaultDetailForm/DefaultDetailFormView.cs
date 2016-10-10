@@ -1,6 +1,6 @@
 using Evidence.Nova.Common;
 
-namespace GreenTransport.NovaForms
+namespace GreenTransport.NovaForms.DefaultDetailForm
 {
 
 

@@ -2,7 +2,7 @@ using Evidence.Business;
 using Evidence.Nova.Common;
 using Evidence.Services;
 
-namespace GreenTransport.NovaForms
+namespace GreenTransport.NovaForms.DefaultDetailForm
 {
     [DefaultView(typeof(DefaultDetailFormView))]
     public class DefaultDetailFormController : ControllerBase<DefaultDetailFormViewModel>

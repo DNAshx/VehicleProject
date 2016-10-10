@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 
@@ -10,6 +11,8 @@ using GlauxSoft.Common;
 using GlauxSoft.GreenTransport.Repository;
 using GlauxSoft.Business;
 using GreenTransport.Controllers;
+
+using myConst = GlauxSoft.GreenTransport.Repository.Constants;
 
 namespace GreenTransport.BookingForms.FirstStep
 {
@@ -31,7 +34,13 @@ namespace GreenTransport.BookingForms.FirstStep
 
             view.StartDate.Value = DateTime.Today;
             view.EndDate.Value = DateTime.Today.AddDays(1);
-           
+
+            var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarType.Electric, GlauxSoft.GreenTransport.Repository.Enums.CarType.Diesel, GlauxSoft.GreenTransport.Repository.Enums.CarType.Hybrid, GlauxSoft.GreenTransport.Repository.Enums.CarType.Petrol });
+            var listClasses = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Medium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Large, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Estate, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Premium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Carriers, GlauxSoft.GreenTransport.Repository.Enums.CarClass.SUV });
+
+            InitCombobox(view.VehicleType, listTypes);
+            InitCombobox(view.VehicleClass, listClasses);
+
             //view.VehicleType.FillFromEnum(new EvidenceEnum(   ,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle);
             //view.VehicleClass.FillFromEnum(new EvidenceEnum( ,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small);
             
@@ -107,6 +116,35 @@ namespace GreenTransport.BookingForms.FirstStep
 
         #region helper
 
+        private void ComposeData()
+        {
+            var tmp = 1;
+            if (tmp == 1)
+            {
+                var cnt = 10;
+                for (var i = 0; i < cnt; ++i)
+                {
+                    var vehicle = BusinessObject.Create<Vehicle>();
+                    vehicle.Brand = RandomProvider.NextCompany();
+                    vehicle.CO2 = "0.2";
+                    vehicle.Description = RandomProvider.NextFirstName();
+                    vehicle.Efficiency = RandomProvider.NextSalutation();
+                    vehicle.Engine = "2990";
+                    vehicle.Feature = "Power";
+                    vehicle.Fuel = "Diesel";
+                    vehicle.Location = RandomProvider.NextCity();
+                    vehicle.Maintenance = string.Empty;
+                    vehicle.PriceDay = (double)RandomProvider.NextDecimal(10, 20);
+                    vehicle.ProdDate = DateTime.Now.AddYears(-RandomProvider.NextInt(1, 5));
+                    vehicle.QtPassengers = 4;
+                    vehicle.ServiceHours = 4;
+                    //vehicle.Type = myConst.Enums.CarType.VALUE_DIESEL;
+                    //vehicle.Class = myConst.Enums.CarClass.VALUE_SMALL;
+                    vehicle.Save();
+                }
+            }
+        }
+       
         private void InitGrid()
         {
             var view = GetView<FirstStepView>();
@@ -117,15 +155,22 @@ namespace GreenTransport.BookingForms.FirstStep
             Random cnt = new Random();
             var num = cnt.Next(10);
             ViewModel.VehicleList.Clear();
-            for (int i = 0; i < num; ++i)
+
+            var orders = GlauxSoft.GreenTransport.Queries.QueryFactory.VehicleOrder.VehicleOrderGetByDateRange.GetObjects<VehicleOrder>(dateFr, dateTo);
+            var vehicles = GlauxSoft.GreenTransport.Queries.QueryFactory.Vehicle.VehicleGetList.GetObjects<Vehicle>();
+            foreach (var data in vehicles)
             {
+                var order = orders.FirstOrDefault( p => p.RefVehicle == data.ObjectID);
+                if(order == null)
+                {
                 ViewModel.VehicleList.Add(new VehicleModelObject(
                     new Vehicle()
                     {
-                        Brand = RandomProvider.NextCompany(),
-                        QtPassengers = RandomProvider.NextInt(2, 6),
-                        PriceDay = RandomProvider.NextDouble(5, 100)
+                        Brand = data.Brand,
+                        QtPassengers = data.QtPassengers,
+                        PriceDay = data.PriceDay
                     }));
+                }
             }
             //Random countryCode = new Random(1000);
             //Person p = BusinessObject.Create<Person>();

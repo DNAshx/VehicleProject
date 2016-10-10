@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Vehicles>
+  <Vehicle>
+    <Brand>Audi</Brand>
+    <Class>Small</Class>
+    <CO2>1.2</CO2>
+    <Description>Audi A1</Description>
+    <Efficiency>11</Efficiency>
+    <Engine>1200</Engine>
+    <Feature>4Wheels,Engine,</Feature>
+    <Fuel>038</Fuel>
+    <Location>Ukraine</Location>
+    <Maintenance>A</Maintenance>
+    <PriceDay>20.5</PriceDay>
+    <ProdDate>10/10/2010</ProdDate>
+    <QtPassengers>4</QtPassengers>
+    <ServiceHours>4</ServiceHours>
+    <Type>Car</Type>
+    <Value>2</Value>
+  </Vehicle>
+  <Vehicle>
+    <Brand>BMW</Brand>
+    <Class>Small</Class>
+    <CO2>1.2</CO2>
+    <Description>BMW x1</Description>
+    <Efficiency>21</Efficiency>
+    <Engine>1800</Engine>
+    <Feature>4Wheels,Engine,</Feature>
+    <Fuel>095</Fuel>
+    <Location>Ukraine</Location>
+    <Maintenance>A</Maintenance>
+    <PriceDay>20.5</PriceDay>
+    <ProdDate>10/10/2010</ProdDate>
+    <QtPassengers>4</QtPassengers>
+    <ServiceHours>4</ServiceHours>
+    <Type>Car</Type>
+    <Value>2</Value>
+  </Vehicle>
+</Vehicles>

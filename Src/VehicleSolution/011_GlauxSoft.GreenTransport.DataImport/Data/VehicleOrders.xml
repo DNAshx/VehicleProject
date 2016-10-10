@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VehicleOrders>
+  <VehicicleOrder>
+    <DateFr>10/10/2016</DateFr>
+    <DateTo>20/10/2016</DateTo>
+    <Status>Opened</Status>
+    <Type>Service</Type>
+    <Amount>22.11</Amount>
+  </VehicicleOrder>
+</VehicleOrders>
+  

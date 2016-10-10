@@ -100,6 +100,7 @@ namespace GlauxSoft.GreenTransport.Queries
             query1.Bracket(0, 0);
             query1.Bracket(1, 1);
             query1.Bracket(2, 2);
+            query1.Bracket(3, 3);
 
             ComplexQuery query0 = ComplexQuery.Create(query1);
             query0.Advanced = true;

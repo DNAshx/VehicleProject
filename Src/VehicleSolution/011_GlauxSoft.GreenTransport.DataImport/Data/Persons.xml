@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Persons>
+  <Person>
+    <FirstName>John</FirstName>
+    <Nachname>Smith</Nachname>
+    <AddressingForm>Kiev</AddressingForm>
+    <Adresse>Pobeda Ave</Adresse>
+    <CityCode>04108</CityCode>
+    <CityName>Kiev</CityName>
+    <CityState>Kievskaya</CityState>
+    <CountryCode>038</CountryCode>
+    <CountryName>Ukraine</CountryName>
+    <EmailPrivat>fef@ukr.net</EmailPrivat>
+  </Person>
+  <Person>
+    <FirstName>Ivan</FirstName>
+    <Nachname>Dulin</Nachname>
+    <AddressingForm>Kiev</AddressingForm>
+    <Adresse>Messel Strasse</Adresse>
+    <CityCode>04108</CityCode>
+    <CityName>Kiev</CityName>
+    <CityState>Kievskaya</CityState>
+    <CountryCode>021</CountryCode>
+    <CountryName>Ukraine</CountryName>
+    <EmailPrivat>bubua@gs.com</EmailPrivat>
+  </Person>
+</Persons>

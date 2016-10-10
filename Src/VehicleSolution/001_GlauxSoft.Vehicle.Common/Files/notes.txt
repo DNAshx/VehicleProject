@@ -69,3 +69,8 @@ ALEX - VehicleOrder ( schedule-Id, veh-id, person-id, company-id, schedule-Id, s
 
  Questions
   - 
+
+   Additional Vehicle Service Options
+    - Common Service List
+	- Separate Service List per each Car Type 
+	- Separate Service List per each Car Class

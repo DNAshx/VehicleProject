@@ -34,8 +34,23 @@
     <Reference Include="Evidence.Nova.Common">
       <HintPath>..\..\..\Lib\Evidence.Nova.Common.dll</HintPath>
     </Reference>
+    <Reference Include="EvidenceXP">
+      <HintPath>..\..\..\Lib\EvidenceXP.dll</HintPath>
+    </Reference>
     <Reference Include="EvidenceXPCommon">
       <HintPath>..\..\..\Lib\EvidenceXPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPExtensibility, Version=4.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\EvidenceXPExtensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPForms, Version=4.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\EvidenceXPForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPServerExtensibility, Version=4.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Lib\EvidenceXPServerExtensibility.dll</HintPath>
     </Reference>
     <Reference Include="GlauxSoft, Version=1.33.2061.717, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

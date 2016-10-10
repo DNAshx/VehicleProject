@@ -5,8 +5,6 @@ using System.Text;
 using Evidence.Business;
 using Evidence.Services;
 using GlauxSoft.Business;
-using GlauxSoft;
-using GlauxSoft.Business.EvidenceFactory;
 using System.Collections;
 using myConst = GlauxSoft.GreenTransport.Repository.Constants;
 
@@ -147,7 +145,7 @@ namespace GlauxSoft.GreenTransport.Queries
         {
             List<ParameterValue> parameters = new List<ParameterValue>();
 
-            return (BusinessObjectQueryable<BusinessObject>)(AsQueryable<BusinessObject>(parameters.ToArray()));
+            return (BusinessObjectQueryable<BusinessObject>)AsQueryable<BusinessObject>(parameters.ToArray());
         }
 
         #endregion // Methods

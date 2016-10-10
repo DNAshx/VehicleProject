@@ -26,7 +26,7 @@ namespace GreenTransport.NovaForms.RentWizzard
             this.ToSelect = false;
             this.PersonID = int.Parse(p.ObjectID.ToString());
             this.CompanyID = int.Parse(p.Ref_Company.ToString());
-            this.LastName = p.Nachname;
+            this.LastName = p.Nachname.ToString();
             this.FirstName = p.FirstName;
             this.Street = p.Adresse;
             this.HouseNumber = p.Hausnummer;

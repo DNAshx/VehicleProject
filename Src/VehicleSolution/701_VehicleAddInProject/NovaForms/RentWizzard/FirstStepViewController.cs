@@ -12,6 +12,8 @@ using GlauxSoft.GreenTransport.Repository;
 using GlauxSoft.Business;
 using GreenTransport.Controllers;
 
+using eDocGenDocumentCreator;
+
 using myConst = GlauxSoft.GreenTransport.Repository.Constants;
 
 namespace GreenTransport.NovaForms.RentWizzard
@@ -26,24 +28,23 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult Index()
         {
-            var view = GetView<FirstStepView>();
-            var form = view.Root as NovaForm;            
-            view.Contact.RefClassId = ((BusinessObject)(new Person())).ClassID;            
-            view.GridVehicles.ItemsSource = ViewModel.VehicleList;
+            CurrentView.Contact.RefClassId = (new Person()).ClassID;
+            CurrentView.Order.RefClassId = (new VehicleOrder()).ClassID;
+            CurrentView.GridVehicles.ItemsSource = ViewModel.VehicleList;
             CurrentView.GridPersons.ItemsSource = ViewModel.PersonList;
 
-            view.StartDate.Value = DateTime.Today;
-            view.EndDate.Value = DateTime.Today.AddDays(1);
+            CurrentView.StartDate.Value = DateTime.Today;
+            CurrentView.EndDate.Value = DateTime.Today.AddDays(1);
 
             var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarType.Electric, GlauxSoft.GreenTransport.Repository.Enums.CarType.Diesel, GlauxSoft.GreenTransport.Repository.Enums.CarType.Hybrid, GlauxSoft.GreenTransport.Repository.Enums.CarType.Petrol });
             var listClasses = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Medium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Large, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Estate, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Premium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Carriers, GlauxSoft.GreenTransport.Repository.Enums.CarClass.SUV });
 
-            InitCombobox(view.VehicleType, listTypes);
-            InitCombobox(view.VehicleClass, listClasses);
+            InitCombobox(CurrentView.VehicleType, listTypes);
+            InitCombobox(CurrentView.VehicleClass, listClasses);
 
             //view.VehicleType.FillFromEnum(new EvidenceEnum(   ,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle);
             //view.VehicleClass.FillFromEnum(new EvidenceEnum( ,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small);
-            
+
             //using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
             //{
             //    if (stream != null)
@@ -54,8 +55,8 @@ namespace GreenTransport.NovaForms.RentWizzard
             //    }
             //}
 
-            
-            if (form == null) throw new NovaException("Wrong type " + view.Root.GetType());
+            var form = CurrentView.Root as NovaForm;
+            if (form == null) throw new NovaException("Wrong type " + form.GetType());
             form.Title = "Booking process.";
 
             return new DoNothingResult();
@@ -79,8 +80,12 @@ namespace GreenTransport.NovaForms.RentWizzard
                 form.WizardGoNext();
                 ViewModel.CurrentPageNumber++;
             }
+            if (ViewModel.CurrentStep == FirstStepViewModel.WizzardSteps.Order)
+            {
+                CreateOrder();                
+            }
             return new DoNothingResult();
-        }
+        }        
 
         public ActionResult FrmWizardBack()
         {
@@ -100,8 +105,9 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult FrmWizardFinish()
         {
-            //var order = BusinessObject.Create<VehicleOrder>();
-            //order.Amount = 
+            SaveOrder();
+            PrintEForm();            
+            
             return new NovaMessageBoxDialog()
                 {
                     Text = "Bucking order created successeful!",
@@ -110,7 +116,7 @@ namespace GreenTransport.NovaForms.RentWizzard
                     DefaultButton = NovaMessageBoxButtonDefault.No,
                     Icon = NovaMessageBoxIcon.Info
                 };
-        }
+        }       
 
         #endregion
 
@@ -147,230 +153,102 @@ namespace GreenTransport.NovaForms.RentWizzard
        
         private void InitGrid()
         {
-            var view = GetView<FirstStepView>();
-            var form = view.Root as NovaForm;
-            var dateFr = view.StartDate.Value.GetValueOrDefault();
-            var dateTo = view.EndDate.Value.GetValueOrDefault();
-            //var vType = view.VehicleClass.SelectedItem.ItemId;
-            Random cnt = new Random();
-            var num = cnt.Next(10);
-            ViewModel.VehicleList.Clear();
-
-            var orders = GlauxSoft.GreenTransport.Queries.QueryFactory.VehicleOrder.VehicleOrderGetByDateRange.GetObjects<VehicleOrder>(dateFr, dateTo);
-            var vehicles = GlauxSoft.GreenTransport.Queries.QueryFactory.Vehicle.VehicleGetList.GetObjects<Vehicle>();
-            foreach (var data in vehicles)
+            if (ViewModel.CurrentStep == FirstStepViewModel.WizzardSteps.Vehicle)
             {
-                var order = orders.FirstOrDefault( p => p.RefVehicle == data.ObjectID);
-                if(order == null)
+                var dateFr = CurrentView.StartDate.Value.GetValueOrDefault();
+                var dateTo = CurrentView.EndDate.Value.GetValueOrDefault();
+                //var vType = CurrentView.VehicleClass.SelectedItem.ItemId;
+                Random cnt = new Random();
+                var num = cnt.Next(10);
+                ViewModel.VehicleList.Clear();
+
+                var orders = GlauxSoft.GreenTransport.Queries.QueryFactory.VehicleOrder.VehicleOrderGetByDateRange.GetObjects<VehicleOrder>(dateFr, dateTo);
+                var vehicles = GlauxSoft.GreenTransport.Queries.QueryFactory.Vehicle.VehicleGetList.GetObjects<Vehicle>();
+                foreach (var data in vehicles)
                 {
-                ViewModel.VehicleList.Add(new VehicleModelObject(
-                    new Vehicle()
+                    var order = orders.FirstOrDefault(p => p.RefVehicle == data.ObjectID);
+                    if (order == null)
                     {
-                        Brand = data.Brand,
-                        QtPassengers = data.QtPassengers,
-                        PriceDay = data.PriceDay
-                    }));
+                        ViewModel.VehicleList.Add(new VehicleModelObject(
+                            new Vehicle()
+                            {
+                                Brand = data.Brand,
+                                QtPassengers = data.QtPassengers,
+                                PriceDay = data.PriceDay
+                            }));
+                    }
                 }
             }
-            //Random countryCode = new Random(1000);
-            //Person p = BusinessObject.Create<Person>();
-
-            //p.FirstName = RandomProvider.NextFirstName();
-            
-            //var filterName = View.SearchField;
-            //var fctext = string.IsNullOrWhiteSpace(filterName.Text) ? string.Empty : filterName.Text.Trim();
-
-            //if (ViewModel.IsToPerson)
-            //{
-            //    var allP = Common.Queries.QueryFactory.Person.GetAllPersons.GetObjects<VehicleOrder>();
-            //    if (allP == null)
-            //    {
-            //        ViewModel.RelationList.Clear();
-            //        return;
-            //    }
-
-            //    if (!string.IsNullOrWhiteSpace(fctext))
-            //    {
-            //        for (int i = 0; i < allP.Count; ++i)
-            //        {
-            //            Person p = allP[i];
-            //            var pFirstName = p.NameFirst != null ? p.NameFirst.Trim().ToLower() : string.Empty;
-            //            var pLastName = p.NameLast != null ? p.NameLast.Trim().ToLower() : string.Empty;
-
-            //            bool ok1 = pFirstName.StartsWith(fctext.Trim().ToLower());
-            //            bool ok2 = pLastName.StartsWith(fctext.Trim().ToLower());
-
-            //            if (!ok1 && !ok2)
-            //            {
-            //                allP.RemoveAt(i);
-            //                --i;
-            //            }
-            //        }
-            //    }
-
-            //    if (!string.IsNullOrWhiteSpace(ViewModel.ExcludePersonID))
-            //    {
-            //        var excludeIDs = ViewModel.ExcludePersonID.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-            //        foreach (string rid in excludeIDs)
-            //        {
-            //            int excID;
-            //            int.TryParse(rid, out excID);
-            //            if (excID <= 0)
-            //                continue;
-
-            //            var excP = allP.FirstOrDefault(x => x.ObjectID.GetValue() == excID);
-            //            if (excP != null)
-            //                allP.Remove(excP);
-            //        }
-            //    }
-
-            //    foreach (Person person in allP)
-            //    {
-            //        if (person != null)
-            //        {
-            //            var nachname = person.NameLast;
-            //            var vorname = person.NameFirst;
-            //            var mainAddress = !person.RefMainAddress.IsNull()
-            //                ? CoreBusinessObject.GetObjects<Address>(new List<EvdObjectId> { person.RefMainAddress }).FirstOrDefault()
-            //                : null;
-            //            var street = mainAddress != null ? mainAddress.Street : string.Empty;
-            //            var houseNumber = mainAddress != null ? mainAddress.StreetNo : string.Empty;
-            //            var plz = mainAddress != null ? mainAddress.CityZIPCode : string.Empty;
-            //            var ort = mainAddress != null ? mainAddress.City : string.Empty;
-            //            var addressType = mainAddress != null ? mainAddress.AddressType : null;
-
-            //            ViewModel.RelationList.Add(new RelationGridViewModel(0,
-            //                    person.ObjectID.GetValue(),
-            //                    0,
-            //                    string.Empty,
-            //                    nachname,
-            //                    vorname,
-            //                    street,
-            //                    houseNumber,
-            //                    plz,
-            //                    ort,
-            //                    string.Empty,
-            //                    addressType));
-            //        }
-            //    }
-            //}
-
-            //if (ViewModel.IsToCompany)
-            //{
-            //    var allP = Common.Queries.QueryFactory.Company.GetAllCompanies.GetObjects<Company>();
-            //    if (allP == null)
-            //    {
-            //        ViewModel.RelationList.Clear();
-            //        return;
-            //    }
-
-            //    if (!string.IsNullOrWhiteSpace(fctext))
-            //    {
-            //        for (int i = 0; i < allP.Count; ++i)
-            //        {
-            //            Company p = allP[i];
-            //            var pName = p.Name != null ? p.Name.Trim().ToLower() : string.Empty;
-            //            var pName2 = p.Name2 != null ? p.Name2.Trim().ToLower() : string.Empty;
-
-            //            bool ok1 = pName.StartsWith(fctext.Trim().ToLower());
-            //            bool ok2 = pName2.StartsWith(fctext.Trim().ToLower());
-
-            //            if (!ok1 && !ok2)
-            //            {
-            //                allP.RemoveAt(i);
-            //                --i;
-            //            }
-            //        }
-            //    }
-
-            //    if (!string.IsNullOrWhiteSpace(ViewModel.ExcludeCompanyID))
-            //    {
-            //        var excludeIDs = ViewModel.ExcludeCompanyID.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-            //        foreach (string rid in excludeIDs)
-            //        {
-            //            int excID;
-            //            int.TryParse(rid, out excID);
-            //            if (excID <= 0)
-            //                continue;
-
-            //            var excP = allP.FirstOrDefault(x => x.ObjectID.GetValue() == excID);
-            //            if (excP != null)
-            //                allP.Remove(excP);
-            //        }
-            //    }
-
-            //    foreach (Company company in allP)
-            //    {
-            //        if (company != null)
-            //        {
-            //            var name = company.Name;
-            //            var nameZusatz = company.Name2;
-            //            var mainAddress = !company.RefMainAddress.IsNull()
-            //                ? CoreBusinessObject.GetObjects<Address>(new List<EvdObjectId> { company.RefMainAddress }).FirstOrDefault()
-            //                : null;
-            //            var street = mainAddress != null ? mainAddress.Street : string.Empty;
-            //            var houseNumber = mainAddress != null ? mainAddress.StreetNo : string.Empty;
-            //            var plz = mainAddress != null ? mainAddress.CityZIPCode : string.Empty;
-            //            var ort = mainAddress != null ? mainAddress.City : string.Empty;
-            //            var addressType = mainAddress != null ? mainAddress.AddressType : null;
-
-            //            ViewModel.RelationList.Add(new RelationGridViewModel(0,
-            //                    0,
-            //                    company.ObjectID.GetValue(),
-            //                    string.Empty,
-            //                    name,
-            //                    nameZusatz,
-            //                    street,
-            //                    houseNumber,
-            //                    plz,
-            //                    ort,
-            //                    string.Empty,
-            //                    addressType));
-            //        }
-            //    }
-            //}
-        }
-
-        private void InitPersonGrid()
-        {            
-            var filterName = CurrentView.SearchPersonField;
-            var fctext = string.IsNullOrWhiteSpace(filterName.Text) ? string.Empty : filterName.Text.Trim();
-
-            if (ViewModel.PersonList == null)
+            else if (ViewModel.CurrentStep == FirstStepViewModel.WizzardSteps.Person)
             {
-                ViewModel.PersonList = new ViewModelList<PersonGridViewModel>();
-            }
+                var filterName = CurrentView.SearchPersonField;
+                var fctext = string.IsNullOrWhiteSpace(filterName.Text) ? string.Empty : filterName.Text.Trim();
 
-            if (!string.IsNullOrEmpty(fctext))
-            {
-                var allP = GlauxSoft.GreenTransport.Queries.QueryFactory.Person.SearchPerson.GetObjects<Person>(fctext);                
-
-                if (!string.IsNullOrWhiteSpace(fctext))
+                if (ViewModel.PersonList == null)
                 {
-                    for (int i = 0; i < allP.Count; ++i)
+                    ViewModel.PersonList = new ViewModelList<PersonGridViewModel>();
+                }
+
+                if (!string.IsNullOrEmpty(fctext))
+                {
+                    var allP = GlauxSoft.GreenTransport.Queries.QueryFactory.Person.SearchPerson.GetObjects<Person>(fctext);
+
+                    if (!string.IsNullOrWhiteSpace(fctext))
                     {
-                        Person p = allP[i];
-                        var pFirstName = p.FirstName != null ? p.FirstName.Trim().ToLower() : string.Empty;
-                        var pLastName = p.Nachname != null ? p.Nachname.Trim().ToLower() : string.Empty;
+                        //for (int i = 0; i < allP.Count; ++i)
+                        //{
+                        //    Person p = allP[i];
+                        //    var pFirstName = p.FirstName != null ? p.FirstName.Trim().ToLower() : string.Empty;
+                        //    var pLastName = p.Nachname != null ? p.Nachname.Trim().ToLower() : string.Empty;
 
-                        bool ok1 = pFirstName.StartsWith(fctext.Trim().ToLower());
-                        bool ok2 = pLastName.StartsWith(fctext.Trim().ToLower());
+                        //    bool ok1 = pFirstName.StartsWith(fctext.Trim().ToLower());
+                        //    bool ok2 = pLastName.StartsWith(fctext.Trim().ToLower());
 
-                        if (!ok1 && !ok2)
+                        //    if (!ok1 && !ok2)
+                        //    {
+                        //        allP.RemoveAt(i);
+                        //        --i;
+                        //    }
+                        //}
+                    }
+                    foreach (Person person in allP)
+                    {
+                        if (person != null)
                         {
-                            allP.RemoveAt(i);
-                            --i;
+                            ViewModel.PersonList.Add(new PersonGridViewModel(person));
                         }
                     }
                 }
-                foreach (Person person in allP)
-                {
-                    if (person != null)
-                    {
-                        ViewModel.PersonList.Add(new PersonGridViewModel(person));
-                    }
-                }
-            }                
+            }
+            
+        }
+
+        private void CreateOrder()
+        {
+            CurrentView.OrderName = "Order_" + (new Random()).Next(10, 1000);            
+            CurrentView.DateFrom.Value = CurrentView.StartDate.Value;
+            CurrentView.DateTo.Value = CurrentView.EndDate.Value;
+            CurrentView.Amount.Value = 1234.44m;
+            var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking, GlauxSoft.GreenTransport.Repository.Enums.OrderType.Holding, GlauxSoft.GreenTransport.Repository.Enums.OrderType.Service});            
+            InitCombobox(CurrentView.OrderType, listTypes);            
+        }
+
+        private void SaveOrder()
+        {
+            VehicleOrder o = new VehicleOrder();
+            o.Amount = CurrentView.Amount.Value;
+            o.DateFrom = CurrentView.DateFrom.Value;
+            o.DateTo = CurrentView.DateTo.Value;
+            o.RefPerson = CurrentView.Contact.RefObjectId;
+            //o.OrderType = CurrentView.OrderType.SelectedItem as EvdEnumValue;
+            o.OrderType = GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking;
+            o.Save();
+        }
+
+        private void PrintEForm()
+        {
+            
+            var gen = new DocumentCreator();
         }
 
         #endregion
@@ -392,7 +270,7 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult SearchPersonEvent()
         {
-            InitPersonGrid();
+            InitGrid();
             return new DoNothingResult();
         }
       
@@ -407,6 +285,11 @@ namespace GreenTransport.NovaForms.RentWizzard
             //    UpdateControls();
             //}
 
+            return new DoNothingResult();
+        }
+
+        public ActionResult GridRowChangedEvent()
+        {
             return new DoNothingResult();
         }
         #endregion

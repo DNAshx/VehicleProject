@@ -9,6 +9,18 @@ namespace GreenTransport.NovaForms.RentWizzard
 {
     public sealed class FirstStepViewModel : ViewModelBase
     {
+        public enum WizzardSteps
+        {
+            Vehicle,
+            Person,
+            Order,
+            Finish
+        }
+
+        public WizzardSteps CurrentStep
+        {
+            get { return (WizzardSteps)CurrentPageNumber; }            
+        }
         public FirstStepViewModel()
         {
             VehicleList = new ViewModelList<VehicleModelObject>();
@@ -41,5 +53,8 @@ namespace GreenTransport.NovaForms.RentWizzard
             get { return (ViewModelList<PersonGridViewModel>)GetValue(); }
             set { SetValue(value); }
         }
+
+        
+
     }
 }

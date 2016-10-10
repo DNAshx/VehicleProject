@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="eDocGenAPI">
+      <HintPath>..\..\..\Lib\eDocGenAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="eDocGenCommon">
+      <HintPath>..\..\..\Lib\eDocGenCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="eDocGenDocumentCreator">
+      <HintPath>..\..\..\Lib\eDocGenDocumentCreator.dll</HintPath>
+    </Reference>
     <Reference Include="Evidence.Nova.Common">
       <HintPath>..\..\..\Lib\Evidence.Nova.Common.dll</HintPath>
     </Reference>

@@ -4,11 +4,11 @@ namespace GreenTransport.NovaForms.RentWizzard
 {
     public class FirstStepView : NovaViewBase
     {
-        //internal string OrderName
-        //{
-        //    get { return FindElementByName<NovaText>().Text; }
-        //    set { FindElementByName<NovaText>().Text = value; } 
-        //}		
+        internal string OrderName
+        {
+            get { return FindElementByName<NovaText>().Text; }
+            set { FindElementByName<NovaText>().Text = value; }
+        }
 
         internal NovaRef Contact
         {
@@ -55,6 +55,30 @@ namespace GreenTransport.NovaForms.RentWizzard
         public NovaText SearchPersonField
         {
             get { return base.FindElementByName<NovaText>(); }
+        }
+
+        public NovaRef Order
+        {
+            get { return base.FindElementByName<NovaRef>(); }
+        }
+
+        internal NovaDateTime DateFrom
+        {
+            get { return FindElementByName<NovaDateTime>(); }
+        }
+        internal NovaDateTime DateTo
+        {
+            get { return FindElementByName<NovaDateTime>(); }
+        }
+
+        internal NovaNumeric Amount
+        {
+            get { return FindElementByName<NovaNumeric>(); }
+        }
+
+        internal NovaCombo OrderType
+        {
+            get { return FindElementByName<NovaCombo>(); }
         }
     }
 }

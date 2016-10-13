@@ -15,7 +15,7 @@ namespace GreenTransport.NovaForms.RentWizzard
             Person,
             Order,
             Finish
-        }
+        }        
 
         public WizzardSteps CurrentStep
         {
@@ -53,8 +53,11 @@ namespace GreenTransport.NovaForms.RentWizzard
             get { return (ViewModelList<PersonGridViewModel>)GetValue(); }
             set { SetValue(value); }
         }
-
-        
+        public EvdObjectId OrderId
+        {
+            get { return (EvdObjectId)GetValue(); }
+            set { SetValue(value); }
+        }
 
     }
 }

@@ -40,6 +40,9 @@
     <Reference Include="eDocGenDocumentCreator">
       <HintPath>..\..\..\Lib\eDocGenDocumentCreator.dll</HintPath>
     </Reference>
+    <Reference Include="eDocGenTemplateBuilder">
+      <HintPath>..\..\..\Lib\eDocGenTemplateBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="Evidence.Nova.Common">
       <HintPath>..\..\..\Lib\Evidence.Nova.Common.dll</HintPath>
     </Reference>

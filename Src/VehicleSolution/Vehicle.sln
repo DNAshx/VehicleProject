@@ -1,10 +1,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "701_VehicleAddInProject", "701_VehicleAddInProject\701_VehicleAddInProject.csproj", "{DE93F786-AF5D-4C51-B00D-8D0304F7DD8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_GlauxSoft.GreenTransport.Common", "001_GlauxSoft.Vehicle.Common\001_GlauxSoft.GreenTransport.Common.csproj", "{285E4C7D-B3BC-41FF-939D-05DD51897C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011_GlauxSoft.GreenTransport.DataImport", "011_GlauxSoft.GreenTransport.DataImport\011_GlauxSoft.GreenTransport.DataImport.csproj", "{5E829238-EF7C-4910-B100-A1523012806E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "501_GlauxSoft.GreenTransport.UnitTest", "501_GlauxSoft.GreenTransport.UnitTest\501_GlauxSoft.GreenTransport.UnitTest.csproj", "{468177E8-23C7-4ACF-8B73-6408A6638405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,14 @@ Global
 		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{285E4C7D-B3BC-41FF-939D-05DD51897C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E829238-EF7C-4910-B100-A1523012806E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E829238-EF7C-4910-B100-A1523012806E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E829238-EF7C-4910-B100-A1523012806E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E829238-EF7C-4910-B100-A1523012806E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468177E8-23C7-4ACF-8B73-6408A6638405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468177E8-23C7-4ACF-8B73-6408A6638405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468177E8-23C7-4ACF-8B73-6408A6638405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468177E8-23C7-4ACF-8B73-6408A6638405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

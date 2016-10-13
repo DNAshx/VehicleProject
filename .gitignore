@@ -36,3 +36,5 @@ App/EvidenceNova/log
 App/evidenceServer/EvidenceXPServerWinShell.config
 App/evidenceServer/log
 App/EvidenceNova/App_Data/store
+/Src/VehicleSolution/packages/NUnit.3.5.0/lib/net20
+/Src/VehicleSolution/packages/NUnit.3.5.0

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CarMetaDatas>
+  <CarMetaData>    
+    <Brand>Audi</Brand>
+    <Model>A1</Model>
+    <Class>Small</Class>
+    <Description>Audi A1</Description>
+    <Efficiency>11</Efficiency>
+    <Fuel>V95</Fuel>
+    <Engine>1200</Engine>
+    <Feature>4Wheels,Engine,</Feature>
+    <PriceDay>20.5</PriceDay>
+    <ProdDate>10/10/2010</ProdDate>
+    <QtPassengers>4</QtPassengers>
+    <ServiceHours>4</ServiceHours>
+  </CarMetaData>
+  <CarMetaData>    
+    <Brand>Acura</Brand>
+    <Model>MDX</Model>
+    <Class>SUV</Class>
+    <Description>MDX </Description>
+    <Efficiency>11</Efficiency>
+    <Fuel>V95</Fuel>
+    <Engine>3400</Engine>
+    <Feature>4Wheels,Engine,</Feature>
+    <PriceDay>150.5</PriceDay>
+    <ProdDate>10/10/2010</ProdDate>
+    <QtPassengers>5</QtPassengers>
+    <ServiceHours>6</ServiceHours>
+  </CarMetaData>
+</CarMetaDatas>

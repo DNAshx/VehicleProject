@@ -42,6 +42,7 @@ namespace GreenTransport.NovaForms.RentWizzard
             InitCombobox(CurrentView.VehicleType, listTypes);
             InitCombobox(CurrentView.VehicleClass, listClasses);
 
+            //ComposeData();
             //view.VehicleType.FillFromEnum(new EvidenceEnum(   ,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle);
             //view.VehicleClass.FillFromEnum(new EvidenceEnum( ,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small);
 
@@ -122,35 +123,6 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         #region helper
 
-        private void ComposeData()
-        {
-            var tmp = 1;
-            if (tmp == 1)
-            {
-                var cnt = 10;
-                for (var i = 0; i < cnt; ++i)
-                {
-                    var vehicle = BusinessObject.Create<Vehicle>();
-                    vehicle.Brand = RandomProvider.NextCompany();
-                    vehicle.CO2 = "0.2";
-                    vehicle.Description = RandomProvider.NextFirstName();
-                    vehicle.Efficiency = RandomProvider.NextSalutation();
-                    vehicle.Engine = "2990";
-                    vehicle.Feature = "Power";
-                    vehicle.Fuel = "Diesel";
-                    vehicle.Location = RandomProvider.NextCity();
-                    vehicle.Maintenance = string.Empty;
-                    vehicle.PriceDay = (double)RandomProvider.NextDecimal(10, 20);
-                    vehicle.ProdDate = DateTime.Now.AddYears(-RandomProvider.NextInt(1, 5));
-                    vehicle.QtPassengers = 4;
-                    vehicle.ServiceHours = 4;
-                    //vehicle.Type = myConst.Enums.CarType.VALUE_DIESEL;
-                    //vehicle.Class = myConst.Enums.CarClass.VALUE_SMALL;
-                    vehicle.Save();
-                }
-            }
-        }
-       
         private void InitGrid()
         {
             if (ViewModel.CurrentStep == FirstStepViewModel.WizzardSteps.Vehicle)
@@ -249,7 +221,7 @@ namespace GreenTransport.NovaForms.RentWizzard
             //var docCreator = new DocumentCreator(null, ViewModel.OrderId, null, "de", eDocGenCommon.Globals.DocCreatingUIMode.ShowDialog, @"D:\reports\report_" + ViewModel.OrderId, order);
             //docCreator.RootObjectID = ViewModel.OrderId;
             
-            //docCreator.createDocument();
+            //var gen = new DocumentCreator();
         }
 
         #endregion

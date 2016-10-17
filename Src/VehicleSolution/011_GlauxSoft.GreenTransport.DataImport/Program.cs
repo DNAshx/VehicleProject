@@ -78,14 +78,12 @@ namespace GlauxSoft.GreenTransport.DataImport
                 var vehicle = BusinessObject.Create<Vehicle>();
                 vehicle.Brand = v.Brand;
                 //vehicle.Class = v.Class;
-                vehicle.CO2 = v.CO2;
+                vehicle.CO2 = decimal.Parse( v.CO2);
                 vehicle.Description  = v.Description;
                 vehicle.Efficiency = v.Efficiency;
-                vehicle.Engine = v.Engine;
+                vehicle.Engine = decimal.Parse(v.Engine);
                 vehicle.Feature = v.Feature;
-                vehicle.Fuel = v.Fuel;
-                vehicle.Location = v.Location;
-                vehicle.Maintenance = v.Maintenance; 
+                
                 vehicle.PriceDay = double.Parse( v.PriceDay);
                 vehicle.ProdDate = DateTime.Parse( v.ProdDate);
                 vehicle.QtPassengers = int.Parse(v.QtPassengers);

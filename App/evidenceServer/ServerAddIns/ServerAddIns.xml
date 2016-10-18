@@ -11,5 +11,15 @@
       <ServerDllName>GlauxSoft.TestProjekt.CopyWatcherSAddIn.dll</ServerDllName>
       <AddInDescription>Copy Server-Event Watcher , Version: 1.0.0.0</AddInDescription>
     </EvdServerAddinInfo>
+    <EvdServerAddinInfo>
+      <CreationDate>2016-10-18T13:23:40.4803849+03:00</CreationDate>
+      <ServerDllName>GlauxSoft.eDocGeneratorServerAddin.dll</ServerDllName>
+      <AddInDescription />
+    </EvdServerAddinInfo>
+    <EvdServerAddinInfo>
+      <CreationDate>2016-10-18T14:05:44.5290653+03:00</CreationDate>
+      <ServerDllName>EXPServerDMSAddIn.dll</ServerDllName>
+      <AddInDescription>Server DMS AddIn</AddInDescription>
+    </EvdServerAddinInfo>
   </AddInsArray>
 </EvdServerAddInOptions>

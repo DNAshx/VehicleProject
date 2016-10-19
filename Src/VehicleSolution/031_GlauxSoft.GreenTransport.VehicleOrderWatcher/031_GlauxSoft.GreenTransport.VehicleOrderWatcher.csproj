@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B084E736-6952-442E-B3AC-9987684A0477}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GlauxSoft.GreenTransport.VehicleOrderWatcher</RootNamespace>
+    <AssemblyName>GlauxSoft.GreenTransport.VehicleOrderWatcher</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EvidenceXP">
+      <HintPath>..\..\..\Lib\EvidenceXP.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPCommon">
+      <HintPath>..\..\..\Lib\EvidenceXPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPExtensibility">
+      <HintPath>..\..\..\Lib\EvidenceXPExtensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPForms">
+      <HintPath>..\..\..\Lib\EvidenceXPForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPRemoting">
+      <HintPath>..\..\..\Lib\EvidenceXPRemoting.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPRemotingService">
+      <HintPath>..\..\..\Lib\EvidenceXPRemotingService.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPReports">
+      <HintPath>..\..\..\Lib\EvidenceXPReports.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPServer">
+      <HintPath>..\..\..\Lib\EvidenceXPServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EvidenceXPServerExtensibility">
+      <HintPath>..\..\..\Lib\EvidenceXPServerExtensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="GlauxSoft">
+      <HintPath>..\..\..\Lib\GlauxSoft.dll</HintPath>
+    </Reference>
+    <Reference Include="GlauxSoft.GreenTransport.Common">
+      <HintPath>..\..\..\Lib\GlauxSoft.GreenTransport.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GlauxSoft.GreenTransport.Repository">
+      <HintPath>..\..\..\Lib\GlauxSoft.GreenTransport.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EvdServerVehicleOrderExt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\001_GlauxSoft.Vehicle.Common\001_GlauxSoft.GreenTransport.Common.csproj">
+      <Project>{285e4c7d-b3bc-41ff-939d-05dd51897c23}</Project>
+      <Name>001_GlauxSoft.GreenTransport.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\Lib"
+xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\App\evidenceServer"
+xcopy /Y/F "$(TargetDir)$(TargetFileName)" "$(SolutionDir)\..\..\App\EvidenceNova"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

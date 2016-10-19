@@ -15,6 +15,8 @@ namespace GreenTransport
             AddClassMapping("Company", typeof(DefaultDetailFormController));
             AddClassMapping("Vehicle", typeof(DefaultDetailFormController));
             AddClassMapping("VehicleOrder", typeof(DefaultDetailFormController));
+            AddClassMapping("Location", typeof(DefaultDetailFormController));
+            AddClassMapping("FuelConsumption", typeof(DefaultDetailFormController));
         }
     }
 }

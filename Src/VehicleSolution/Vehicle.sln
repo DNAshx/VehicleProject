@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011_GlauxSoft.GreenTranspor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "501_GlauxSoft.GreenTransport.UnitTest", "501_GlauxSoft.GreenTransport.UnitTest\501_GlauxSoft.GreenTransport.UnitTest.csproj", "{468177E8-23C7-4ACF-8B73-6408A6638405}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "031_GlauxSoft.GreenTransport.VehicleOrderWatcher", "031_GlauxSoft.GreenTransport.VehicleOrderWatcher\031_GlauxSoft.GreenTransport.VehicleOrderWatcher.csproj", "{B084E736-6952-442E-B3AC-9987684A0477}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{468177E8-23C7-4ACF-8B73-6408A6638405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468177E8-23C7-4ACF-8B73-6408A6638405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468177E8-23C7-4ACF-8B73-6408A6638405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B084E736-6952-442E-B3AC-9987684A0477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B084E736-6952-442E-B3AC-9987684A0477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B084E736-6952-442E-B3AC-9987684A0477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B084E736-6952-442E-B3AC-9987684A0477}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

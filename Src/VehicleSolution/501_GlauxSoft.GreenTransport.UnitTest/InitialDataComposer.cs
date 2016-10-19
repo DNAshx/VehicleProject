@@ -45,36 +45,21 @@ namespace GlauxSoft.GreenTransport.UnitTest
                 Assert.IsTrue(vehicles.Count > 0);
                 // check orders
                 var dateStart = DateTime.Now.AddDays(RandomProvider.NextInt(10, 100));
-                var tmpDate = dateStart;
-                for (int i = 0; i < 10; ++i)
-                {
-                    var days = RandomProvider.NextInt(5, 20);
-
-                    ComposeVehicleOrder(tmpDate, tmpDate.AddDays(days - 1));
-                    tmpDate = tmpDate.AddDays(days).Date;
-                }
-
                 var orders = GlauxSoft.GreenTransport.Queries.QueryFactory.VehicleOrder.VehicleOrderGetByDateRange.GetObjects<VehicleOrder>(dateStart, dateStart.AddDays(100));
-                Assert.IsTrue(orders.Count > 0);
-                //    var vehicles = GlauxSoft.GreenTransport.Queries.QueryFactory.Vehicle.VehicleGetList.GetObjects<Vehicle>();
-
-
-
-                List<Person> personList = new List<Person>();
-
-
-                //SessionHelper.Connect();
-                var cntPersons = 10;
-                for (int i = 0; i < cntPersons; i++)
+                if (orders.Count < 5)
                 {
-                    Person p = BusinessObject.Create<GlauxSoft.GreenTransport.Repository.Person>();
 
-                    p.FirstName = RandomProvider.NextFirstName();
-                    p.Nachname = RandomProvider.NextLastName();
-                    p.CityName = RandomProvider.NextCity();
-                    p.CityState = RandomProvider.NextStreet();
-                    p.Save();
-                    personList.Add(p);
+                    var tmpDate = dateStart;
+                    for (int i = 0; i < 10; ++i)
+                    {
+                        var days = RandomProvider.NextInt(5, 20);
+
+                        ComposeVehicleOrder(tmpDate, tmpDate.AddDays(days - 1));
+                        tmpDate = tmpDate.AddDays(days).Date;
+                    }
+
+                    orders = GlauxSoft.GreenTransport.Queries.QueryFactory.VehicleOrder.VehicleOrderGetByDateRange.GetObjects<VehicleOrder>(dateStart, dateStart.AddDays(100));
+                    Assert.IsTrue(orders.Count > 0);
                 }
             }
             catch// (Exception ex)

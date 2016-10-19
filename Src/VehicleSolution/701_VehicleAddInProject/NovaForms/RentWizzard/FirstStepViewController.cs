@@ -28,8 +28,8 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult Index()
         {
-            CurrentView.Contact.RefClassId = (new Person()).ClassID;
-            CurrentView.Order.RefClassId = (new VehicleOrder()).ClassID;
+            CurrentView.Contact.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
+            CurrentView.Order.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.VehicleOrder.CLASSNAME).ID;
             CurrentView.GridVehicles.ItemsSource = ViewModel.VehicleList;
             CurrentView.GridPersons.ItemsSource = ViewModel.PersonList;
 
@@ -155,12 +155,8 @@ namespace GreenTransport.NovaForms.RentWizzard
             {
                 var filterName = CurrentView.SearchPersonField;
                 var fctext = string.IsNullOrWhiteSpace(filterName.Text) ? string.Empty : filterName.Text.Trim();
-
-                if (ViewModel.PersonList == null)
-                {
-                    ViewModel.PersonList = new ViewModelList<PersonGridViewModel>();
-                }
-
+                
+                ViewModel.PersonList.Clear();
                 if (!string.IsNullOrEmpty(fctext))
                 {
                     var allP = GlauxSoft.GreenTransport.Queries.QueryFactory.Person.SearchPerson.GetObjects<Person>(fctext);
@@ -215,10 +211,15 @@ namespace GreenTransport.NovaForms.RentWizzard
             //o.OrderType = CurrentView.OrderType.SelectedItem as EvdEnumValue;
             o.OrderType = GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking;
             o.Save();
+            ViewModel.OrderId = o.ObjectID;
         }
 
         private void PrintEForm()
         {
+            //eDocGenTemplateBuilder.General.
+            var order = GlauxSoft.GreenTransport.Queries.QueryFactory.VehicleOrder.GetOrderById.GetObjects<VehicleOrder>(int.Parse(ViewModel.OrderId.ToString()));
+            //var docCreator = new DocumentCreator(null, ViewModel.OrderId, null, "de", eDocGenCommon.Globals.DocCreatingUIMode.ShowDialog, @"D:\reports\report_" + ViewModel.OrderId, order);
+            //docCreator.RootObjectID = ViewModel.OrderId;
             
             //var gen = new DocumentCreator();
         }

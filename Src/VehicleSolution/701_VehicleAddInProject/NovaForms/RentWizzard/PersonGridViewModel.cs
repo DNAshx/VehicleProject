@@ -1,4 +1,5 @@
-﻿using Evidence.Nova.Common;
+﻿using Evidence.Business;
+using Evidence.Nova.Common;
 using GlauxSoft.GreenTransport.Repository;
 using System;
 using System.Collections.Generic;
@@ -10,21 +11,61 @@ namespace GreenTransport.NovaForms.RentWizzard
 {
     public sealed class PersonGridViewModel : ViewModelObject
     {
-        public bool ToSelect { get; set; }
-        public int PersonID { get; set; }
-        public int CompanyID { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public string Street { get; set; }
-        public string HouseNumber { get; set; }
-        public string PLZ { get; set; }
-        public string City { get; set; }
-        public string AddressType { get; set; }
+        public bool ToSelect
+        {
+            get { return (bool)GetValue(); }
+            set { SetValue(value); }
+        }
+        public EvdObjectId PersonID
+        {
+            get { return (EvdObjectId)GetValue(); }
+            set { SetValue(value); }
+        }
+        public int CompanyID
+        {
+            get { return (int)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string LastName
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string FirstName
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string Street
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string HouseNumber
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string PLZ
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string City
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }
+        public string AddressType
+        {
+            get { return (string)GetValue(); }
+            set { SetValue(value); }
+        }        
 
         public PersonGridViewModel(Person p)
-        {
+        {            
             this.ToSelect = false;
-            this.PersonID = int.Parse(p.ObjectID.ToString());
+            this.PersonID = p.ObjectID;
             this.CompanyID = int.Parse(p.Ref_Company.ToString());
             this.LastName = p.Nachname.ToString();
             this.FirstName = p.FirstName;

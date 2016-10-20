@@ -18,6 +18,7 @@
           <ActionItem Caption="A3" IsQuickAccess="true" Action="SearchEvent" />
         </Actions>
         <Columns>
+          <NovaGridColumn ValueBinding="Selected" ColumnType="Checkbox" ColumnWidth="50" />
           <NovaGridColumn ValueBinding="Brand" IsSortable="true" ColumnWidth="100" Text="Brand" ContentAlignment ="Left" />
           <NovaGridColumn ValueBinding="QtPassengers"  IsSortable="true" ColumnWidth="60" Text="Qty Passengers" ContentAlignment ="Center"/>
           <NovaGridColumn ValueBinding="PriceDay"  IsSortable="true" ColumnWidth="60" Text="Price/day" ContentAlignment ="Right" OutputFormat="C2"/>
@@ -54,10 +55,12 @@
   <NovaWizardPage Name="pageOrder" Layout="w:16">
     <NovaGroup Name="groupOrder" Layout="w:16">
       <NovaRef Name="Order" Label="Order" />
+      <NovaRef Name="PersonRef" Label="Person" />
+      <NovaRef Name="VehicleRef" Label="Vehicle" />
       <NovaText Name="OrderName" Label="Order Name" />
       <NovaNumeric Name="Amount" Label="Order Amount (EUR)" />
-      <NovaDateTime Name="DateFrom" Label="Date From" />
-      <NovaDateTime Name="DateTo" Label="Date To" />
+      <NovaDateTime Name="DateFrom" Label="Date From" DateMode="DateTime"/>
+      <NovaDateTime Name="DateTo" Label="Date To" DateMode="DateTime"/>
       <NovaCombo Name="OrderType" Label="Order Type"/>
      </NovaGroup>
   </NovaWizardPage>

@@ -80,5 +80,15 @@ namespace GreenTransport.NovaForms.RentWizzard
         {
             get { return FindElementByName<NovaCombo>(); }
         }
+
+        internal NovaRef PersonRef
+        {
+            get { return FindElementByName<NovaRef>(); }
+        }
+
+        internal NovaRef VehicleRef
+        {
+            get { return FindElementByName<NovaRef>(); }
+        }
     }
 }

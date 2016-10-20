@@ -30,6 +30,9 @@ namespace GreenTransport.NovaForms.RentWizzard
         {
             CurrentView.Contact.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
             CurrentView.Order.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.VehicleOrder.CLASSNAME).ID;
+            CurrentView.PersonRef.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
+            CurrentView.VehicleRef.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Vehicle.CLASSNAME).ID;
+
             CurrentView.GridVehicles.ItemsSource = ViewModel.VehicleList;
             CurrentView.GridPersons.ItemsSource = ViewModel.PersonList;
 
@@ -41,21 +44,7 @@ namespace GreenTransport.NovaForms.RentWizzard
 
             InitCombobox(CurrentView.VehicleType, listTypes);
             InitCombobox(CurrentView.VehicleClass, listClasses);
-
-            //ComposeData();
-            //view.VehicleType.FillFromEnum(new EvidenceEnum(   ,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle,GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle);
-            //view.VehicleClass.FillFromEnum(new EvidenceEnum( ,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small,GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small);
-
-            //using (var stream = this.GetType().Assembly.GetManifestResourceStream("GreenTransport.Images.owls.jpg"))
-            //{
-            //    if (stream != null)
-            //    {
-            //        byte[] ba = new byte[stream.Length];
-            //        stream.Read(ba, 0, ba.Length);
-            //        view.Image.ImageContent.SetContent(ba, ".jpg");
-            //    }
-            //}
-
+            
             var form = CurrentView.Root as NovaForm;
             if (form == null) throw new NovaException("Wrong type " + form.GetType());
             form.Title = "Booking process.";
@@ -76,6 +65,17 @@ namespace GreenTransport.NovaForms.RentWizzard
         public ActionResult FrmWizardNext()
         {
             var form = View.FindElementByName<NovaForm>("frmGreenTransportStartView");
+            if (ViewModel.CurrentStep == FirstStepViewModel.WizzardSteps.Vehicle && !ViewModel.VehicleList.Any(v => v.Selected))
+            {
+                return new NovaMessageBoxDialog()
+                {
+                    Text = "You should select at least 1 vehicle",
+                    Title = "Select Vehicle!",
+                    Buttons = NovaMessageBoxButtons.Ok,
+                    DefaultButton = NovaMessageBoxButtonDefault.No,
+                    Icon = NovaMessageBoxIcon.Warning
+                };
+            }
             if (form != null && form.WizardCanGoNext())
             {
                 form.WizardGoNext();
@@ -160,25 +160,7 @@ namespace GreenTransport.NovaForms.RentWizzard
                 if (!string.IsNullOrEmpty(fctext))
                 {
                     var allP = GlauxSoft.GreenTransport.Queries.QueryFactory.Person.SearchPerson.GetObjects<Person>(fctext);
-
-                    if (!string.IsNullOrWhiteSpace(fctext))
-                    {
-                        //for (int i = 0; i < allP.Count; ++i)
-                        //{
-                        //    Person p = allP[i];
-                        //    var pFirstName = p.FirstName != null ? p.FirstName.Trim().ToLower() : string.Empty;
-                        //    var pLastName = p.Nachname != null ? p.Nachname.Trim().ToLower() : string.Empty;
-
-                        //    bool ok1 = pFirstName.StartsWith(fctext.Trim().ToLower());
-                        //    bool ok2 = pLastName.StartsWith(fctext.Trim().ToLower());
-
-                        //    if (!ok1 && !ok2)
-                        //    {
-                        //        allP.RemoveAt(i);
-                        //        --i;
-                        //    }
-                        //}
-                    }
+                                        
                     foreach (Person person in allP)
                     {
                         if (person != null)
@@ -197,6 +179,8 @@ namespace GreenTransport.NovaForms.RentWizzard
             CurrentView.DateFrom.Value = CurrentView.StartDate.Value;
             CurrentView.DateTo.Value = CurrentView.EndDate.Value;
             CurrentView.Amount.Value = 1234.44m;
+            CurrentView.VehicleRef.RefObjectId = ViewModel.VehicleList.FirstOrDefault(v => v.Selected).VehicleId;
+            CurrentView.PersonRef.RefObjectId = ViewModel.PersonList.FirstOrDefault(p => p.ToSelect).PersonID;
             var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking, GlauxSoft.GreenTransport.Repository.Enums.OrderType.Holding, GlauxSoft.GreenTransport.Repository.Enums.OrderType.Service});            
             InitCombobox(CurrentView.OrderType, listTypes);            
         }
@@ -235,8 +219,7 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult SelectContact()
         {
-            var view = GetView<FirstStepView>();
-            view.Contact.ActionAfterSelectedObjectChanged = "SelectContact";
+            CurrentView.Contact.ActionAfterSelectedObjectChanged = "SelectContact";
 
             return new DoNothingResult();
         }
@@ -249,15 +232,7 @@ namespace GreenTransport.NovaForms.RentWizzard
       
         public ActionResult CreatePerson()
         {
-            //NovaForm form = CurrentView.FrmRelationsWizard;
-            //if (form != null)
-            //{
-            //    form.WizardGoNext();
-
-            //    ViewModel.CurrentPageNumber = (byte)Pages.Create;
-            //    UpdateControls();
-            //}
-
+            
             return new DoNothingResult();
         }
 

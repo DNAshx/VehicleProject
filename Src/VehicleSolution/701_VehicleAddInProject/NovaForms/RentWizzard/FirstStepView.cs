@@ -49,7 +49,12 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public NovaGrid GridPersons
         {
-            get { return base.FindElementByName<NovaGrid>("gridPersons"); }
+            get { return base.FindElementByName<NovaGrid>(); }
+        }
+
+        public NovaGrid GridSelectedVehicles
+        {
+            get { return base.FindElementByName<NovaGrid>(); }
         }
 
         public NovaText SearchPersonField
@@ -84,11 +89,6 @@ namespace GreenTransport.NovaForms.RentWizzard
         internal NovaRef PersonRef
         {
             get { return FindElementByName<NovaRef>(); }
-        }
-
-        internal NovaRef VehicleRef
-        {
-            get { return FindElementByName<NovaRef>(); }
-        }
+        }        
     }
 }

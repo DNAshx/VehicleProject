@@ -31,7 +31,7 @@
     <NovaGroup Name="groupContact" Layout="w:16">
       <NovaRef Name="Contact" Label="Contact" ActionAfterSelectedObjectChanged="SelectContact" />      
       <NovaText Name="SearchPersonField" Label="{Resource Search}" ActionChanged="SearchPersonEvent" />
-      <NovaGrid Name="gridPersons" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
+      <NovaGrid Name="GridPersons" Layout="w:16;h:10" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">
         <Actions>
           <ActionItem Caption="Searching" IsQuickAccess="true" Action="SearchPersonEvent" />          
           <ActionItem Caption="New" IsQuickAccess="true" Action="CreatePerson" />
@@ -56,7 +56,13 @@
     <NovaGroup Name="groupOrder" Layout="w:16">
       <NovaRef Name="Order" Label="Order" />
       <NovaRef Name="PersonRef" Label="Person" />
-      <NovaRef Name="VehicleRef" Label="Vehicle" />
+      <NovaGrid Name="GridSelectedVehicles" Layout="w:8;" PageSize="10" SortMode="BuiltIn" LastColumnFullWidth="true" ActionSelectionChanged="GridRowChangedEvent">        
+        <Columns>          
+          <NovaGridColumn ValueBinding="Brand" IsSortable="true" ColumnWidth="100" Text="Brand" ContentAlignment ="Left" />
+          <NovaGridColumn ValueBinding="QtPassengers"  IsSortable="true" ColumnWidth="60" Text="Qty Passengers" ContentAlignment ="Center"/>
+          <NovaGridColumn ValueBinding="PriceDay"  IsSortable="true" ColumnWidth="60" Text="Price/day" ContentAlignment ="Right" OutputFormat="C2"/>
+        </Columns>
+      </NovaGrid>
       <NovaText Name="OrderName" Label="Order Name" />
       <NovaNumeric Name="Amount" Label="Order Amount (EUR)" />
       <NovaDateTime Name="DateFrom" Label="Date From" DateMode="DateTime"/>

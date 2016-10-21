@@ -4,6 +4,8 @@ using Evidence.Nova.Common;
 using GreenTransport.ViewModels;
 
 using GlauxSoft.GreenTransport.Repository;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace GreenTransport.NovaForms.RentWizzard
 {
@@ -25,6 +27,7 @@ namespace GreenTransport.NovaForms.RentWizzard
         {
             VehicleList = new ViewModelList<VehicleModelObject>();
             PersonList = new ViewModelList<PersonGridViewModel>();
+            VehicleSelectedList = new ViewModelList<VehicleModelObject>();
         }
 
         public byte CurrentPageNumber
@@ -37,6 +40,11 @@ namespace GreenTransport.NovaForms.RentWizzard
         public DateTime EndDate { get { return (DateTime)GetValue(); } set { SetValue(value); } }
 
         public ViewModelList<VehicleModelObject> VehicleList
+        {
+            get { return (ViewModelList<VehicleModelObject>)GetValue(); }
+            private set { SetValue(value); }
+        }
+        public ViewModelList<VehicleModelObject> VehicleSelectedList
         {
             get { return (ViewModelList<VehicleModelObject>)GetValue(); }
             private set { SetValue(value); }

@@ -18,7 +18,7 @@
   <xSysKey>
     <Id>4</Id>
     <KeyName>LastId_xDescriptionLink</KeyName>
-    <KeyValue>7962</KeyValue>
+    <KeyValue>8035</KeyValue>
   </xSysKey>
   <xSysKey>
     <Id>5</Id>
@@ -4942,7 +4942,7 @@
     <RoleACaptionId>7364</RoleACaptionId>
     <RoleBCaptionId>7365</RoleBCaptionId>
     <HasChangeHistory>false</HasChangeHistory>
-    <Cardinality>1</Cardinality>
+    <Cardinality>3</Cardinality>
     <CannotBeChanged>false</CannotBeChanged>
   </xRelation>
   <xRelation>
@@ -4956,7 +4956,7 @@
     <RoleACaptionId>7368</RoleACaptionId>
     <RoleBCaptionId>7369</RoleBCaptionId>
     <HasChangeHistory>false</HasChangeHistory>
-    <Cardinality>1</Cardinality>
+    <Cardinality>3</Cardinality>
     <CannotBeChanged>false</CannotBeChanged>
   </xRelation>
   <xRelation>
@@ -8077,7 +8077,7 @@ Imports Evidence.Forms
     <IsIDAttr>false</IsIDAttr>
     <HasChangeHistory>false</HasChangeHistory>
     <RefClassId>10</RefClassId>
-    <Required>false</Required>
+    <Required>true</Required>
     <MapedRelId>473</MapedRelId>
     <Format />
     <CompareMethod>0</CompareMethod>

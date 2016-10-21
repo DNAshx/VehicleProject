@@ -31,10 +31,11 @@ namespace GreenTransport.NovaForms.RentWizzard
             CurrentView.Contact.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
             CurrentView.Order.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.VehicleOrder.CLASSNAME).ID;
             CurrentView.PersonRef.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
-            CurrentView.VehicleRef.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Vehicle.CLASSNAME).ID;
+            
 
             CurrentView.GridVehicles.ItemsSource = ViewModel.VehicleList;
             CurrentView.GridPersons.ItemsSource = ViewModel.PersonList;
+            CurrentView.GridSelectedVehicles.ItemsSource = ViewModel.VehicleSelectedList;
 
             CurrentView.StartDate.Value = DateTime.Today;
             CurrentView.EndDate.Value = DateTime.Today.AddDays(1);
@@ -71,6 +72,17 @@ namespace GreenTransport.NovaForms.RentWizzard
                 {
                     Text = "You should select at least 1 vehicle",
                     Title = "Select Vehicle!",
+                    Buttons = NovaMessageBoxButtons.Ok,
+                    DefaultButton = NovaMessageBoxButtonDefault.No,
+                    Icon = NovaMessageBoxIcon.Warning
+                };
+            }
+            if (ViewModel.CurrentStep == FirstStepViewModel.WizzardSteps.Person && ViewModel.PersonList.Count(v => v.ToSelect) != 1)
+            {
+                return new NovaMessageBoxDialog()
+                {
+                    Text = "You should select 1 contact",
+                    Title = "Select Contact!",
                     Buttons = NovaMessageBoxButtons.Ok,
                     DefaultButton = NovaMessageBoxButtonDefault.No,
                     Icon = NovaMessageBoxIcon.Warning
@@ -175,12 +187,26 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         private void CreateOrder()
         {
-            CurrentView.OrderName = "Order_" + (new Random()).Next(10, 1000);            
+            CurrentView.OrderName = DateTime.Now.ToString("yyyyMMddHHmmssfff");
             CurrentView.DateFrom.Value = CurrentView.StartDate.Value;
             CurrentView.DateTo.Value = CurrentView.EndDate.Value;
-            CurrentView.Amount.Value = 1234.44m;
-            CurrentView.VehicleRef.RefObjectId = ViewModel.VehicleList.FirstOrDefault(v => v.Selected).VehicleId;
-            CurrentView.PersonRef.RefObjectId = ViewModel.PersonList.FirstOrDefault(p => p.ToSelect).PersonID;
+
+            ViewModel.VehicleSelectedList.Clear();
+            
+            foreach (var v in ViewModel.VehicleList.Where(v => v.Selected))
+            {
+                ViewModel.VehicleSelectedList.Add(v);
+            }
+
+            var amount = ViewModel.VehicleList.Where(v => v.Selected).Sum(v => (decimal)v.PriceDay);
+            var days = (int)(CurrentView.DateTo.Value - CurrentView.DateFrom.Value).Value.TotalDays;
+            amount *= days;
+            CurrentView.Amount.Value = amount;
+
+            var person = ViewModel.PersonList.FirstOrDefault(p => p.ToSelect);
+            CurrentView.PersonRef.RefObjectId = person.PersonID;
+            CurrentView.PersonRef.Value = string.Format("{0} {1}", person.LastName, person.FirstName);
+                        
             var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking, GlauxSoft.GreenTransport.Repository.Enums.OrderType.Holding, GlauxSoft.GreenTransport.Repository.Enums.OrderType.Service});            
             InitCombobox(CurrentView.OrderType, listTypes);            
         }
@@ -192,8 +218,19 @@ namespace GreenTransport.NovaForms.RentWizzard
             o.DateFrom = CurrentView.DateFrom.Value;
             o.DateTo = CurrentView.DateTo.Value;
             o.RefPerson = CurrentView.Contact.RefObjectId;
-            //o.OrderType = CurrentView.OrderType.SelectedItem as EvdEnumValue;
-            o.OrderType = GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking;
+            o.RefVehicle = ViewModel.VehicleSelectedList.First().VehicleId;    
+            switch (CurrentView.OrderType.SelectedItem.ItemId)
+            {
+                case 0:
+                    o.OrderType = GlauxSoft.GreenTransport.Repository.Enums.OrderType.Booking;
+                    break;
+                case 1:
+                    o.OrderType = GlauxSoft.GreenTransport.Repository.Enums.OrderType.Holding;
+                    break;
+                case 2:
+                    o.OrderType = GlauxSoft.GreenTransport.Repository.Enums.OrderType.Service;
+                    break;
+            }                        
             o.Save();
             ViewModel.OrderId = o.ObjectID;
         }

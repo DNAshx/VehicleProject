@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NovaForm Name="frmVehicleDetailsForm" Title="Vehicle Details Form" DialogBehavior="SaveAndClose" xmlns="http://www.evidence.ch/nova/forms">
+  <!--Vehicle Type / Brand / Model -->
+  <NovaCombo Name="VehicleType" Label="Vehicle Type:" ActionChanged="SearchEvent"/>
+  <NovaCombo Name="Brand" Label="Brand:"/>
+  <NovaText Name="Model" Label="Model:"/>
+  <NovaRef Name="RefLocation" Label="Location" />
+  <!--Car Type-->
+  <NovaCombo Name="VehicleClass" Label="Vehicle Class:"/>
+  <NovaNumeric Name="CO2" Label="CO2" /> 
+  <NovaText Name="Description" Label="Description: "/>
+  <NovaNumeric Name="Efficiency" Label="Efficiency:"/>
+  <NovaNumeric Name="Engine" Label="Engine:"/>
+  <NovaCombo Name="Fuel" Label="Fuel:"/>
+  <NovaNumeric Name="Mileage" Label="Mileage:"/>
+  <!--Common properties-->
+  <NovaNumeric Name="QtPassengers" Label="Passengers:"/>
+  <NovaNumeric Name="PriceDay" Label="Price/day" />
+  <NovaNumeric Name="ServiceHours" Label="Service hours" />
+  <NovaDateTime Name="ProdDate" Label="Production Date" DateMode="Date" />
+  
+</NovaForm>

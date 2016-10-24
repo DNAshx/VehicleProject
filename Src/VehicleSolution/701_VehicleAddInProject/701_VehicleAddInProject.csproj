@@ -103,6 +103,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.en.resx</DependentUpon>
     </Compile>
+    <Compile Include="NovaForms\VehicleDetailsForm\VehicleDetailsFormController.cs" />
+    <Compile Include="NovaForms\VehicleDetailsForm\VehicleDetailsFormModel.cs" />
+    <Compile Include="NovaForms\VehicleDetailsForm\VehicleDetailsFormView.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,7 +136,9 @@
   <ItemGroup>
     <EmbeddedResource Include="NovaForms\DefaultDetailForm\DefaultDetailFormView.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="NovaForms\VehicleDetailsForm\VehicleDetailsFormView.xml" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="NovaForms\Strings.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

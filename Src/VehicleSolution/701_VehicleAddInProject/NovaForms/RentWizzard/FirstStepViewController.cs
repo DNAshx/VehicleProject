@@ -21,6 +21,14 @@ namespace GreenTransport.NovaForms.RentWizzard
 	[DefaultView(typeof(FirstStepView))]
     public class FirstStepViewController : BaseController<FirstStepViewModel>
     {
+        static List<EvdEnumValue> listVehicleTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle, GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Car });
+        static List<EvdEnumValue> listCarType = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarType.Petrol, GlauxSoft.GreenTransport.Repository.Enums.CarType.Diesel, GlauxSoft.GreenTransport.Repository.Enums.CarType.Hybrid, GlauxSoft.GreenTransport.Repository.Enums.CarType.Electric});
+        static List<EvdEnumValue> listBycicleType = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.BicycleType.Electric, GlauxSoft.GreenTransport.Repository.Enums.BicycleType.Ordinary});
+        static List<EvdEnumValue> listCarClasses = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Medium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Large, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Estate, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Premium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Carriers, GlauxSoft.GreenTransport.Repository.Enums.CarClass.SUV });
+
+        static string[] listBycicleTypeNames = new string[] { "Electric","Ordinary"};
+        static string[] listCarTypeNames = new string[] { "Petrol","Diesel","Hybrid","Electric"};
+
         public FirstStepView CurrentView
         {
             get { return GetView<FirstStepView>(); }
@@ -28,10 +36,12 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult Index()
         {
+            CurrentView.Pick.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Location.CLASSNAME).ID;
+            CurrentView.Drop.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Location.CLASSNAME).ID;
+
             CurrentView.Contact.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
             CurrentView.Order.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.VehicleOrder.CLASSNAME).ID;
             CurrentView.PersonRef.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Person.CLASSNAME).ID;
-            
 
             CurrentView.GridVehicles.ItemsSource = ViewModel.VehicleList;
             CurrentView.GridPersons.ItemsSource = ViewModel.PersonList;
@@ -40,16 +50,21 @@ namespace GreenTransport.NovaForms.RentWizzard
             CurrentView.StartDate.Value = DateTime.Today;
             CurrentView.EndDate.Value = DateTime.Today.AddDays(1);
 
-            var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarType.Electric, GlauxSoft.GreenTransport.Repository.Enums.CarType.Diesel, GlauxSoft.GreenTransport.Repository.Enums.CarType.Hybrid, GlauxSoft.GreenTransport.Repository.Enums.CarType.Petrol });
-            var listClasses = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Medium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Large, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Estate, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Premium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Carriers, GlauxSoft.GreenTransport.Repository.Enums.CarClass.SUV });
+            InitCombobox(CurrentView.VehicleType, listVehicleTypes);
+            InitCombobox(CurrentView.BycicleType, listBycicleType);
+            InitCombobox(CurrentView.CarType, listCarType);
+            InitCombobox(CurrentView.CarClass, listCarClasses);
 
-            InitCombobox(CurrentView.VehicleType, listTypes);
-            InitCombobox(CurrentView.VehicleClass, listClasses);
-            
             var form = CurrentView.Root as NovaForm;
             if (form == null) throw new NovaException("Wrong type " + form.GetType());
             form.Title = "Booking process.";
-
+            var actCnt = CurrentView.GridVehicles.Actions.Count;
+            for (int ind = 1; ind < actCnt; ++ind)
+            {
+                var actn = CurrentView.GridVehicles.Actions.FindActionByName(string.Format("A{0}", ind));
+                actn.IsEnabled = false;
+                actn.Caption = string.Empty;
+            }
             return new DoNothingResult();
         }
 
@@ -250,6 +265,41 @@ namespace GreenTransport.NovaForms.RentWizzard
         #region events
         public ActionResult SearchEvent()
         {
+            var selVhType = CurrentView.VehicleType.SelectedItem;
+            
+            var isBycicle = (selVhType!=null)?(selVhType.ItemId == CurrentView.VehicleType.Items[2].ItemId):(false);
+            var isCar = (selVhType!=null)?(selVhType.ItemId == CurrentView.VehicleType.Items[1].ItemId):(false);
+            // bycicle settings
+            CurrentView.BycicleType.Visibility = (isBycicle) ? (Visibility.Visible) : (Visibility.Hidden);
+            // car options
+            CurrentView.CarType.Visibility = (isCar) ? (Visibility.Visible) : (Visibility.Hidden);
+            CurrentView.CarClass.Visibility = (isCar) ? (Visibility.Visible) : (Visibility.Hidden);
+            //
+            var actCnt = CurrentView.GridVehicles.Actions.Count;
+            for (int ind = 1; ind < actCnt; ++ind)
+            {
+                var actn = CurrentView.GridVehicles.Actions.FindActionByName(string.Format("A{0}",ind));
+                actn.Caption = string.Empty;
+                actn.IsEnabled = false;
+                var actInd = ind - 1;
+                if(isBycicle)
+                {
+                    actn.IsEnabled = (actInd < listBycicleTypeNames.Length);
+                    if(actn.IsEnabled)
+                    {
+                        actn.Caption = listBycicleTypeNames[actInd];
+                    }
+                }
+                if (isCar)
+                {
+                    actn.IsEnabled = (actInd < listCarTypeNames.Length);
+                    if (actn.IsEnabled)
+                    {
+                        actn.Caption = listCarTypeNames[actInd];
+                    }
+                }
+            }
+            
             InitGrid();
             return new DoNothingResult();
         }
@@ -275,6 +325,7 @@ namespace GreenTransport.NovaForms.RentWizzard
 
         public ActionResult GridRowChangedEvent()
         {
+            //
             return new DoNothingResult();
         }
         #endregion

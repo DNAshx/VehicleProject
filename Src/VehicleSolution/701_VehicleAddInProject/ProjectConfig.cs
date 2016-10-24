@@ -13,7 +13,7 @@ namespace GreenTransport
             this.SetClassImage("Company", "GreenTransport.Images.company.svg");   
             AddClassMapping("Person", typeof(DefaultDetailFormController));
             AddClassMapping("Company", typeof(DefaultDetailFormController));
-            AddClassMapping("Vehicle", typeof(DefaultDetailFormController));
+            AddClassMapping("Vehicle", typeof(GreenTransport.NovaForms.VehicleDetailsForm.VehicleDetailsFormController));
             AddClassMapping("VehicleOrder", typeof(DefaultDetailFormController));
             AddClassMapping("Location", typeof(DefaultDetailFormController));
             AddClassMapping("FuelConsumption", typeof(DefaultDetailFormController));

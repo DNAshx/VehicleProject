@@ -1,20 +1,63 @@
-using Evidence.Business;
-using Evidence.Nova.Common;
-using Evidence.Services;
+﻿using System;
+using System.Linq;
+using System.IO;
+using System.Collections.Generic;
 
-namespace GreenTransport.NovaForms.DefaultDetailForm
+using Evidence.Business;
+using Evidence.Services;
+using Evidence.Nova.Common;
+
+using GlauxSoft.Common;
+using GlauxSoft.GreenTransport.Repository;
+using GlauxSoft.Business;
+using GreenTransport.Controllers;
+
+using eDocGenDocumentCreator;
+
+using myConst = GlauxSoft.GreenTransport.Repository.Constants;
+
+namespace GreenTransport.NovaForms.VehicleDetailsForm
 {
-    [DefaultView(typeof(DefaultDetailFormView))]
-    public class DefaultDetailFormController : ControllerBase<DefaultDetailFormViewModel>
+    [DefaultView(typeof(VehicleDetailsFormView))]
+    public class VehicleDetailsFormController : BaseController<VehicleDetailsFormModel>
     {
+        public VehicleDetailsFormView CurrentView
+        {
+            get { return GetView<VehicleDetailsFormView>(); }
+        }
+
         public ActionComposer Index()
         {
+            CurrentView.RefLocation.RefClassId = BusinessDirectory.get_ClassDescriptor(myConst.Location.CLASSNAME).ID;
+
             var composer = new ActionComposer();
 
             var dlg = base.GetArgument<NovaEvidenceObjectDialog>();
-            //EvdObjectId
+
             if (dlg != null)
             {
+                //CurrentView.Model.Text = string.Format("{0}-{1}-{2}", dlg.ObjectID, dlg.CandidateObjectId, ViewModel.EvdObj);
+                var vehicles = GlauxSoft.GreenTransport.Queries.QueryFactory.Vehicle.VehicleGetById.GetObjects<Vehicle>(dlg.ObjectID.GetValue());
+                var vehicle = vehicles.FirstOrDefault();
+                if(vehicle!=null)
+                {
+                    //CurrentView.VehicleType.SelectedItem;
+                    //CurrentView.Brand.
+                    CurrentView.Model.Text = vehicle.Model;
+                    CurrentView.RefLocation.RefObjectId = vehicle.RefLocation;
+                    //CurrentView.VehicleClass.;
+                    //CurrentView.co2;
+                    //CurrentView.Description
+                    CurrentView.Efficiency.Value = 1;// vehicle.Efficiency;
+                    //CurrentView.Engine;
+                    CurrentView.QtPassengers.Value = vehicle.QtPassengers;
+                    CurrentView.PriceDay.Value = (decimal)vehicle.PriceDay.GetValueOrDefault();
+                    CurrentView.ServiceHours.Value = vehicle.ServiceHours;
+                    CurrentView.ProdDate.Value = vehicle.ProdDate.GetValueOrDefault();
+                }
+                //
+
+                //
                 ViewModel.DialogResponseAction = dlg.DialogResponseAction;
                 var cls = this.BusinessDirectory.get_ClassDescriptor(dlg.ClassID);
                 //AN: TODO NovaEvidenceObjectDialog also has properties RequestSource, CandidateObjectId, CandidateObjectClass, InputOutputParameter which may need to be processed some way 
@@ -22,6 +65,18 @@ namespace GreenTransport.NovaForms.DefaultDetailForm
                     InitView(cls, dlg.IsReadonly);
             }
 
+            var listTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Bicycle, GlauxSoft.GreenTransport.Repository.Enums.VehicleType.Car});
+            var listCarTypes = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarType.Electric, GlauxSoft.GreenTransport.Repository.Enums.CarType.Diesel, GlauxSoft.GreenTransport.Repository.Enums.CarType.Hybrid, GlauxSoft.GreenTransport.Repository.Enums.CarType.Petrol });
+            var listClasses = new List<EvdEnumValue>(new EvdEnumValue[] { GlauxSoft.GreenTransport.Repository.Enums.CarClass.Small, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Medium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Large, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Estate, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Premium, GlauxSoft.GreenTransport.Repository.Enums.CarClass.Carriers, GlauxSoft.GreenTransport.Repository.Enums.CarClass.SUV });
+
+            //InitCombobox(CurrentView.VehicleType, listTypes);
+            InitCombobox(CurrentView.VehicleClass, listClasses);
+            InitCombobox(CurrentView.VehicleClass, listClasses);
+            //InitCombobox(CurrentView.Brand, listClasses);
+            var d = this.ViewModel.EvdObj;
+
+            //CurrentView.Model.Text = string.Format("");
+            //CurrentView.VehicleType = 
             composer.Add(() =>
             {
                 // Call the index-function of the base class
@@ -62,6 +117,11 @@ namespace GreenTransport.NovaForms.DefaultDetailForm
             return composer;
         }
 
+        public ActionResult SearchEvent()
+        {
+            //InitGrid();
+            return new DoNothingResult();
+        }
 
         /// <summary>
         /// Call the FormSave-function to save the evidence object
@@ -91,7 +151,7 @@ namespace GreenTransport.NovaForms.DefaultDetailForm
 
         private void InitView(EvidenceClass evdClass, bool viewOnly)
         {
-            var view = GetView<DefaultDetailFormView>();
+            var view = GetView<VehicleDetailsFormView>();
 
             var form = view.Root as NovaForm;
             if (form == null) throw new NovaException("Wrong type " + view.Root.GetType());
@@ -108,7 +168,7 @@ namespace GreenTransport.NovaForms.DefaultDetailForm
                 switch (attrib.ExprType)
                 {
                     case AttributeType.XBoolean:
-                        form.UIElementTree.Add(new NovaCheckBox {EvdSourceAttr = sourceAttr, IsEnabled = !viewOnly});
+                        form.UIElementTree.Add(new NovaCheckBox { EvdSourceAttr = sourceAttr, IsEnabled = !viewOnly });
                         break;
                     case AttributeType.XDataTime:
                         form.UIElementTree.Add(new NovaDateTime { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly, });
@@ -155,7 +215,7 @@ namespace GreenTransport.NovaForms.DefaultDetailForm
                         form.UIElementTree.Add(new NovaText { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly });
                         break;
                     case AttributeType.XVDocument:
-                        form.UIElementTree.Add(new NovaDoc { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly, HasDocPreview = true});
+                        form.UIElementTree.Add(new NovaDoc { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly, HasDocPreview = true });
                         break;
                     case AttributeType.XWebLink:
                         form.UIElementTree.Add(new NovaWeb { EvdSourceAttr = sourceAttr, IsReadOnly = viewOnly });
@@ -165,4 +225,3 @@ namespace GreenTransport.NovaForms.DefaultDetailForm
         }
     }
 }
-

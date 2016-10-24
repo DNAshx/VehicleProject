@@ -70,6 +70,7 @@
     <Compile Include="Queries\Location\LocationGetList.cs" />
     <Compile Include="Queries\QueryFactory.FuelConsumption.cs" />
     <Compile Include="Queries\FuelConsumption\FuelConsumptionGetList.cs" />
+    <Compile Include="Queries\Vehicle\VehicleGetById.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Files\notes.txt" />

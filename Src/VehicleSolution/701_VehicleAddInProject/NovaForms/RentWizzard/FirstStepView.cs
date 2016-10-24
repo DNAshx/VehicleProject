@@ -15,6 +15,16 @@ namespace GreenTransport.NovaForms.RentWizzard
             get { return FindElementByName<NovaRef>(); }
         }
 
+        internal NovaRef Pick
+        {
+            get { return FindElementByName<NovaRef>(); }
+        }
+
+        internal NovaRef Drop
+        {
+            get { return FindElementByName<NovaRef>(); }
+        }
+
         internal NovaRef Vehicle
         {
             get { return FindElementByName<NovaRef>(); }
@@ -37,11 +47,18 @@ namespace GreenTransport.NovaForms.RentWizzard
         {
             get { return FindElementByName<NovaCombo>(); }
         }
-        internal NovaCombo VehicleClass
+        internal NovaCombo BycicleType
         {
             get { return FindElementByName<NovaCombo>(); }
         }
-
+        internal NovaCombo CarClass
+        {
+            get { return FindElementByName<NovaCombo>(); }
+        }
+        internal NovaCombo CarType
+        {
+            get { return FindElementByName<NovaCombo>(); }
+        }
         internal NovaGrid GridVehicles
         {
             get { return FindElementByName<NovaGrid>(); }
